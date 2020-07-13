@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import SideDrawer from '../shared/SideDrawer/SideDrawer';
 import Backdrop from '../shared/Backdrop';
 import Footer from '../shared/Footer';
-import Individual from '../components/TeamPage/individual';
+import Individual from '../components/TeamPage/Individual';
 import Aos from 'aos';
 
 const team = () => {
