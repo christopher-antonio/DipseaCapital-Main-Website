@@ -24,7 +24,7 @@ const Navbar = ( props ) => {
                         flex-direction: row;
                         align-items: center;
                         justify-content: center;
-                        background-color: #283348;
+                        background-color: transparent;
                     }
 
                     .toggle-button {
@@ -33,12 +33,14 @@ const Navbar = ( props ) => {
 
                     .logo {
                         background-color: white;
+                        border-radius: 5px;
                     }
 
                     .logo img {
                         height: 60px;
                         width: auto;
                         cursor: pointer;
+                        border-radius: 5px;
                     }
 
                     .client-login {

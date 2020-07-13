@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import SideDrawer from '../shared/SideDrawer/SideDrawer';
 import Backdrop from '../shared/Backdrop';
 import { IoIosArrowDown } from 'react-icons/io';
-import { MdAttachMoney } from 'react-icons/md';
 import Footer from '../shared/Footer';
 import Aos from 'aos';
 
@@ -16,9 +15,9 @@ export default function Home () {
     backdrop = <Backdrop click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />;
   }
 
-  useEffect(() => {
+  useEffect( () => {
     Aos.init( { duration: 1200 } );
-  })
+  } );
 
   return (
     <div className="container">
@@ -27,16 +26,18 @@ export default function Home () {
         <link rel="icon" href="/dipseaicon.jpg" />
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
       </Head>
-      <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
+
       <SideDrawer show={ sideDrawerOpen } />
       { backdrop }
       <main>
+        
         <div className='hero'>
+        <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
           <div className='eyebrow fade-in'>At Dipsea Capital</div>
           <div className='heading text-animation'>We believe in consistent and</div>
           <div className='heading-2 text-animation-2'>uncorrelated returns<div className='border'></div></div>
           <div className='space'></div>
-          <a className='arrow' href='#belief-section'><IoIosArrowDown size={ 50 } color='white' /></a>
+          <div className='arrow' data-aos='fade-down'><IoIosArrowDown size={ 50 } color='white' /></div>
         </div>
         <div className='belief' id='belief-section'>
           <div className='belief-sub'>
@@ -65,7 +66,7 @@ export default function Home () {
         }
 
         .hero {
-          height: calc(100vh - 78px);
+          height: 100vh;
           width: 100%;
           background-color: #283348;
           display: flex;
