@@ -5,6 +5,10 @@ import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
 const Navbar = ( props ) => {
     const router = useRouter();
 
+    const goTo = () => {
+        window.open( 'https://www.navconsulting.net/' );
+    };
+
     return (
         <React.Fragment>
             <nav className='nav'>
@@ -12,7 +16,7 @@ const Navbar = ( props ) => {
                 <div className='space'></div>
                 <Link href='/'><a className='logo'><img src='/DipseaLogo.png' alt='homepage logo' /></a></Link>
                 <div className='space'></div>
-                <div className='client-login'>Client Login</div>
+                <div className='client-login' onClick={ goTo }>Client Login</div>
             </nav>
             <style jsx>
                 {
@@ -28,7 +32,7 @@ const Navbar = ( props ) => {
                     }
 
                     .toggle-button {
-                        padding-left: 1rem;
+                        margin-left: 2%;
                     }
 
                     .logo {
@@ -44,7 +48,7 @@ const Navbar = ( props ) => {
                     }
 
                     .client-login {
-                        padding-right: 1rem;
+                        margin-right: 2%;
                         color: white;
                         font-size: 18px;
                         cursor: pointer;

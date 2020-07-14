@@ -31,9 +31,9 @@ const Footer = () => {
                 <div className='menus'>
                     <Link href='/about'><a>About Us</a></Link>
                     <Link href='/team'><a>Our Team</a></Link>
-                    <Link href='/'><a>Investment Philosophy</a></Link>
-                    <Link href='/'><a>Publications</a></Link>
-                    <Link href='/'><a>Contact Us</a></Link>
+                    <Link href='/philosophy'><a>Investment Philosophy</a></Link>
+                    <Link href='/publications'><a>Publications</a></Link>
+                    {/* <Link href='/'><a>Contact Us</a></Link> */}
                 </div>
             </div>
             <style jsx>

@@ -21,7 +21,7 @@ const SideDrawer = props => {
                     </Link>
                     <Link href='/philosophy'>
                         <a className='clickable'>
-                            <p>PHILOSOPHY</p>
+                            <p>INVESTMENT PHILOSOPHY</p>
                         </a>
                     </Link>
                     <Link href='/publications'>
@@ -29,12 +29,15 @@ const SideDrawer = props => {
                             <p>PUBLICATIONS</p>
                         </a>
                     </Link>
-                    <Link href='/contact'>
+                    {/* <Link href='/contact'>
                         <a className='clickable'>
                             <p>CONTACT US</p>
                         </a>
-                    </Link>
+                    </Link> */}
                 </ul>
+                <div className='logo'>
+                    <img src='/SideDrawerLogo.png' alt='Dipsea Capital, LLC Logo' />
+                </div>
             </nav>
             <style jsx>
                 {
@@ -46,8 +49,7 @@ const SideDrawer = props => {
                         position: fixed;
                         top: 0;
                         left: 0;
-                        width: 60%;
-                        max-width: 320px;
+                        width: 30vw;
                         z-index: 200;
                         transform: translateX(-100%);
                         transition: transform 0.3s ease-in-out;
@@ -62,13 +64,13 @@ const SideDrawer = props => {
                         display: flex;
                         flex-direction: column;
                         margin: 0;
-                        padding: 5rem 0 0 0;
+                        padding: 5rem 0 0 10%;
                     }
                     
                     .sideDrawer a {
                         color: white;
                         font-weight: 250;
-                        padding: 1rem 0 1rem 3rem;
+                        padding: 1rem 0 1rem 10%;
                     }
                     
                     .clickable {
@@ -89,6 +91,42 @@ const SideDrawer = props => {
                         border-bottom: 3px solid #8EB3FD;
                         transition: border-bottom 0.3s;
                     }
+
+                    .logo {
+                        height: auto;
+                        width: 18vw;
+                        margin: 22% 0 0 17%;                        
+                    }
+
+                    .logo img {
+                        height: auto;
+                        width: 100%;
+                        background-color: white;
+                    }
+
+                    // .logo {
+                    //     display: flex;
+                    //     height: 13vh;
+                    //     margin: 8rem 0 0 6rem;
+                    //     font-family: 'Playfair Display', serif;
+                    //     color: white;
+                    //     font-size: 30px;
+                    //     font-weight: 600;
+                    //     letter-spacing: 2px;
+                    // }
+
+                    // .tilted {
+                    //     padding: 0 2px 0 4px;
+                    //     transform: rotate(20deg) translateX(-15px) translateY(3px);
+                    // }
+
+                    // .logo img {
+                    //     height: 100%;
+                    //     width: auto;
+                    //     background-color: white;
+                    // }
+
+                    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
                     `
                 }
             </style>
