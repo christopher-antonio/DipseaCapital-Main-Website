@@ -56,7 +56,7 @@ export default function Home () {
             </ul>
           </div>
         </div>
-        <div data-aos='fade-up'><Footer /></div>
+        <Footer />
       </main>
 
       <style jsx>{

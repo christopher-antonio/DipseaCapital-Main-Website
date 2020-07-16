@@ -22,7 +22,7 @@ const Individual = ( props ) => {
                 {
                     `
                     .employee {
-                        height: 60vh;
+                        height: calc(100vw * 51 / 131 + 0px);
                         width: 100%;
                         display: flex;
                         flex-direction: row;
@@ -40,14 +40,15 @@ const Individual = ( props ) => {
                     }
 
                     .image {
-                        height: 80%;
+                        height: auto;
+                        width: 80%;
                         padding-left: 2rem;
                         
                     }
 
                     .image img {
-                        height: 100%;
-                        width: auto;
+                        height: auto;
+                        width: 100%;
                         box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
                     }
 
@@ -78,13 +79,13 @@ const Individual = ( props ) => {
                     .about p {
                         font-family: 'Prata', serif;
                         font-size: calc(100vw * 0.014 + 0px);
-                        line-height: 40px;
+                        line-height: calc(100vw * 4 / 131 + 0px);
                         margin: 0;
                         padding: 0 0 0 2rem;
                     }
 
                     .space-between-indy {
-                        height: 15vh;
+                        height: calc(100vw * 11 / 131 + 0px);
                         width: 100%;
                     }
                     

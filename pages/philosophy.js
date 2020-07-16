@@ -74,12 +74,12 @@ const philosophy = () => {
                     </div>
                 </div>
             </main>
-            <div data-aos='fade-up'><Footer /></div>
+            <Footer />
             <style jsx>
                 {
                     `
                     .firm, .highlights {
-                        height: 1400px;
+                        height: calc(100vw * 14 / 13 + 0px);
                         width: 100%;
                         display: flex;
                         flex-direction: row;
@@ -87,17 +87,17 @@ const philosophy = () => {
                         justify-content: center;
                         background-image: linear-gradient(#e6eefe, #e6eefe);
                         background-repeat: no-repeat;
-                        background-size: calc(100vw * 0.8 + 0px) 1300px;
+                        background-size: calc(100vw * 0.8 + 0px) calc(100vw * 9 / 13 + 370px);
                         background-position: calc(100vw / 6 + 0px) calc(100vw * 13 / 420 + 0px);
                     }
 
                     .highlights {
-                        height: 1600px;
+                        height: calc(100vw * 16 / 13 + 0px);;
                         padding-top: 190px;
                         align-items: flex-start;
                         background-image: linear-gradient(#e6eefe, #e6eefe);
                         background-repeat: no-repeat;
-                        background-size: calc(100vw * 0.8 + 0px) 1450px;
+                        background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 250px);
                         background-position: calc(100vw / 21 + 0px) calc(100vw * 3 / 70 + 0px);
                     }
               
@@ -137,7 +137,7 @@ const philosophy = () => {
 
                     .sub-heading {
                         font-family: 'Prata', serif;
-                        font-size: 50px;
+                        font-size: calc(100vw * 4 / 131 + 3px);
                         margin: 0;
                         color: #283348;
                         width: 80%;

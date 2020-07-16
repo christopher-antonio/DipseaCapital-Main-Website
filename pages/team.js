@@ -68,7 +68,7 @@ const team = () => {
                 </div>
 
             </main>
-            <div data-aos='fade-up'><Footer /></div>
+            <Footer />
             <style jsx>
                 {
                     `
@@ -108,7 +108,7 @@ const team = () => {
                       .the-team {
                         background-image: linear-gradient(white, white, #e6e6e6);
                         background-repeat: no-repeat;
-                        height: 60vh;
+                        height: calc(100vw * 90 / 256 + 130px);
                         width: 100%;
                         display: flex;
                         flex-direction: column;

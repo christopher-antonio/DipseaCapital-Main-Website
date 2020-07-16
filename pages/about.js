@@ -67,7 +67,7 @@ const about = () => {
                     </div>
                 </div>
             </main>
-            <div data-aos='fade-up'><Footer /></div>
+            <Footer />
             <style jsx>
                 {
                     `
@@ -77,7 +77,7 @@ const about = () => {
                     }
 
                     .firm, .begin {
-                        height: 100vh;
+                        height: calc(100vw * 110 / 131 + 0px);
                         width: 100%;
                         display: flex;
                         flex-direction: row;
@@ -110,15 +110,15 @@ const about = () => {
 
                     .sub-heading {
                         font-family: 'Prata', serif;
-                        font-size: 50px;
+                        font-size: calc(100vw * 5 / 131 + 0px);
                         margin: 0;
                         color: #283348;
                         width: 80%;
                     }
 
                     .about-1 {
-                        font-size: 19px;
-                        line-height: 45px;
+                        font-size: calc(100vw * 19 / 1310 + 0px);
+                        line-height: calc(100vw * 9 / 262 + 0px);
                         font-weight: 300;
                     }
 
@@ -138,7 +138,7 @@ const about = () => {
                     }
 
                     .hook {
-                        font-size: 50px;
+                        font-size: calc(100vw * 4 / 131 + 0px);
                         font-family: 'Prata', serif;
                         display: flex;
                         align-items: flex-end;
@@ -161,7 +161,7 @@ const about = () => {
                     }
 
                     .old-trace {
-                        height: 60%;
+                        height: calc(100vw * 45 / 131 + 0px);
                         width: 100%;
                         display: flex;
                         align-items: center;

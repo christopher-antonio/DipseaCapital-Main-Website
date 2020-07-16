@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { FaLinkedinIn, FaTwitter, FaMediumM } from 'react-icons/fa';
+import { useEffect } from 'react';
 
 const Footer = () => {
+
     const goTo = () => {
         window.open( 'https://www.google.com/maps/place/Dipsea+Capital/@37.9452467,-122.5241261,17z/data=!3m1!4b1!4m5!3m4!1s0x80859a446de34fc3:0xb0b6faf3b01150f5!8m2!3d37.9452467!4d-122.5219374' );
     };
@@ -10,7 +12,7 @@ const Footer = () => {
         window.open('https://www.linkedin.com/company/dipsea-capital-llc/')
     }
     return (
-        <div className='footer'>
+        <div className='footer' data-aos='fade-up'>
             <div className='dipsea-side'>
                 <img src='/DipseaLogo.png' alt='dipsea logo' />
                 <div className='address'>
@@ -21,9 +23,9 @@ const Footer = () => {
                 <div className='direction' onClick={ goTo }>Get directions</div>
                 <div className='number'>+1 (415) 925-9022</div>
                 <div className='icons'>
-                    <div className='linkedin' onClick={goLinkedIn}><FaLinkedinIn color="#283348" size={ 20 } /></div>
-                    <div className='twitter' onClick={goLinkedIn}><FaTwitter color="#283348" size={ 20 } /></div>
-                    <div className='medium' onClick={goLinkedIn}><FaMediumM color="#283348" size={ 20 } /></div>
+                    <div className='linkedin' onClick={goLinkedIn}><FaLinkedinIn color="#283348" size={ 'calc(100vw * 2 / 131 + 0px)' } /></div>
+                    <div className='twitter' onClick={goLinkedIn}><FaTwitter color="#283348" size={ 'calc(100vw * 2 / 131 + 0px)' } /></div>
+                    <div className='medium' onClick={goLinkedIn}><FaMediumM color="#283348" size={ 'calc(100vw * 2 / 131 + 0px)' } /></div>
                 </div>
             </div>
             <div className='pages-side'>
@@ -40,7 +42,7 @@ const Footer = () => {
                 {
                     `
                     .footer {
-                        height: 520px;
+                        height: calc(100vw * 52 / 131 + 0px);
                         width: 100%;
                         background-color: #283348;
                         display: flex;
@@ -61,8 +63,8 @@ const Footer = () => {
 
                     img {
                         background-color: white;
-                        height: 200px;
-                        width: 200px;
+                        height: calc(100vw * 20 / 131 + 0px);
+                        width: calc(100vw * 20 / 131 + 0px);
                     }
 
                     .address {
@@ -104,8 +106,8 @@ const Footer = () => {
                     }
 
                     .linkedin, .twitter, .medium {
-                        height: 35px;
-                        width: 35px;
+                        height: calc(100vw * 7 / 262 + 3px);
+                        width: calc(100vw * 7 / 262 + 3px);
                         background-color: white;
                         display: flex;
                         justify-content: center;

@@ -9,14 +9,14 @@ const List = ( props ) => {
                 {
                     `
                     .list h4 {
-                        font-size: 30px;
+                        font-size: calc(100vw * 2 / 131 + 5px);
                         font-family: 'Prata', serif;
                         margin: 1rem 0;
                     }
 
                     .about-1 {
-                        font-size: 19px;
-                        line-height: 45px;
+                        font-size: calc(100vw * 19 / 1310 + 0px);
+                        line-height: calc(100vw * 8 / 262 + 0px);
                         font-weight: 300;
                     }
                     `
