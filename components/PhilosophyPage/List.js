@@ -19,6 +19,18 @@ const List = ( props ) => {
                         line-height: calc(100vw * 8 / 262 + 0px);
                         font-weight: 300;
                     }
+
+                    @media (max-width: 376px) {
+                        .list h4 {
+                            margin: 0.2rem 0;
+                        }
+
+                        .about-1 {
+                            font-size: 8px;
+                            line-height: calc(100vw * 8 / 262 + 0px);
+                        }
+                    }
+
                     `
                 }
             </style>

@@ -125,7 +125,7 @@ const team = () => {
                         font-size: calc(100vw * 0.014 + 0px);
                         width: 50%;
                         height: auto;
-                        padding: 5rem 0 0 0;
+                        padding: calc(100vw * 3 / 70 + 0px) 0 0 0;
                         text-align: center;
                       }
 
@@ -147,6 +147,21 @@ const team = () => {
                         from { opacity: 0; }
                         to { opacity: 1; }
                       }
+
+                      @media (max-width: 376px) {
+
+                        .the-team {
+                            height: 230px;
+                        }
+                        .team-pic img {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        .intro {
+                            width: 80%;
+                            font-size: 10px;
+                        }
                     `
                 }
             </style>

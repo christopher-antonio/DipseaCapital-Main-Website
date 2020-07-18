@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 const DrawerToggleButton = props => {
     return (
         <React.Fragment>
-            <button className='toggleButton' onClick={ props.click } ><GiHamburgerMenu color="white" size={ 30 } /></button>
+            <button className='toggleButton' onClick={ props.click } ><GiHamburgerMenu color="white" size={ 'calc(100vw * 1 / 140 + 20px)' } /></button>
             <style jsx>
                 {
                     `

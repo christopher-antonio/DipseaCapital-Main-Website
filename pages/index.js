@@ -37,7 +37,7 @@ export default function Home () {
           <div className='heading text-animation'>We believe in consistent and</div>
           <div className='heading-2 text-animation-2'>uncorrelated returns<div className='border'></div></div>
           <div className='space'></div>
-          <div className='arrow' data-aos='fade-down'><IoIosArrowDown size={ 50 } color='white' /></div>
+          <div className='arrow' data-aos='fade-down'><IoIosArrowDown size={ 'calc(100vw * 5 / 131 + 0px)' } color='white' /></div>
         </div>
         <div className='belief' id='belief-section'>
           <div className='belief-sub'>
@@ -222,6 +222,112 @@ export default function Home () {
         @keyframes animated-cursor {
           from, to { border-color: transparent }
           50% { border-color: white; }
+        }
+
+        @media (max-width: 376px) {
+          .hero {
+            height: 70vh;
+          }
+
+          .eyebrow {
+            color: white;
+            font-size: 10px;
+            font-weight: 300;
+            padding: 2rem 0 0 2rem;
+          }
+
+          .heading{
+            display: flex;
+            height: auto;
+            width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: 'Prata', serif;
+            color: white;
+            font-size: calc(100vw * 0.05 + 0px);
+            padding: 2rem 0 0 2rem;
+          }
+  
+          .heading-2 {
+            display: flex;
+            height: auto;
+            width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: 'Prata', serif;
+            color: white;
+            font-size: calc(100vw * 0.05 + 0px);
+            padding: 1rem 0 0 2rem;
+          }
+
+          .border {
+            border-bottom: solid 2px white;
+            width: 20px;
+            animation: animated-cursor 0.75s step-end infinite;
+          }
+
+          // Belif section ----------
+
+          .belief {
+            height: 640px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .belief-sub {
+            height: 4%;
+            width: 100%;
+          }
+  
+          .line {
+            height: 3px;
+            width: 80px;
+            background-color: #4E638C;
+            margin-left: 1rem;
+          }
+  
+          .belief-sub h4 {
+            margin: 0;
+            padding: 0.5rem 1rem 2rem 1rem;
+            font-size: 10px;
+          }
+  
+          .belief-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
+            width: 100%;
+          }
+  
+          .list-content {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 80%;
+          }
+  
+          .list-content li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1.5rem 1rem;
+            font-size: 25px;
+            font-weight: 300;
+            border-top: 1px solid #8EB3FD;
+            border-bottom: 1px solid #8EB3FD;
+          }
+  
+          .list-content p {
+            margin: 0;
+            padding-left: 1rem;
+            font-size: 12px;
+          }
+
         }
         `
       }</style>

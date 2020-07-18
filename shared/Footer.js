@@ -93,7 +93,7 @@ const Footer = () => {
                     }
 
                     .number {
-                        padding: 1.5rem 0;
+                        padding: calc(100vw * 23 / 1400 + 0px) 0;
                         color: white;
                         font-size: calc(100vw * 0.009 + 1px);
                     }
@@ -130,7 +130,7 @@ const Footer = () => {
                         height: 3px;
                         width: 100%;
                         background-color: white;
-                        margin-bottom: 2rem;
+                        margin-bottom: calc(100vw / 35 + 0px);
                     }
 
                     .menus {
@@ -141,10 +141,41 @@ const Footer = () => {
                     }
 
                     .menus a {
-                        padding: 1rem 0;
+                        padding: calc(100vw / 70 + 0px) 0;
                         color: white;
                         text-decoration: none;
                         font-size: calc(100vw * 0.0114 + 0px);
+                    }
+
+                    @media (max-width: 376px) {
+                        .footer {
+                            height: 250px;
+                        }
+
+                        .pages-side {
+                            padding-left: 10px;
+                        }
+
+                        .dipsea-side {
+                            padding-left: 10px;
+                        }
+
+                        .icons {
+                            margin-top: 10px;
+                        }
+
+                        .menus a {
+                            font-size: 8px;
+                        }
+
+                        .address p {
+                            font-size: 8px;
+                        }
+
+                        .direction, .number {
+                            font-size: 7px;
+                        }
+
                     }
                     `
                 }

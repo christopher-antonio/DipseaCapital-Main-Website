@@ -92,7 +92,7 @@ const philosophy = () => {
                     }
 
                     .highlights {
-                        height: calc(100vw * 16 / 13 + 0px);;
+                        height: calc(100vw * 16 / 13 + 80px);;
                         padding-top: 190px;
                         align-items: flex-start;
                         background-image: linear-gradient(#e6eefe, #e6eefe);
@@ -113,20 +113,26 @@ const philosophy = () => {
             
                     .line {
                         height: 3px;
-                        width: 180px;
+                        width: calc(100vw * 9 / 70 + 0px);
                         background-color: #4E638C;
                         margin-left: 2rem;
                     }
 
                     .highlights-line {
                         height: 3px;
-                        width: 180px;
+                        width: calc(100vw * 9 / 70 + 0px);
                         background-color: #4E638C;
                     }
             
                     .firm-sub h4 {
                         margin: 0;
                         padding: 1rem 2rem 2rem 2rem;
+                        font-size: calc(100vw * 0.014 + 0px);
+                    }
+
+                    .highlights-sub h4 {
+                        margin: 0;
+                        padding: 1rem 2rem 2rem 0;
                         font-size: calc(100vw * 0.014 + 0px);
                     }
             
@@ -151,7 +157,47 @@ const philosophy = () => {
                         height: 2px;
                         width: 100%;
                         background-color: #8EB3FD;
-                        margin: 2rem 0;
+                        margin: calc(100vw * 3 / 175 + 0px) 0;
+                    }
+
+                    @media (max-width: 376px) {
+
+                        .firm, .highlights {
+                            height: 600px;
+                        }
+
+                        .line {
+                            height: 2px;
+                            margin-left: 1rem;
+                        }
+
+                        
+                        .firm-sub h4 {
+                            padding: 0.2rem 2rem 2rem 1rem;
+                            font-size: 7px;
+                        }
+                        
+                        .highlights-line {
+                            height: 2px;
+                        }
+
+                        .highlights-sub h4 {
+                            padding: 0.2rem 2rem 2rem 0;
+                            font-size: 7px;
+                        }
+
+                        .ul {
+                            margin-top: 0.7rem;
+                        }
+
+                        .highlights {
+                            padding-top: 60px;
+                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 200px);
+                        }
+
+                        #firm-section {
+                            margin-top: 30px;
+                        }
                     }
                     `
                 }

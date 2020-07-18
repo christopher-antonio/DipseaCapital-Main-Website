@@ -54,6 +54,27 @@ const Card = ( props ) => {
                         letter-spacing: 1px;
                         color: #000;
                     }
+
+                    @media (max-width: 376px) {
+                        .head {
+                            font-size: 14px;
+                            padding: 1rem 1rem 0.2rem 1rem;
+                        }
+
+                        .date {
+                            font-size: 7px;
+                            padding: 0.5rem 1rem 0.2rem 1rem;
+                        }
+                        .author {
+                            font-size: 7px;
+                            padding: 0 1rem 0.4rem 1rem;
+                        }
+
+                        .desc {
+                            font-size: 9px;
+                            padding: 0 1rem 2rem 1rem;
+                        }
+                    }
                     `
                 }
             </style>

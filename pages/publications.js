@@ -88,6 +88,20 @@ const publications = () => {
                         margin: 0 calc(100vw * 3 / 131 + 0px);
                     }
 
+                    @media (max-width: 376px) {
+                        .main-sub {
+                            height: auto;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        .sub-left, .sub-right {
+                            height: 70%;
+                            width: 80%;
+                            margin: 0;
+                        }
+                    }
+
                     `
                 }
             </style>

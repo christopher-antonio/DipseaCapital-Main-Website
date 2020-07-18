@@ -92,7 +92,7 @@ const about = () => {
             
                     .line {
                         height: 3px;
-                        width: 180px;
+                        width: calc(100vw * 9 / 70 + 0px);
                         background-color: #4E638C;
                         margin-left: 2rem;
                     }
@@ -180,6 +180,49 @@ const about = () => {
                     @keyframes fadeIn {
                         from { opacity: 0; }
                         to { opacity: 1; }
+                    }
+
+                    @media (max-width: 376px) {
+
+                        .firm, .begin {
+                            height: 400px;
+                        }
+                        
+                        .firm-sub {
+                            height: 80%;
+                            width: 20%;
+                        }
+
+                        .firm-content {
+                            height: 80%;
+                            width: 70%;
+                        }
+
+                        .firm-sub h4 {
+                            padding: 0.2rem 2rem 2rem 0;
+                            font-size: 7px;
+                        }
+
+                        .line {
+                            height: 2px;
+                            width: calc(100vw * 9 / 70 + 0px);
+                            background-color: #4E638C;
+                            margin-left: 0;
+                        }
+
+                        .about-1 {
+                            font-size: 10px;
+                            line-height: calc(100vw * 9 / 262 + 0px);
+                            font-weight: 300;
+                        }
+
+                        .hook-desc {
+                            font-size: 8px;
+                        }
+
+                        .cards {
+                            transform: translateX(-15%);   
+                        }
                     }
               
                     `

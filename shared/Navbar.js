@@ -23,7 +23,7 @@ const Navbar = ( props ) => {
                     `
                     .nav {
                         width: 100%;
-                        height: 78px;
+                        height: calc(100vw * 39 / 700 + 10px);
                         display: flex;
                         flex-direction: row;
                         align-items: center;
@@ -41,7 +41,7 @@ const Navbar = ( props ) => {
                     }
 
                     .logo img {
-                        height: 60px;
+                        height: calc(100vw * 3 / 70 + 0px);
                         width: auto;
                         cursor: pointer;
                         border-radius: 5px;
@@ -50,7 +50,7 @@ const Navbar = ( props ) => {
                     .client-login {
                         margin-right: 2%;
                         color: white;
-                        font-size: 18px;
+                        font-size: calc(100vw * 9 / 700 + 3px);
                         cursor: pointer;
                     }
 
@@ -58,47 +58,18 @@ const Navbar = ( props ) => {
                         flex: 1;
                     }
 
-                    // Small devices
-                    @media (max-width: 576px) {
+                    @media (max-width: 376px) {
                         .nav {
-                            font-size: 9pt;
-                        }
-                        
-                        .pages {
-                            width: 50%;
+                            width: 100%;
+                            height: 80px;
                         }
 
-                        .main-buttons {
-                            display: none;
+                        .logo img {
+                            height: 50px;
                         }
 
-                        .tg-button {
-                            visibility: visible;
-                        }
-                    }
-
-                    // Medium devices (tablets, 768px and up)
-                    @media (min-width: 576px) and (max-width: 768px) {
-                        .nav {
-                            font-size: 9pt;
-                        }
-
-                        .pages {
-                            width: 50%;
-                        }
-
-                        .tg-button {
-                            visibility: visible;
-                        }
-                    }
-
-                    // Large devices (desktops, 992px and up)
-                    @media (min-width: 768px) and (max-width: 992px) {
-                        .nav {
-                            font-size: 10pt;
-                        }
-                        .tg-button {
-                            visibility: visible;
+                        .client-login {
+                            font-size: 12px;
                         }
                     }
                     `

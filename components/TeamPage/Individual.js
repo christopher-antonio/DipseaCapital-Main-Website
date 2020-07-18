@@ -88,6 +88,20 @@ const Individual = ( props ) => {
                         height: calc(100vw * 11 / 131 + 0px);
                         width: 100%;
                     }
+
+                    @media (max-width: 376px) {
+                        .bio {
+                            width: 35%;
+                        }
+
+                        .intro {
+                            padding: 0.5rem 0 0 2rem;
+                        }
+
+                        .position {
+                            padding: 0.3rem 0 0 0;
+                        }
+                    }
                     
                     `
                 }
