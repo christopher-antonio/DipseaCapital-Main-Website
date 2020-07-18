@@ -90,16 +90,56 @@ const Individual = ( props ) => {
                     }
 
                     @media (max-width: 376px) {
+                        .employee {
+                            height: auto;
+                            flex-direction: column;
+                        }
+
                         .bio {
-                            width: 35%;
+                            height: 120px;
+                            width: 100%;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: flex-start;
+                        }
+
+                        .image {
+                            width: 110px;
+                        }
+
+                        .image img {
+                            height: auto;
+                            width: 80px;
+                        }
+
+                        .description {
+                            height: auto;
+                            width: 90%;
+                            margin-top: 20px;
+                            justify-content: flex-start;
                         }
 
                         .intro {
                             padding: 0.5rem 0 0 2rem;
                         }
 
+                        .about p {
+                            font-size: 10px;
+                            padding: 0 0 0 1rem;
+                            line-height: 20px;
+                        }
+
+                        .name {
+                            font-size: 12px;
+                        }
+
                         .position {
+                            font-size: 10px;
                             padding: 0.3rem 0 0 0;
+                        }
+
+                        .space-between-indy {
+                            height: 80px;
                         }
                     }
                     

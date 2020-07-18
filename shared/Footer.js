@@ -12,7 +12,7 @@ const Footer = () => {
         window.open('https://www.linkedin.com/company/dipsea-capital-llc/')
     }
     return (
-        <div className='footer' data-aos='fade-up'>
+        <div className='footer'>
             <div className='dipsea-side'>
                 <img src='/DipseaLogo.png' alt='dipsea logo' />
                 <div className='address'>
@@ -23,9 +23,9 @@ const Footer = () => {
                 <div className='direction' onClick={ goTo }>Get directions</div>
                 <div className='number'>+1 (415) 925-9022</div>
                 <div className='icons'>
-                    <div className='linkedin' onClick={goLinkedIn}><FaLinkedinIn color="#283348" size={ 'calc(100vw * 2 / 131 + 0px)' } /></div>
-                    <div className='twitter' onClick={goLinkedIn}><FaTwitter color="#283348" size={ 'calc(100vw * 2 / 131 + 0px)' } /></div>
-                    <div className='medium' onClick={goLinkedIn}><FaMediumM color="#283348" size={ 'calc(100vw * 2 / 131 + 0px)' } /></div>
+                    <div className='linkedin' onClick={goLinkedIn}><FaLinkedinIn color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
+                    <div className='twitter' onClick={goLinkedIn}><FaTwitter color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
+                    <div className='medium' onClick={goLinkedIn}><FaMediumM color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
                 </div>
             </div>
             <div className='pages-side'>
@@ -162,11 +162,14 @@ const Footer = () => {
 
                         .icons {
                             margin-top: 10px;
+                            width: auto;
                         }
 
                         .linkedin, .twitter, .medium {
                             height: 20px;
                             width: 20px;
+                            border-radius: 20px;
+                            margin-right: 0.5rem;
                         }
 
                         .menus a {

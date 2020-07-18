@@ -162,13 +162,29 @@ const philosophy = () => {
 
                     @media (max-width: 376px) {
 
+                        .firm {
+                            align-items: flex-start;
+                            padding-top: 50px;
+                            margin-top: 20px;
+                        }
+
                         .firm, .highlights {
-                            height: 600px;
+                            height: 760px;
+                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 9 / 13 + 410px);
+                        }
+
+                        .highlights {
+                            padding-top: 40px;
+                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 330px);
                         }
 
                         .line {
                             height: 2px;
                             margin-left: 1rem;
+                        }
+
+                        .sub-heading {
+                            font-size: 18px;
                         }
 
                         
@@ -190,14 +206,6 @@ const philosophy = () => {
                             margin-top: 0.7rem;
                         }
 
-                        .highlights {
-                            padding-top: 60px;
-                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 200px);
-                        }
-
-                        #firm-section {
-                            margin-top: 30px;
-                        }
                     }
                     `
                 }

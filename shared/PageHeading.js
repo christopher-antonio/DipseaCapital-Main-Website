@@ -53,6 +53,17 @@ const PageHeading = ( props ) => {
                         font-size: calc(100vw * 0.05 + 0px);
                         padding: calc(100vw * 1 / 131 + 0px) 0 0 calc(100vw * 17 / 262 + 0px);
                     }
+
+                    @media (max-width: 376px) {
+                        .subtitle {
+                            font-size: 9px;
+                            padding: 0 0 0 30px;
+                        }
+
+                        .heading {
+                            padding: calc(100vw * 1 / 131 + 0px) 0 0 30px;
+                        }
+                    }
                     `
                 }
             </style>

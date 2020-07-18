@@ -22,12 +22,13 @@ const List = ( props ) => {
 
                     @media (max-width: 376px) {
                         .list h4 {
+                            font-size: 14px;
                             margin: 0.2rem 0;
                         }
 
                         .about-1 {
-                            font-size: 8px;
-                            line-height: calc(100vw * 8 / 262 + 0px);
+                            font-size: 10px;
+                            line-height: 14px;
                         }
                     }
 
