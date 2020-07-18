@@ -164,6 +164,11 @@ const Footer = () => {
                             margin-top: 10px;
                         }
 
+                        .linkedin, .twitter, .medium {
+                            height: 20px;
+                            width: 20px;
+                        }
+
                         .menus a {
                             font-size: 8px;
                         }
