@@ -10,7 +10,7 @@ export const listContent2 = {
 
 export const listContent3 = {
     head: 'No correlation',
-    detail: 'Dipsea Capital’s returns on a day-to-day basis reflect the robustness of our strategy over 4.5 + years with a stock market correlation of approximately 0.10, two-thirds positive days, and positive returns on nearly three-quarters of down market days'
+    detail: 'Dipsea Capital’s returns on a day-to-day basis reflect the robustness of our strategy over 5+ years with a stock market correlation of approximately -0.10, two-thirds positive days, and positive returns on nearly three-quarters of down market days'
 };
 
 export const listContent4 = {
@@ -20,7 +20,7 @@ export const listContent4 = {
 
 export const listContent5 = {
     head: 'Uncorrelated returns',
-    detail: 'The strategy has been effective at protecting capital during market downturns such as in February 2018 ("Volmageddon"), and the May 2019 (-6.35%) and fourth quarter 2018 (-13.52%) S&P 500 selloffs, most recently, resulting in a track record with zero correlation to equities and negative correlation to bonds'
+    detail: 'The strategy has been effective at also profiting during market downturns such as in the February - March 2020 (-19.56%) and fourth quarter 2018 (-13.52%) S&P 500 selloffs, resulting in a track record with negative correlation to equities and negative correlation to bonds'
 };
 
 export const listContent6 = {

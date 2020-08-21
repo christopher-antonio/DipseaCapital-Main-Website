@@ -13,8 +13,9 @@ const Navbar = ( props ) => {
         <React.Fragment>
             <nav className='nav'>
                 <div className='toggle-button'><DrawerToggleButton click={ props.click } /></div>
-                <div className='space'></div>
                 <Link href='/'><a className='logo'><img src='/DipseaLogo.png' alt='homepage logo' /></a></Link>
+                <div className='space'></div>
+                <Link href='/'><a className='dipsea-name'>DIPSEA CAPITAL</a></Link>
                 <div className='space'></div>
                 <div className='client-login' onClick={ goTo }>Client Login</div>
             </nav>
@@ -37,14 +38,23 @@ const Navbar = ( props ) => {
 
                     .logo {
                         background-color: white;
-                        border-radius: 5px;
+                        margin-left: 40px;
+                        padding: 3px 0;
                     }
 
                     .logo img {
                         height: calc(100vw * 3 / 70 + 0px);
                         width: auto;
                         cursor: pointer;
-                        border-radius: 5px;
+                    }
+
+                    .dipsea-name {
+                        font-family: 'Prata', serif;
+                        font-size: 35px;
+                        font-weight: 600;
+                        color: #fff;
+                        letter-spacing: 2.2px;
+                        text-decoration: none;
                     }
 
                     .client-login {

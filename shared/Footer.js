@@ -9,12 +9,14 @@ const Footer = () => {
     };
 
     const goLinkedIn = () => {
-        window.open('https://www.linkedin.com/company/dipsea-capital-llc/')
-    }
+        window.open( 'https://www.linkedin.com/company/dipsea-capital-llc/' );
+    };
     return (
         <div className='footer'>
             <div className='dipsea-side'>
-                <img src='/DipseaLogo.png' alt='dipsea logo' />
+                <div className='logo-img'>
+                    <img src='/DipseaLogo.png' alt='dipsea logo' />
+                </div>
                 <div className='address'>
                     <p>350 Bon Air Center</p>
                     <p>Suite 230</p>
@@ -23,19 +25,25 @@ const Footer = () => {
                 <div className='direction' onClick={ goTo }>Get directions</div>
                 <div className='number'>+1 (415) 925-9022</div>
                 <div className='icons'>
-                    <div className='linkedin' onClick={goLinkedIn}><FaLinkedinIn color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
-                    <div className='twitter' onClick={goLinkedIn}><FaTwitter color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
-                    <div className='medium' onClick={goLinkedIn}><FaMediumM color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
+                    <div className='linkedin' onClick={ goLinkedIn }><FaLinkedinIn color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
+                    <div className='twitter' onClick={ goLinkedIn }><FaTwitter color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
+                    <div className='medium' onClick={ goLinkedIn }><FaMediumM color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
                 </div>
             </div>
             <div className='pages-side'>
                 <div className='line'></div>
-                <div className='menus'>
-                    <Link href='/about'><a>About Us</a></Link>
-                    <Link href='/team'><a>Our Team</a></Link>
-                    <Link href='/philosophy'><a>Investment Philosophy</a></Link>
-                    <Link href='/publications'><a>Publications</a></Link>
-                    {/* <Link href='/'><a>Contact Us</a></Link> */}
+                <div className='menu-option'>
+                    <div className='menus'>
+                        <Link href='/'><a>Home</a></Link>
+                        <Link href='/about'><a>About Us</a></Link>
+                        <Link href='/team'><a>Our Team</a></Link>
+                        <Link href='/philosophy'><a>Investment Philosophy</a></Link>
+                    </div>
+                    <div className='menus'>
+                        <Link href='/highlights'><a>Fund Highlights</a></Link>
+                        <Link href='/publications'><a>Publications</a></Link>
+                        <Link href='/'><a>Contact Us</a></Link>
+                    </div>
                 </div>
             </div>
             <style jsx>
@@ -61,10 +69,15 @@ const Footer = () => {
                         padding-left: 2rem;
                     }
 
+                    .logo-img {
+                        padding: 12px 0;
+                        background-color: #fff;
+                    }
+
                     img {
                         background-color: white;
-                        height: calc(100vw * 20 / 131 + 0px);
-                        width: calc(100vw * 20 / 131 + 0px);
+                        height: calc(100vw * 18 / 131 + 0px);
+                        width: calc(100vw * 18 / 131 + 0px);
                     }
 
                     .address {
@@ -133,15 +146,23 @@ const Footer = () => {
                         margin-bottom: calc(100vw / 35 + 0px);
                     }
 
+                    .menu-option {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: center;
+                    }
+
                     .menus {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
-                        justify-content: flex-start;   
+                        justify-content: flex-start; 
+                        margin-right: 90px;  
                     }
 
                     .menus a {
-                        padding: calc(100vw / 70 + 0px) 0;
+                        padding: calc(100vw / 90 + 0px) 0;
                         color: white;
                         text-decoration: none;
                         font-size: calc(100vw * 0.0114 + 0px);

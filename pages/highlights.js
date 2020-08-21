@@ -7,11 +7,11 @@ import Footer from '../shared/Footer';
 import List from '../components/PhilosophyPage/List';
 import * as ListContent from '../components/PhilosophyPage/ListDetails'
 
-const philosophy = () => {
+const highlights = () => {
 
     const headDetail = {
-        subtitle: 'Investment Philosophy',
-        heading: 'Consistent & Non-correlated'
+        subtitle: 'Fund Highlights',
+        heading: 'Lorem ipsum'
     };
 
     useEffect( () => {
@@ -27,24 +27,26 @@ const philosophy = () => {
             </Head>
             <main>
                 <PageHeading head={ headDetail } />
-                <div className='firm' id='firm-section'>
-                    <div className='firm-sub'>
+                <div className='highlights' id='firm-section'>
+                    <div className='highlights-sub'>
                         <div className='headline'>
-                            <div className='line fade-in'></div>
-                            <h4 data-aos='fade-right'>Strategy</h4>
+                            <div className='highlights-line fade-in'></div>
+                            <h4 data-aos='fade-right'>Highlights</h4>
                         </div>
                     </div>
                     <div className='firm-content'>
                         <h2 className='sub-heading' data-aos='fade-up'>Lorem ipsum</h2>
                         <div className='ul'>
                             <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent1 } />
+                            <List content={ ListContent.listContent5 } />
                             <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent2 } />
+                            <List content={ ListContent.listContent6 } />
                             <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent3 } />
+                            <List content={ ListContent.listContent7 } />
                             <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent4 } />
+                            <List content={ ListContent.listContent8 } />
+                            <div className='list-line' data-aos='fade-up'></div>
+                            <List content={ ListContent.listContent9 } />
                             <div className='list-line' data-aos='fade-up'></div>
                         </div>
                     </div>
@@ -54,7 +56,7 @@ const philosophy = () => {
             <style jsx>
                 {
                     `
-                    .firm {
+                    .highlights {
                         height: calc(100vw * 14 / 13 + 0px);
                         width: 100%;
                         display: flex;
@@ -67,9 +69,19 @@ const philosophy = () => {
                         background-position: calc(100vw / 6 + 0px) calc(100vw * 13 / 420 + 0px);
                     }
 
-                    .firm-sub {
+                    .highlights {
+                        height: calc(100vw * 16 / 13 + 80px);;
+                        padding-top: 190px;
+                        align-items: flex-start;
+                        background-image: linear-gradient(#e6eefe, #e6eefe);
+                        background-repeat: no-repeat;
+                        background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 250px);
+                        background-position: calc(100vw / 21 + 0px) calc(100vw * 3 / 70 + 0px);
+                    }
+              
+                    .highlights-sub {
                         height: 80%;
-                        width: 30%;
+                        width: 20%;
                     }
             
                     .line {
@@ -78,10 +90,16 @@ const philosophy = () => {
                         background-color: #4E638C;
                         margin-left: 2rem;
                     }
-            
-                    .firm-sub h4 {
+
+                    .highlights-line {
+                        height: 3px;
+                        width: calc(100vw * 9 / 70 + 0px);
+                        background-color: #4E638C;
+                    }
+
+                    .highlights-sub h4 {
                         margin: 0;
-                        padding: 1rem 2rem 2rem 2rem;
+                        padding: 1rem 2rem 2rem 0;
                         font-size: calc(100vw * 0.014 + 0px);
                     }
             
@@ -117,9 +135,14 @@ const philosophy = () => {
                             margin-top: 20px;
                         }
 
-                        .firm {
+                        .firm, .highlights {
                             height: 760px;
                             background-size: calc(100vw * 0.8 + 0px) calc(100vw * 9 / 13 + 410px);
+                        }
+
+                        .highlights {
+                            padding-top: 40px;
+                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 330px);
                         }
 
                         .line {
@@ -134,6 +157,15 @@ const philosophy = () => {
                         
                         .firm-sub h4 {
                             padding: 0.2rem 2rem 2rem 1rem;
+                            font-size: 7px;
+                        }
+                        
+                        .highlights-line {
+                            height: 2px;
+                        }
+
+                        .highlights-sub h4 {
+                            padding: 0.2rem 2rem 2rem 0;
                             font-size: 7px;
                         }
 
@@ -163,7 +195,7 @@ const philosophy = () => {
                 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
             `}</style>
         </div>
-    );
-};
+    )
+}
 
-export default philosophy;
+export default highlights

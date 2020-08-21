@@ -37,12 +37,12 @@ const about = () => {
                         <p className='about-1' data-aos='fade-up' data-aos-delay={ 300 }>Dipsea Capital manages liquid hedged investment strategies using systematic tools combined with discretionary portfolio management. Founder and CIO Chris Antonio’s investment approach is based on his formative experience in the late 80s and early 90s as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations, seeking consistent daily profitability based on equity market inefficiencies</p>
                         <p className='about-1' data-aos='fade-up'>Chris has been an independent portfolio manager since 1995 and established Dipsea Capital, LLC in 2007, followed by the Dipsea Capital Fund, LP in 2015</p>
                         <div className='cards'>
-                            <div className='card' data-aos='fade-up'>
+                            {/* <div className='card' data-aos='fade-up'>
                                 <div className='hook'>No Negative Year</div>
                                 <div className='hook-desc'>since 1995</div>
-                            </div>
+                            </div> */}
                             <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
-                                <div className='hook'>87 +</div>
+                                <div className='hook'>93 +</div>
                                 <div className='hook-desc'>year combined trading experience</div>
                             </div>
                             <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>

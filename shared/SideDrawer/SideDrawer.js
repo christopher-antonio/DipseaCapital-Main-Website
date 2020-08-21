@@ -9,6 +9,11 @@ const SideDrawer = props => {
         <React.Fragment>
             <nav className={ drawerClasses.join( ' ' ) }>
                 <ul>
+                    <Link href='/'>
+                        <a className='clickable'>
+                            <p>HOME</p>
+                        </a>
+                    </Link>
                     <Link href='/about'>
                         <a className='clickable'>
                             <p>ABOUT US</p>
@@ -24,16 +29,21 @@ const SideDrawer = props => {
                             <p>INVESTMENT PHILOSOPHY</p>
                         </a>
                     </Link>
+                    <Link href='/highlights'>
+                        <a className='clickable'>
+                            <p>FUND HIGHLIGHTS</p>
+                        </a>
+                    </Link>
                     <Link href='/publications'>
                         <a className='clickable'>
                             <p>PUBLICATIONS</p>
                         </a>
                     </Link>
-                    {/* <Link href='/contact'>
+                    <Link href='/contact'>
                         <a className='clickable'>
                             <p>CONTACT US</p>
                         </a>
-                    </Link> */}
+                    </Link>
                 </ul>
                 <div className='logo'>
                     <img src='/SideDrawerLogo.png' alt='Dipsea Capital, LLC Logo' />

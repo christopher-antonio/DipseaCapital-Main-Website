@@ -68,13 +68,14 @@ const publications = () => {
                         <Card content={ card1 } delay={ 200 } />
                     </div>
                 </div>
+                <div className='spacing'></div>
             </main>
             <Footer />
             <style jsx>
                 {
                     `
                     .main-sub {
-                        height: 100vh;
+                        // height: 100vh;
                         width: 100%;
                         display: flex;
                         align-items: flex-start;
@@ -86,6 +87,11 @@ const publications = () => {
                         height: 80%;
                         width: 40%;
                         margin: 0 calc(100vw * 3 / 131 + 0px);
+                    }
+
+                    .spacing {
+                        height: 100px;
+                        width: 100vw;
                     }
 
                     @media (max-width: 376px) {

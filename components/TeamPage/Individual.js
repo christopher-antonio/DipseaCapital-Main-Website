@@ -17,7 +17,7 @@ const Individual = ( props ) => {
 
 
             </div>
-            <div className='space-between-indy'></div>
+            {/* <div className='space-between-indy'></div> */}
             <style jsx>
                 {
                     `

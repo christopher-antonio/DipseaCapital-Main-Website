@@ -37,9 +37,15 @@ const team = () => {
     };
 
     const Employee5 = {
-        name: 'Jenine Stilson',
+        name: 'Eugene',
         position: 'Director of Operations',
-        desc: "Ms. Stilson manages accounting, system administration, and business continuity functions as Director of Operations. Jenine brings a wide perspective and 25 years of experience managing businesses in various industries. Previously, she managed a multi-million dollar book of managed care and employee assistance program business at MHN, a Health Net Company. Ms. Stilson graduated with a Master’s Degree in Counseling Psychology from the University of San Francisco and a Bachelor’s in Psychology from Santa Clara University."
+        desc: "At Dipsea Capital, Eugene oversees all aspects of the fund’s operations and compliance. Eugene joined Dipsea in July, 2020 and has twelve years of experience in hedge fund operations at two multi-billion dollar hedge funds, a fund administrator, and a consultant. Most recently, Eugene served as an outsourced CFO to private equity and hedge fund managers with investment management consultant Constellation Advisors.  In this capacity, he advised both new and established funds on best practices for their reporting functions and back-office operations.  Prior to this, Eugene was a senior fund accountant at Passport Capital managing accounting processes for multiple hedge funds, 40 Act funds, and separate accounts.  Eugene began his career at hedge fund Parallax Volatility Advisers as a senior fund accountant with additional responsibilities in compliance and operations.  Eugene received his bachelor of science in Corporate Finance and Accounting from San Francisco State University"
+    };
+
+    const Employee6 = {
+        name: 'Cameron',
+        position: 'Lorem Ipsum',
+        desc: 'Cameron joined Dipsea Capital in July, 2020 after serving six years as a derivatives trader for CMZ Trading, a Chicago prop trading firm. He was involved in all aspects of portfolio trading, including identifying and enhancing trading strategies and managing portfolio risk across various market environments. He also provided liquidity as a market maker in index equity options at both the Chicago Board of Trade and the Chicago Board of Options Exchange. Cameron earned his bachelor’s degree in Economics from The University of Chicago'
     };
 
     useEffect( () => {
@@ -56,8 +62,8 @@ const team = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='the-team fade-in'>
-                    <div className='team-pic'><img src='/Team.png' alt='team picture' /></div>
-                    <div className='intro'>Meet our executive team, combining 92+ years of experience in trading, operations, and managing client portfolios </div>
+                    {/* <div className='team-pic'><img src='/Team.png' alt='team picture' /></div> */}
+                    <div className='intro'>Meet our team, combining over nine decades of experience in generating absolute returns</div>
                 </div>
                 <div className='indy-mem'>
                     <Individual employee={ Employee1 } />
@@ -65,6 +71,7 @@ const team = () => {
                     <Individual employee={ Employee3 } />
                     <Individual employee={ Employee4 } />
                     <Individual employee={ Employee5 } />
+                    <Individual employee={ Employee6 } />
                 </div>
 
             </main>
@@ -108,16 +115,12 @@ const team = () => {
                       .the-team {
                         background-image: linear-gradient(white, white, #e6e6e6);
                         background-repeat: no-repeat;
-                        height: calc(100vw * 90 / 256 + 130px);
+                        // height: calc(100vw * 60 / 256 + 0px);
                         width: 100%;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: flex-start;
-                      }
-
-                      .team-pic {
-                        padding: 2rem 0 0 0;
                       }
 
                       .intro {
