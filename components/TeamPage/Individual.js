@@ -3,7 +3,7 @@ const Individual = ( props ) => {
         <React.Fragment>
             <div className='employee'>
                 <div className='bio' data-aos='fade-up'>
-                    <div className='image'><img src='/blank-profile.jpg' /></div>
+                    <div className='image'><img src={ props.employee.pic } /></div>
                     <div className='intro'>
                         <div className='name'>{ props.employee.name }</div>
                         <div className='position'>{ props.employee.position }</div>
@@ -78,7 +78,7 @@ const Individual = ( props ) => {
 
                     .about p {
                         font-family: 'Prata', serif;
-                        font-size: calc(100vw * 0.014 + 0px);
+                        font-size: calc(100vw * 0.011 + 0px);
                         line-height: calc(100vw * 4 / 131 + 0px);
                         margin: 0;
                         padding: 0 0 0 2rem;

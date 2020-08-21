@@ -82,6 +82,8 @@ const Navbar = ( props ) => {
                             font-size: 12px;
                         }
                     }
+
+                    @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
                     `
                 }
             </style>

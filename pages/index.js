@@ -19,7 +19,6 @@ export default function Home () {
 
   useEffect( () => {
     Aos.init( { duration: 1200 } );
-    s = <script id="mcjs">{!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/de162b7323cdfcd212d9ecf2e/166fc7670875e56ef108c6da2.js")}</script>
   } );
 
   return (
@@ -28,7 +27,6 @@ export default function Home () {
         <title>Dipsea Capital, LLC</title>
         <link rel="icon" href="/dipseaicon.jpg" />
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
-        {s}
       </Head>
 
       <SideDrawer show={ sideDrawerOpen } />

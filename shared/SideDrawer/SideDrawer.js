@@ -5,6 +5,7 @@ const SideDrawer = props => {
     if ( props.show ) {
         drawerClasses.push( 'open' );
     }
+
     return (
         <React.Fragment>
             <nav className={ drawerClasses.join( ' ' ) }>
@@ -39,15 +40,14 @@ const SideDrawer = props => {
                             <p>PUBLICATIONS</p>
                         </a>
                     </Link>
-                    <Link href='/contact'>
-                        <a className='clickable'>
-                            <p>CONTACT US</p>
-                        </a>
-                    </Link>
+                    <a href='http://eepurl.com/g_QvTb' className='clickable' target='_blank'>
+                        <p>CONTACT US</p>
+                    </a>
                 </ul>
                 <div className='logo'>
                     <img src='/SideDrawerLogo.png' alt='Dipsea Capital, LLC Logo' />
                 </div>
+                
             </nav>
             <style jsx>
                 {

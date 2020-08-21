@@ -42,7 +42,7 @@ const Footer = () => {
                     <div className='menus'>
                         <Link href='/highlights'><a>Fund Highlights</a></Link>
                         <Link href='/publications'><a>Publications</a></Link>
-                        <Link href='/'><a>Contact Us</a></Link>
+                        <a href='http://eepurl.com/g_QvTb' target='_blank'>Contact Us</a>
                     </div>
                 </div>
             </div>
