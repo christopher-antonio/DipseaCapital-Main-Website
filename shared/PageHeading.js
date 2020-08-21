@@ -22,6 +22,7 @@ const PageHeading = ( props ) => {
                     <div className='heading'>{ props.head.heading }</div>
                 </div>
             </div>
+            <div className='header-line'></div>
             <style jsx>
                 {
                     `
@@ -52,6 +53,12 @@ const PageHeading = ( props ) => {
                         color: white;
                         font-size: calc(100vw * 0.05 + 0px);
                         padding: calc(100vw * 1 / 131 + 0px) 0 0 calc(100vw * 17 / 262 + 0px);
+                    }
+
+                    .header-line {
+                        height: 5px;
+                        width: 100vw;
+                        background-color: #f9bc06;
                     }
 
                     @media (max-width: 376px) {

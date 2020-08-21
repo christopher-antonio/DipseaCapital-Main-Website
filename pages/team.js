@@ -48,8 +48,8 @@ const team = () => {
     };
 
     const Employee6 = {
-        name: 'Cameron',
-        position: 'Lorem Ipsum',
+        name: 'Cameron Grimes',
+        position: 'Trader',
         desc: 'Cameron joined Dipsea Capital in July, 2020 after serving six years as a derivatives trader for CMZ Trading, a Chicago prop trading firm. He was involved in all aspects of portfolio trading, including identifying and enhancing trading strategies and managing portfolio risk across various market environments. He also provided liquidity as a market maker in index equity options at both the Chicago Board of Trade and the Chicago Board of Options Exchange. Cameron earned his bachelor’s degree in Economics from The University of Chicago',
         pic: '/Cameron.JPG'
     };

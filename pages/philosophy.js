@@ -35,7 +35,7 @@ const philosophy = () => {
                         </div>
                     </div>
                     <div className='firm-content'>
-                        <h2 className='sub-heading' data-aos='fade-up'>Lorem ipsum</h2>
+                        <h2 className='sub-heading' data-aos='fade-up'>High Quality Returns</h2>
                         <div className='ul'>
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent1 } />

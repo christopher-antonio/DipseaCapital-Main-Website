@@ -35,7 +35,8 @@ export default function Home () {
         
         <div className='hero'>
         <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
-          <div className='eyebrow fade-in'>At Dipsea Capital</div>
+          {/* <div className='eyebrow fade-in'>At Dipsea Capital</div> */}
+          <div className='top-space'></div>
           <div className='heading text-animation'>We believe in consistent and</div>
           <div className='heading-2 text-animation-2'>uncorrelated returns<div className='border'></div></div>
           <div className='space'></div>
@@ -112,6 +113,11 @@ export default function Home () {
           border-bottom: solid 3px white;
           width: 40px;
           animation: animated-cursor 0.75s step-end infinite;
+        }
+
+        .top-space {
+          height: 8rem;
+          width: 100vw;
         }
 
         .space {

@@ -24,7 +24,7 @@ const Navbar = ( props ) => {
                     `
                     .nav {
                         width: 100%;
-                        height: calc(100vw * 39 / 700 + 10px);
+                        height: calc(100vw * 60 / 700 + 10px);
                         display: flex;
                         flex-direction: row;
                         align-items: center;
@@ -43,14 +43,14 @@ const Navbar = ( props ) => {
                     }
 
                     .logo img {
-                        height: calc(100vw * 3 / 70 + 0px);
+                        height: calc(100vw * 5 / 70 + 0px);
                         width: auto;
                         cursor: pointer;
                     }
 
                     .dipsea-name {
                         font-family: 'Prata', serif;
-                        font-size: 35px;
+                        font-size: 40px;
                         font-weight: 600;
                         color: #fff;
                         letter-spacing: 2.2px;

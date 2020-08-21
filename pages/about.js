@@ -57,13 +57,13 @@ const about = () => {
                         <div className='headline'>
                             <div className='line fade-in'></div>
                             <h4 data-aos='fade-right'>Beginning</h4>
+                            <div className='old-trace' data-aos='fade-up'><img src='/DipseaTrace.png' alt='Dipsea Capital Trace' /></div>
                         </div>
                     </div>
-                    <div className='firm-content'>
+                    <div className='firm-content' id='firm-begin'>
                         <h2 className='sub-heading' data-aos='fade-up'>Where it all begins...</h2>
                         <p className='about-1' data-aos='fade-up'>Dipsea Capital is a California Registered Investment Advisor and offers both a private fund, Dipsea Capital Fund, LP, as well as separately managed accounts for large institutional investors</p>
                         <p className='about-1' data-aos='fade-up'>Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach - a grueling event that rewards perseverance, teamwork, and preparation</p>
-                        <div className='old-trace' data-aos='fade-up'><img src='/DipseaTrace.png' alt='Dipsea Capital Trace' /></div>
                     </div>
                 </div>
             </main>
@@ -77,12 +77,16 @@ const about = () => {
                     }
 
                     .firm, .begin {
-                        height: calc(100vw * 110 / 131 + 0px);
+                        height: calc(100vw * 100 / 131 + 0px);
                         width: 100%;
                         display: flex;
                         flex-direction: row;
                         align-items: center;
                         justify-content: center;
+                    }
+
+                    .begin {
+                        height: calc(100vw * 90 / 131 + 0px);
                     }
               
                     .firm-sub {
@@ -106,6 +110,10 @@ const about = () => {
                     .firm-content {
                         height: 80%;
                         width: 55%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
                     }
 
                     .sub-heading {
@@ -166,6 +174,7 @@ const about = () => {
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        margin-top: calc(100vw * 0.041 + 0px);
                     }
 
                     .old-trace img {
