@@ -240,6 +240,11 @@ export default function Home () {
             height: 70vh;
           }
 
+          .top-space {
+            height: 8rem;
+            max-height: 100px;
+          }
+
           .eyebrow {
             color: white;
             font-size: 10px;
@@ -272,8 +277,8 @@ export default function Home () {
           }
 
           .border {
-            border-bottom: solid 2px white;
-            width: 20px;
+            border-bottom: solid 1px white;
+            width: 8px;
             animation: animated-cursor 0.75s step-end infinite;
           }
 

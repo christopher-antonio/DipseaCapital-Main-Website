@@ -74,6 +74,10 @@ const Navbar = ( props ) => {
                             height: 80px;
                         }
 
+                        .logo {
+                            margin-left: 10px;
+                        }
+
                         .logo img {
                             height: 50px;
                         }

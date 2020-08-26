@@ -193,6 +193,10 @@ const Footer = () => {
                             margin-right: 0.5rem;
                         }
 
+                        .menus {
+                            margin-right: 20px;
+                        }
+
                         .menus a {
                             font-size: 8px;
                         }
