@@ -181,6 +181,10 @@ const Footer = () => {
                             padding-left: 10px;
                         }
 
+                        .logo-img {
+                            padding: 3px 0;
+                        }
+
                         .icons {
                             margin-top: 10px;
                             width: auto;

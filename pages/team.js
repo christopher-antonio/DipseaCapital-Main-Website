@@ -167,7 +167,7 @@ const team = () => {
                       @media (max-width: 376px) {
 
                         .the-team {
-                            height: 230px;
+                            height: 60px;
                         }
                         .team-pic img {
                             width: 100%;
@@ -177,6 +177,10 @@ const team = () => {
                         .intro {
                             width: 80%;
                             font-size: 10px;
+                        }
+
+                        .space-bottom {
+                            height: 60px;
                         }
                     `
                 }
