@@ -95,7 +95,7 @@ const SideDrawer = props => {
                     .clickable p {
                         margin: 0;
                         padding-bottom: 6px;
-                        font-size: calc(100vw * 14 / 1450 + 2px);
+                        font-size: max(calc(100vw * 14 / 1450 + 2px), 12px);
                     }
 
                     .clickable p:hover {
@@ -115,7 +115,7 @@ const SideDrawer = props => {
                         background-color: white;
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 451px) {
                         .sideDrawer {
                             width: 70vw;
                         }

@@ -22,7 +22,7 @@ const Individual = ( props ) => {
                 {
                     `
                     .employee {
-                        height: calc(100vw * 51 / 131 + 0px);
+                        height: max(calc(100vw * 51 / 148 + 0px), 330px);
                         width: 100%;
                         display: flex;
                         flex-direction: row;
@@ -78,7 +78,7 @@ const Individual = ( props ) => {
 
                     .about p {
                         font-family: 'Prata', serif;
-                        font-size: calc(100vw * 0.011 + 0px);
+                        font-size: max(calc(100vw * 0.011 + 0px), 12px);
                         line-height: calc(100vw * 4 / 131 + 0px);
                         margin: 0;
                         padding: 0 0 0 2rem;
@@ -89,7 +89,7 @@ const Individual = ( props ) => {
                         width: 100%;
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 451px) {
                         .employee {
                             height: auto;
                             flex-direction: column;

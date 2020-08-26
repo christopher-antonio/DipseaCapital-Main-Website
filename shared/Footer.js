@@ -168,7 +168,7 @@ const Footer = () => {
                         font-size: calc(100vw * 0.0114 + 0px);
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 451px) {
                         .footer {
                             height: 250px;
                         }

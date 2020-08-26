@@ -37,8 +37,8 @@ export default function Home () {
         <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
           {/* <div className='eyebrow fade-in'>At Dipsea Capital</div> */}
           <div className='top-space'></div>
-          <div className='heading text-animation'>We believe in consistent and</div>
-          <div className='heading-2 text-animation-2'>uncorrelated returns<div className='border'></div></div>
+          <div className='heading text-animation'>We believe in providing consistent returns</div>
+          <div className='heading-2 text-animation-2'>throughout the markets' ups and downs<div className='border'></div></div>
           <div className='space'></div>
           <div className='arrow' data-aos='fade-down'><IoIosArrowDown size={ 'calc(100vw * 5 / 131 + 0px)' } color='white' /></div>
         </div>
@@ -93,7 +93,8 @@ export default function Home () {
           overflow: hidden;
           font-family: 'Prata', serif;
           color: white;
-          font-size: calc(100vw * 0.05 + 0px);
+          // font-size: calc(100vw * 0.05 + 0px);
+          font-size: min(calc(100vw * 0.034 + 0px), 50px);
           padding: 2rem 0 0 5rem;
         }
 
@@ -105,7 +106,8 @@ export default function Home () {
           overflow: hidden;
           font-family: 'Prata', serif;
           color: white;
-          font-size: calc(100vw * 0.05 + 0px);
+          // font-size: calc(100vw * 0.05 + 0px);
+          font-size: min(calc(100vw * 0.034 + 0px), 50px);
           padding: 1rem 0 0 5rem;
         }
 
@@ -117,6 +119,7 @@ export default function Home () {
 
         .top-space {
           height: 8rem;
+          max-height: 130px;
           width: 100vw;
         }
 
@@ -164,7 +167,7 @@ export default function Home () {
         .belief-sub h4 {
           margin: 0;
           padding: 1rem 2rem 2rem 2rem;
-          font-size: calc(100vw * 0.014 + 0px);
+          font-size: max(calc(100vw * 0.014 + 0px), 14px);
         }
 
         .belief-content {
@@ -192,7 +195,7 @@ export default function Home () {
         .list-content p {
           margin: 1rem;
           padding-left: 1rem;
-          font-size: calc(100vw * 0.0157 + 0px);
+          font-size: max(calc(100vw * 0.0157 + 0px), 17px);
         }
 
         .text-animation {
@@ -232,7 +235,7 @@ export default function Home () {
           50% { border-color: white; }
         }
 
-        @media (max-width: 376px) {
+        @media (max-width: 451px) {
           .hero {
             height: 70vh;
           }
@@ -252,7 +255,7 @@ export default function Home () {
             overflow: hidden;
             font-family: 'Prata', serif;
             color: white;
-            font-size: calc(100vw * 0.05 + 0px);
+            font-size: calc(100vw * 0.03 + 0px);
             padding: 2rem 0 0 2rem;
           }
   
@@ -264,7 +267,7 @@ export default function Home () {
             overflow: hidden;
             font-family: 'Prata', serif;
             color: white;
-            font-size: calc(100vw * 0.05 + 0px);
+            font-size: calc(100vw * 0.03 + 0px);
             padding: 1rem 0 0 2rem;
           }
 

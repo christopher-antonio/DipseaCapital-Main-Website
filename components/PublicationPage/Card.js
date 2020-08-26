@@ -55,7 +55,7 @@ const Card = ( props ) => {
                         color: #000;
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 451px) {
                         .head {
                             font-size: 14px;
                             padding: 1rem 1rem 0.2rem 1rem;

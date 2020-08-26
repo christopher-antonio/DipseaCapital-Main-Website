@@ -94,7 +94,7 @@ const publications = () => {
                         width: 100vw;
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 451px) {
                         .main-sub {
                             height: auto;
                             flex-direction: column;
@@ -105,6 +105,11 @@ const publications = () => {
                             height: 70%;
                             width: 80%;
                             margin: 0;
+                        }
+
+                        .spacing {
+                            height: 70px;
+                            width: 100vw;
                         }
                     }
 

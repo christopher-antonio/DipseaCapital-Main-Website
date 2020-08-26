@@ -50,7 +50,7 @@ const Navbar = ( props ) => {
 
                     .dipsea-name {
                         font-family: 'Prata', serif;
-                        font-size: 40px;
+                        font-size: min(calc(100vw * 0.027 + 0px), 43px);
                         font-weight: 600;
                         color: #fff;
                         letter-spacing: 2.2px;
@@ -68,7 +68,7 @@ const Navbar = ( props ) => {
                         flex: 1;
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 451px) {
                         .nav {
                             width: 100%;
                             height: 80px;

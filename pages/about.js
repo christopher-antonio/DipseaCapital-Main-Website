@@ -9,7 +9,7 @@ const about = () => {
 
     const headDetail = {
         subtitle: 'About Us',
-        heading: 'Evolution and endurance'
+        heading: 'Highly experienced at adaptation'
     };
 
     useEffect( () => {
@@ -25,6 +25,7 @@ const about = () => {
             </Head>
             <main>
                 <PageHeading head={ headDetail } />
+                <div className='firm-space'></div>
                 <div className='firm' id='firm-section'>
                     <div className='firm-sub'>
                         <div className='headline'>
@@ -33,7 +34,7 @@ const about = () => {
                         </div>
                     </div>
                     <div className='firm-content'>
-                        <h2 className='sub-heading' data-aos='fade-up'>Established to provide consistent returns in all market environments</h2>
+                        {/* <h2 className='sub-heading' data-aos='fade-up'>Established to provide consistent returns in all market environments</h2> */}
                         <p className='about-1' data-aos='fade-up' data-aos-delay={ 300 }>Dipsea Capital manages liquid hedged investment strategies using systematic tools combined with discretionary portfolio management. Founder and CIO Chris Antonio’s investment approach is based on his formative experience in the late 80s and early 90s as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations, seeking consistent daily profitability based on equity market inefficiencies</p>
                         <p className='about-1' data-aos='fade-up'>Chris has been an independent portfolio manager since 1995 and established Dipsea Capital, LLC in 2007, followed by the Dipsea Capital Fund, LP in 2015</p>
                         <div className='cards'>
@@ -52,6 +53,7 @@ const about = () => {
                         </div>
                     </div>
                 </div>
+                <div className='firm-space'></div>
                 <div className='begin' id='firm-section'>
                     <div className='firm-sub'>
                         <div className='headline'>
@@ -66,6 +68,7 @@ const about = () => {
                         <p className='about-1' data-aos='fade-up'>Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach - a grueling event that rewards perseverance, teamwork, and preparation</p>
                     </div>
                 </div>
+                <div className='firm-space'></div>
             </main>
             <Footer />
             <style jsx>
@@ -76,21 +79,27 @@ const about = () => {
                         width: 100%;
                     }
 
+                    .firm-space {
+                        height: calc(100vw * 0.09 + 0px);
+                        max-height: 100px;
+                        width: 100%;
+                    }
+
                     .firm, .begin {
-                        height: calc(100vw * 100 / 131 + 0px);
+                        min-height: calc(100vw * 75 / 161 + 0px);
                         width: 100%;
                         display: flex;
                         flex-direction: row;
-                        align-items: center;
+                        align-items: flex-start;
                         justify-content: center;
                     }
 
-                    .begin {
-                        height: calc(100vw * 90 / 131 + 0px);
-                    }
+                    // .begin {
+                    //     height: calc(100vw * 90 / 131 + 0px);
+                    // }
               
                     .firm-sub {
-                        height: 80%;
+                        height: 100%;
                         width: 30%;
                     }
             
@@ -104,7 +113,7 @@ const about = () => {
                     .firm-sub h4 {
                         margin: 0;
                         padding: 1rem 2rem 2rem 2rem;
-                        font-size: calc(100vw * 0.014 + 0px);
+                        font-size: max(calc(100vw * 0.014 + 0px), 13px);
                     }
             
                     .firm-content {
@@ -113,7 +122,7 @@ const about = () => {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
-                        justify-content: center;
+                        justify-content: flex-start;
                     }
 
                     .sub-heading {
@@ -125,7 +134,7 @@ const about = () => {
                     }
 
                     .about-1 {
-                        font-size: calc(100vw * 19 / 1310 + 0px);
+                        font-size: max(calc(100vw * 19 / 1310 + 0px), 15px);
                         line-height: calc(100vw * 9 / 262 + 0px);
                         font-weight: 300;
                     }
@@ -146,7 +155,7 @@ const about = () => {
                     }
 
                     .hook {
-                        font-size: calc(100vw * 4 / 131 + 0px);
+                        font-size: calc(100vw * 4 / 141 + 0px);
                         font-family: 'Prata', serif;
                         display: flex;
                         align-items: flex-end;
@@ -164,7 +173,7 @@ const about = () => {
                         align-items: center;
                         justify-content: center;
                         text-align: center;
-                        font-size: 17px;
+                        font-size: max(calc(100vw * 19 / 1310 + 0px), 13px);
                         font-weight: 300;
                     }
 
@@ -172,8 +181,8 @@ const about = () => {
                         height: calc(100vw * 45 / 131 + 0px);
                         width: 100%;
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        align-items: flex-start;
+                        justify-content: flex-start;
                         margin-top: calc(100vw * 0.041 + 0px);
                     }
 
@@ -191,10 +200,14 @@ const about = () => {
                         to { opacity: 1; }
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 451px) {
 
-                        .firm, .begin {
-                            height: 400px;
+                        .firm {
+                            height: 270px;
+                        }
+
+                        .begin {
+                            height: 230px;
                         }
                         
                         .firm-sub {
@@ -225,12 +238,21 @@ const about = () => {
                             font-weight: 300;
                         }
 
+                        .hook {
+                            margin-bottom: 10px;
+                        }
+
                         .hook-desc {
                             font-size: 8px;
                         }
 
                         .cards {
                             transform: translateX(-15%);   
+                        }
+
+                        .old-trace img {
+                            height: 75%;
+                            width: auto;
                         }
                     }
               

@@ -63,7 +63,7 @@ const philosophy = () => {
                         justify-content: center;
                         background-image: linear-gradient(#e6eefe, #e6eefe);
                         background-repeat: no-repeat;
-                        background-size: calc(100vw * 0.8 + 0px) calc(100vw * 9 / 13 + 370px);
+                        background-size: calc(100vw * 0.8 + 0px) max(calc(100vw * 21.5 / 23 + 0px), 780px) ;
                         background-position: calc(100vw / 6 + 0px) calc(100vw * 13 / 420 + 0px);
                     }
 

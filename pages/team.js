@@ -81,6 +81,7 @@ const team = () => {
                 </div>
 
             </main>
+            <div className='space-bottom'></div>
             <Footer />
             <style jsx>
                 {
@@ -150,6 +151,12 @@ const team = () => {
 
                       .fade-in {
                         animation: fadeIn 0.70s ease-in;
+                      }
+
+                      .space-bottom {
+                          height: 100px;
+                          width: 100%;
+                          background-color: #e6e6e6;
                       }
 
                       @keyframes fadeIn {

@@ -11,7 +11,7 @@ const highlights = () => {
 
     const headDetail = {
         subtitle: 'Fund Highlights',
-        heading: 'Lorem ipsum'
+        heading: 'Transparency from the ground up'
     };
 
     useEffect( () => {
