@@ -161,7 +161,7 @@ const philosophy = () => {
                         margin: calc(100vw * 3 / 175 + 0px) 0;
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 451px) {
 
                         .firm {
                             align-items: flex-start;

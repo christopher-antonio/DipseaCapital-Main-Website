@@ -139,7 +139,7 @@ export default function Home () {
           transition: all 1s ease-in-out;
         }
 
-        // belief section ------------
+        /* belief section ------------ */
 
         .belief {
           height: 100vh;
@@ -219,35 +219,19 @@ export default function Home () {
         }
 
         @keyframes slideDown {
-          from {
-            opacity: 0;
-            transform: translateY(-100%)
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0)
-          }		
+          from { opacity: 0; transform: translateY(-100%); }
+          to { opacity: 1; transform: translateY(0); }		
         }
         
         @keyframes animated-text {
-          from {
-            width: 0%;
-          }
-          to {
-            width: 80%;
-          }
+          from { width: 0%; }
+          to { width: 80%; }
         }
         
         @keyframes animated-cursor {
-          from, to {
-            border-color: transparent
-          }
-          50% {
-            border-color: white;
-          }
+          from, to { border-color: transparent; }
+          50% { border-color: white; }
         }
-        
-        // Mobile CSS Adjustments
         
         @media (max-width: 451px) {
           .hero {
@@ -296,7 +280,7 @@ export default function Home () {
             animation: animated-cursor 0.75s step-end infinite;
           }
 
-          // Belif section ----------
+          /* Belief Section */
 
           .belief {
             height: 640px;

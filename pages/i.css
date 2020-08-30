@@ -1,0 +1,275 @@
+.container {
+    width: 100%;
+  }
+
+  .hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #283348;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .eyebrow {
+    color: white;
+    font-size: calc(100vw * 0.0178 + 0px);
+    font-weight: 300;
+    padding: 7rem 0 0 5rem;
+  }
+/*  */
+  .heading{
+    display: flex;
+    height: auto;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Prata', serif;
+    color: white;
+    font-size: min(calc(100vw * 0.034 + 0px), 50px);
+    padding: 2rem 0 0 5rem;
+  }
+
+  .heading-2 {
+    display: flex;
+    height: auto;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Prata', serif;
+    color: white;
+    font-size: min(calc(100vw * 0.034 + 0px), 50px);
+    padding: 1rem 0 0 5rem;
+  }
+
+  .border {
+    border-bottom: solid 3px white;
+    width: 40px;
+    animation: animated-cursor 0.75s step-end infinite;
+  }
+
+  .top-space {
+    height: 8rem;
+    max-height: 130px;
+    width: 100vw;
+  }
+
+  .space {
+    flex: 1;
+  }
+
+  .arrow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .arrow a {
+    transition: all 1s ease-in-out;
+  }
+
+  .belief {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .belief-sub {
+    height: 80%;
+    width: 30%;
+  }
+
+  .line {
+    height: 3px;
+    width: 180px;
+    background-color: #4E638C;
+    margin-left: 2rem;
+  }
+
+  .belief-sub h4 {
+    margin: 0;
+    padding: 1rem 2rem 2rem 2rem;
+    font-size: max(calc(100vw * 0.014 + 0px), 14px);
+  }
+
+  .belief-content {
+    height: 80%;
+    width: 55%;
+  }
+
+  .list-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .list-content li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem 1rem;
+    font-size: 25px;
+    font-weight: 300;
+    border-top: 1px solid #8EB3FD;
+    border-bottom: 1px solid #8EB3FD;
+  }
+
+  .list-content p {
+    margin: 1rem;
+    padding-left: 1rem;
+    font-size: max(calc(100vw * 0.0157 + 0px), 17px);
+  }
+
+  .text-animation {
+    animation: animated-text 2s steps(40,end) 1s 1 normal both;
+  }
+
+  .text-animation-2 {
+    animation: animated-text 2s steps(40,end) 1s 1 normal both;
+    animation-delay: 2.5s;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.70s ease-in;
+  }
+
+  .slide-down {
+    animation: slideDown 0.75s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-100%); }
+    to { opacity: 1; transform: translateY(0); }		
+  }
+  
+  @keyframes animated-text {
+    from { width: 0%; }
+    to { width: 80%; }
+  }
+  
+  @keyframes animated-cursor {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+  
+  @media (max-width: 451px) {
+    .hero {
+      height: 70vh;
+    }
+
+    .top-space {
+      height: 8rem;
+      max-height: 100px;
+    }
+
+    .eyebrow {
+      color: white;
+      font-size: 10px;
+      font-weight: 300;
+      padding: 2rem 0 0 2rem;
+    }
+
+    .heading{
+      display: flex;
+      height: auto;
+      width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      font-family: 'Prata', serif;
+      color: white;
+      font-size: calc(100vw * 0.03 + 0px);
+      padding: 2rem 0 0 2rem;
+    }
+
+    .heading-2 {
+      display: flex;
+      height: auto;
+      width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      font-family: 'Prata', serif;
+      color: white;
+      font-size: calc(100vw * 0.03 + 0px);
+      padding: 1rem 0 0 2rem;
+    }
+
+    .border {
+      border-bottom: solid 1px white;
+      width: 8px;
+      animation: animated-cursor 0.75s step-end infinite;
+    }
+
+
+    .belief {
+      height: 640px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .belief-sub {
+      height: 4%;
+      width: 100%;
+    }
+
+    .line {
+      height: 3px;
+      width: 80px;
+      background-color: #4E638C;
+      margin-left: 1rem;
+    }
+
+    .belief-sub h4 {
+      margin: 0;
+      padding: 0.5rem 1rem 2rem 1rem;
+      font-size: 10px;
+    }
+
+    .belief-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+      width: 100%;
+    }
+
+    .list-content {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 80%;
+    }
+
+    .list-content li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1.5rem 1rem;
+      font-size: 25px;
+      font-weight: 300;
+      border-top: 1px solid #8EB3FD;
+      border-bottom: 1px solid #8EB3FD;
+    }
+
+    .list-content p {
+      margin: 0;
+      padding-left: 1rem;
+      font-size: 12px;
+    }
+}
