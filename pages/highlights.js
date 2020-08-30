@@ -69,16 +69,6 @@ const highlights = () => {
                         background-size: calc(100vw * 0.8 + 0px) calc(100vw * 9 / 13 + 370px);
                         background-position: calc(100vw / 6 + 0px) calc(100vw * 13 / 420 + 0px);
                     }
-
-                    // .highlights {
-                    //     height: calc(100vw * 16 / 13 + 80px);;
-                    //     padding-top: 190px;
-                    //     align-items: flex-start;
-                    //     background-image: linear-gradient(#e6eefe, #e6eefe);
-                    //     background-repeat: no-repeat;
-                    //     background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 250px);
-                    //     background-position: calc(100vw / 21 + 0px) calc(100vw * 3 / 70 + 0px);
-                    // }
               
                     .highlights-sub {
                         height: 80%;
