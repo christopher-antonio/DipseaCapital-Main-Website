@@ -35,8 +35,8 @@ const about = () => {
                     </div>
                     <div className='firm-content'>
                         {/* <h2 className='sub-heading' data-aos='fade-up'>Established to provide consistent returns in all market environments</h2> */}
-                        <p className='about-1' data-aos='fade-up' data-aos-delay={ 300 }>Dipsea Capital manages liquid hedged investment strategies using systematic tools combined with discretionary portfolio management. Founder and CIO Chris Antonio’s investment approach is based on his formative experience in the late 80s and early 90s as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations, seeking consistent daily profitability based on equity market inefficiencies</p>
-                        <p className='about-1' data-aos='fade-up'>Chris has been an independent portfolio manager since 1995 and established Dipsea Capital, LLC in 2007, followed by the Dipsea Capital Fund, LP in 2015</p>
+                        <p className='about-1' data-aos='fade-up' data-aos-delay={ 300 }>Dipsea Capital manages liquid hedged investment strategies using systematic tools combined with discretionary portfolio management. Founder and CIO Chris Antonio’s investment approach is based on his formative experience in the late 80s and early 90s as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations, seeking consistent daily profitability based on equity market inefficiencies.</p>
+                        <p className='about-1' data-aos='fade-up'>Chris has been an independent portfolio manager since 1995 and established Dipsea Capital, LLC in 2007, followed by the Dipsea Capital Fund, LP in 2015.</p>
                         <div className='cards'>
                             {/* <div className='card' data-aos='fade-up'>
                                 <div className='hook'>No Negative Year</div>
@@ -48,7 +48,7 @@ const about = () => {
                             </div>
                             <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
                                 <div className='hook'>16 +</div>
-                                <div className='hook-desc'>year managed investment strategies</div>
+                                <div className='hook-desc'>years as a team</div>
                             </div>
                         </div>
                     </div>
@@ -64,8 +64,8 @@ const about = () => {
                     </div>
                     <div className='firm-content' id='firm-begin'>
                         <h2 className='sub-heading' data-aos='fade-up'>Where it all begins...</h2>
-                        <p className='about-1' data-aos='fade-up'>Dipsea Capital is a California Registered Investment Advisor and offers both a private fund, Dipsea Capital Fund, LP, as well as separately managed accounts for large institutional investors</p>
-                        <p className='about-1' data-aos='fade-up'>Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach - a grueling event that rewards perseverance, teamwork, and preparation</p>
+                        <p className='about-1' data-aos='fade-up'>Dipsea Capital is a California Registered Investment Advisor and offers both a private fund, Dipsea Capital Fund, LP, as well as separately managed accounts for large institutional investors.</p>
+                        <p className='about-1' data-aos='fade-up'>Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach - a grueling event that rewards perseverance, teamwork, and preparation.</p>
                     </div>
                 </div>
                 <div className='firm-space'></div>

@@ -9,8 +9,8 @@ import Card from '../components/PublicationPage/Card';
 const publications = () => {
 
     const headDetail = {
-        subtitle: 'Publications',
-        heading: 'Lastest Insights'
+        subtitle: 'Insights',
+        heading: 'Lastest articles and letters'
     };
 
     useEffect( () => {
@@ -26,7 +26,7 @@ const publications = () => {
     };
 
     const card2 = {
-        head: 'Business of Water-as-a-Service (WAAS): AquaVenture Holdings Ltd',
+        head: 'Best Idea 2020: Business of Water-as-a-Service (WAAS): AquaVenture Holdings Ltd',
         date: 'December 6, 2019',
         author: 'Holly Singer',
         desc: 'On December 4th, Hedge Connection hosted its End of Year Recap and Holiday Celebration. The event opened with Mithra Warrier of TD Securities moderating a panel of hedge fund managers in a discussion of their Best Ideas for 2020.  Each of the managers on the panel will have their best idea featured here on The Edge. Below we have Christopher Antonio, CIO, Dipsea Capital LLC breakdown AquaVenture Holdings, a developer and provider of sustainable water.',
@@ -52,7 +52,7 @@ const publications = () => {
     return (
         <div className="container">
             <Head>
-                <title>Publications - Dipsea Capital</title>
+                <title>Insights - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
             </Head>

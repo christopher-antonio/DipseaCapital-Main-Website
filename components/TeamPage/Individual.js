@@ -17,7 +17,7 @@ const Individual = ( props ) => {
 
 
             </div>
-            {/* <div className='space-between-indy'></div> */}
+            <div className='space-between-indy'></div>
             <style jsx>
                 {
                     `
@@ -26,12 +26,12 @@ const Individual = ( props ) => {
                         width: 100%;
                         display: flex;
                         flex-direction: row;
-                        align-items: center;
+                        align-items: flex-start;
                         justify-content: center;
                     }
 
                     .bio {
-                        height: 80%;
+                        height: auto;
                         width: 25%;
                         display: flex;
                         flex-direction: column;
@@ -73,7 +73,7 @@ const Individual = ( props ) => {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: flex-start;
                     }
 
                     .about p {
@@ -82,11 +82,6 @@ const Individual = ( props ) => {
                         line-height: calc(100vw * 4 / 131 + 0px);
                         margin: 0;
                         padding: 0 0 0 2rem;
-                    }
-
-                    .space-between-indy {
-                        height: calc(100vw * 11 / 131 + 0px);
-                        width: 100%;
                     }
 
                     @media (max-width: 451px) {
@@ -139,7 +134,7 @@ const Individual = ( props ) => {
                         }
 
                         .space-between-indy {
-                            height: 80px;
+                            height: 20px;
                         }
                     }
                     

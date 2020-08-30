@@ -11,7 +11,7 @@ const highlights = () => {
 
     const headDetail = {
         subtitle: 'Fund Highlights',
-        heading: 'Transparency from the ground up'
+        heading: 'High Quality Returns'
     };
 
     useEffect( () => {
@@ -35,7 +35,7 @@ const highlights = () => {
                         </div>
                     </div>
                     <div className='firm-content'>
-                        <h2 className='sub-heading' data-aos='fade-up'>Lorem ipsum</h2>
+                        {/* <h2 className='sub-heading' data-aos='fade-up'>Lorem ipsum</h2> */}
                         <div className='ul'>
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent5 } />

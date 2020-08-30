@@ -93,7 +93,6 @@ export default function Home () {
           overflow: hidden;
           font-family: 'Prata', serif;
           color: white;
-          // font-size: calc(100vw * 0.05 + 0px);
           font-size: min(calc(100vw * 0.034 + 0px), 50px);
           padding: 2rem 0 0 5rem;
         }
@@ -106,7 +105,6 @@ export default function Home () {
           overflow: hidden;
           font-family: 'Prata', serif;
           color: white;
-          // font-size: calc(100vw * 0.05 + 0px);
           font-size: min(calc(100vw * 0.034 + 0px), 50px);
           padding: 1rem 0 0 5rem;
         }
@@ -221,20 +219,36 @@ export default function Home () {
         }
 
         @keyframes slideDown {
-          from {opacity: 0; transform: translateY(-100%)}
-          to {opacity: 1; transform: translateY(0)}		
+          from {
+            opacity: 0;
+            transform: translateY(-100%)
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0)
+          }		
         }
         
         @keyframes animated-text {
-          from { width: 0%; }
-          to { width: 80%; }
+          from {
+            width: 0%;
+          }
+          to {
+            width: 80%;
+          }
         }
         
         @keyframes animated-cursor {
-          from, to { border-color: transparent }
-          50% { border-color: white; }
+          from, to {
+            border-color: transparent
+          }
+          50% {
+            border-color: white;
+          }
         }
-
+        
+        // Mobile CSS Adjustments
+        
         @media (max-width: 451px) {
           .hero {
             height: 70vh;
@@ -343,7 +357,6 @@ export default function Home () {
             padding-left: 1rem;
             font-size: 12px;
           }
-
         }
         `
       }</style>

@@ -11,7 +11,7 @@ const philosophy = () => {
 
     const headDetail = {
         subtitle: 'Investment Philosophy',
-        heading: 'Consistent & Non-correlated'
+        heading: 'Transparency from the ground up'
     };
 
     useEffect( () => {
@@ -21,7 +21,7 @@ const philosophy = () => {
     return (
         <div className="container">
             <Head>
-                <title>Philisophy - Dipsea Capital</title>
+                <title>Philosophy - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
             </Head>
@@ -35,7 +35,7 @@ const philosophy = () => {
                         </div>
                     </div>
                     <div className='firm-content'>
-                        <h2 className='sub-heading' data-aos='fade-up'>High Quality Returns</h2>
+                        {/* <h2 className='sub-heading' data-aos='fade-up'>High Quality Returns</h2> */}
                         <div className='ul'>
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent1 } />
@@ -47,6 +47,20 @@ const philosophy = () => {
                             <List content={ ListContent.listContent4 } />
                             <div className='list-line' data-aos='fade-up'></div>
                         </div>
+                        <div className='cards'>
+                            <div className='card' data-aos='fade-up'>
+                                <div className='hook'>0</div>
+                                <div className='hook-desc'>correlation to stock market</div>
+                            </div>
+                            <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
+                                <div className='hook'>0</div>
+                                <div className='hook-desc'>correlation to bond indices</div>
+                            </div>
+                            <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
+                                <div className='hook'>67 %</div>
+                                <div className='hook-desc'>positive days</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -55,7 +69,7 @@ const philosophy = () => {
                 {
                     `
                     .firm {
-                        height: calc(100vw * 14 / 13 + 0px);
+                        height: calc(100vw * 14 / 13 + 70px);
                         width: 100%;
                         display: flex;
                         flex-direction: row;
@@ -88,6 +102,44 @@ const philosophy = () => {
                     .firm-content {
                         height: 80%;
                         width: 55%;
+                    }
+
+                    .cards {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        height: 10%;
+                        width: 120%;
+                        transform: translateX(-10%);
+                    }
+
+                    .card {
+                        height: 100%;
+                        width: 33%;
+                    }
+
+                    .hook {
+                        font-size: calc(100vw * 4 / 141 + 0px);
+                        font-family: 'Prata', serif;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        text-align: center;
+                        height: 70%;
+                        color: #7EA0E2;
+                    }
+
+                    .hook-desc {
+                        height: 20%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: max(calc(100vw * 19 / 1310 + 0px), 13px);
+                        font-weight: 300;
                     }
 
                     .sub-heading {
@@ -139,6 +191,18 @@ const philosophy = () => {
 
                         .ul {
                             margin-top: 0.7rem;
+                        }
+
+                        .hook {
+                            margin-bottom: 10px;
+                        }
+
+                        .hook-desc {
+                            font-size: 8px;
+                        }
+
+                        .cards {
+                            transform: translateX(-15%);   
                         }
 
                     }

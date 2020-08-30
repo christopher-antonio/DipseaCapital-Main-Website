@@ -9,49 +9,49 @@ import Aos from 'aos';
 const team = () => {
     const headDetail = {
         subtitle: 'Our Team',
-        heading: 'Experience and Dedication'
+        heading: 'Experience & Dedication'
     };
 
     const Employee1 = {
         name: 'Christopher Antonio',
         position: 'Founder and Chief Investment Officer',
-        desc: 'Mr. Antonio began his career on the Pacific Stock Exchange in 1985. He later co-managed the listed securities business for Paine Webber before departing, in 1995, to start his own firm and manage client monies. He established the current Investment Management Company, Dipsea Capital, LLC in 2007.  From 1995 through present, his clients have never withstood a negative return year.  Chris has a passion for research pertaining to the Science of Consistency.  Specific research interests center on the successful cultivation of an elastic mindset, peak performance similarities across multiple disciplines, and processes which encourage consistent, high efficacy decision making.  Mr. Antonio has a Bachelor’s Degree from the University of California at Davis in Biological Sciences',
-        pic: '/blank-profile.jpg'
+        desc: 'Mr. Antonio began his career on the Pacific Stock Exchange in 1985. He later co-managed the listed securities business for Paine Webber before departing, in 1995, to start his own firm and manage client monies. He established the current Investment Management Company, Dipsea Capital, LLC in 2007.  From 1995 through present, his clients have never withstood a negative return year.  Chris has a passion for research pertaining to the Science of Consistency.  Specific research interests center on the successful cultivation of an elastic mindset, peak performance similarities across multiple disciplines, and processes which encourage consistent, high efficacy decision making.  Mr. Antonio has a Bachelor’s Degree from the University of California at Davis in Biological Sciences.',
+        pic: '/chris.png'
     };
 
     const Employee2 = {
         name: 'Eddy Altamirano',
         position: 'Head of Trading',
-        desc: "Mr. Altamirano joined Dipsea Capital in 2003 and serves as the Firm’s Head of Trading.  Eddy is actively involved in managing Dipsea's direct investment strategy. Eddy has over 25 years of experience in trading, operations, and portfolio risk management. Prior to Dipsea Capital, Eddy was a trader on the Pacific Stock Exchange Options Floor, Assistant Specialist on the Cincinnati Stock Exchange for Paine Webber, and an Assistant Specialist on the Equities Floor of the PSE. He earned his Bachelor’s degree in Economics from the University of California at Berkeley",
-        pic: '/Eddy.JPG'
+        desc: "Mr. Altamirano joined Dipsea Capital in 2003 and serves as the Firm’s Head of Trading.  Eddy is actively involved in managing Dipsea's direct investment strategy. Eddy has over 25 years of experience in trading, operations, and portfolio risk management. Prior to Dipsea Capital, Eddy was a trader on the Pacific Stock Exchange Options Floor, Assistant Specialist on the Cincinnati Stock Exchange for Paine Webber, and an Assistant Specialist on the Equities Floor of the PSE. He earned his Bachelor’s degree in Economics from the University of California at Berkeley.",
+        pic: '/eddy.JPG'
     };
 
     const Employee3 = {
         name: 'Kurt Romstad',
         position: 'Head of Risk Management',
-        desc: "Mr. Romstad has over 20 years of risk management experience and has worked with Mr. Antonio since 1998.  Kurt has managed capital through all types of market environments and covered all types of investment products (equities, options, futures, and fixed income products). Prior to joining Dipsea Capital, Kurt managed a Paine Webber equity trading desk for eight years. Kurt earned a Bachelor of Science in Finance from the California State University at Chico",
-        pic: '/Kurt.JPG'
+        desc: "Mr. Romstad has over 20 years of risk management experience and has worked with Mr. Antonio since 1998.  Kurt has managed capital through all types of market environments and covered all types of investment products (equities, options, futures, and fixed income products). Prior to joining Dipsea Capital, Kurt managed a Paine Webber equity trading desk for eight years. Kurt earned a Bachelor of Science in Finance from the California State University at Chico.",
+        pic: '/kurt.jpg'
     };
 
     const Employee4 = {
         name: 'Jonathan Clark',
         position: 'Director of Marketing',
         desc: "Prior to joining Dipsea Capital in 2019, Jonathan researched and managed portfolios of alternative investment strategies since 2003. Most recently, he was a Vice President at Progress Investment Management in San Francisco. Prior to moving to the west coast, he was a Managing Director at one of the oldest fund-of-funds in the United States, Sandalwood Securities. Previously, he was a Vice President at HSBC Alternative Investments in New York and, before that, a Vice President and Strategy Head at Optimal (a unit of Banco Santander) in New York. Jonathan earned an MBA with honors from Columbia Business School and a Bachelor’s in Business Administration, Summa Cum Laude, from John Brown University.",
-        pic: '/Jonathan.JPG'
+        pic: '/jonathan.JPG'
     };
 
     const Employee5 = {
         name: 'Eugene Rekhtman',
         position: 'Director of Operations',
-        desc: "At Dipsea Capital, Eugene oversees all aspects of the fund’s operations and compliance. Eugene joined Dipsea in July, 2020 and has twelve years of experience in hedge fund operations at two multi-billion dollar hedge funds, a fund administrator, and a consultant. Most recently, Eugene served as an outsourced CFO to private equity and hedge fund managers with investment management consultant Constellation Advisors.  In this capacity, he advised both new and established funds on best practices for their reporting functions and back-office operations.  Prior to this, Eugene was a senior fund accountant at Passport Capital managing accounting processes for multiple hedge funds, 40 Act funds, and separate accounts.  Eugene began his career at hedge fund Parallax Volatility Advisers as a senior fund accountant with additional responsibilities in compliance and operations.  Eugene received his bachelor of science in Corporate Finance and Accounting from San Francisco State University",
-        pic: '/Eugene.JPG'
+        desc: "At Dipsea Capital, Eugene oversees all aspects of the fund’s operations and compliance. Eugene joined Dipsea in July, 2020 and has twelve years of experience in hedge fund operations at two multi-billion dollar hedge funds, a fund administrator, and a consultant. Most recently, Eugene served as an outsourced CFO to private equity and hedge fund managers with investment management consultant Constellation Advisors.  In this capacity, he advised both new and established funds on best practices for their reporting functions and back-office operations.  Prior to this, Eugene was a senior fund accountant at Passport Capital managing accounting processes for multiple hedge funds, 40 Act funds, and separate accounts.  Eugene began his career at hedge fund Parallax Volatility Advisers as a senior fund accountant with additional responsibilities in compliance and operations.  Eugene received his bachelor of science in Corporate Finance and Accounting from San Francisco State University.",
+        pic: '/eugene.jpg'
     };
 
     const Employee6 = {
         name: 'Cameron Grimes',
         position: 'Trader',
-        desc: 'Cameron joined Dipsea Capital in July, 2020 after serving six years as a derivatives trader for CMZ Trading, a Chicago prop trading firm. He was involved in all aspects of portfolio trading, including identifying and enhancing trading strategies and managing portfolio risk across various market environments. He also provided liquidity as a market maker in index equity options at both the Chicago Board of Trade and the Chicago Board of Options Exchange. Cameron earned his bachelor’s degree in Economics from The University of Chicago',
-        pic: '/Cameron.JPG'
+        desc: 'Cameron joined Dipsea Capital in July, 2020 after serving six years as a derivatives trader for CMZ Trading, a Chicago prop trading firm. He was involved in all aspects of portfolio trading, including identifying and enhancing trading strategies and managing portfolio risk across various market environments. He also provided liquidity as a market maker in index equity options at both the Chicago Board of Trade and the Chicago Board of Options Exchange. Cameron earned his bachelor’s degree in Economics from The University of Chicago.',
+        pic: '/cameron.JPG'
     };
 
     useEffect( () => {
@@ -71,6 +71,7 @@ const team = () => {
                     {/* <div className='team-pic'><img src='/Team.png' alt='team picture' /></div> */}
                     <div className='intro'>Meet our team, combining over nine decades of experience in generating absolute returns</div>
                 </div>
+                <div className='space-top'></div>
                 <div className='indy-mem'>
                     <Individual employee={ Employee1 } />
                     <Individual employee={ Employee2 } />
@@ -153,7 +154,7 @@ const team = () => {
                         animation: fadeIn 0.70s ease-in;
                       }
 
-                      .space-bottom {
+                      .space-bottom, .space-top {
                           height: 100px;
                           width: 100%;
                           background-color: #e6e6e6;
@@ -164,7 +165,7 @@ const team = () => {
                         to { opacity: 1; }
                       }
 
-                      @media (max-width: 376px) {
+                      @media (max-width: 451px) {
 
                         .the-team {
                             height: 60px;
@@ -177,6 +178,10 @@ const team = () => {
                         .intro {
                             width: 80%;
                             font-size: 10px;
+                        }
+
+                        .space-top {
+                            height: 20px;
                         }
 
                         .space-bottom {

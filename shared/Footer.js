@@ -30,6 +30,9 @@ const Footer = () => {
                     <div className='medium' onClick={ goLinkedIn }><FaMediumM color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
                 </div>
             </div>
+            <div className='dipsea-map'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.36550171785!2d-122.52412608459578!3d37.9452509101058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a446de34fc3%3A0xb0b6faf3b01150f5!2sDipsea%20Capital!5e0!3m2!1sen!2sus!4v1598818482193!5m2!1sen!2sus" frameborder="0" style={{border:0, height:'calc(100vw * 37 / 131 + 0px)', width:'100%'}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
             <div className='pages-side'>
                 <div className='line'></div>
                 <div className='menu-option'>
@@ -65,7 +68,7 @@ const Footer = () => {
                         align-items: flex-start;
                         justify-content: center;
                         height: 80%;
-                        width: 30%;
+                        width: 20%;
                         padding-left: 2rem;
                     }
 
@@ -136,7 +139,8 @@ const Footer = () => {
                         align-items: flex-start;
                         justify-content: center;
                         height: 80%;
-                        width: 45%;
+                        width: 40%;
+                        margin-left: 5%;
                     }
 
                     .line {
@@ -168,6 +172,12 @@ const Footer = () => {
                         font-size: calc(100vw * 0.0114 + 0px);
                     }
 
+                    .dipsea-map {
+                        height: auto;
+                        width: 20%;
+                    }
+
+                
                     @media (max-width: 451px) {
                         .footer {
                             height: 250px;
@@ -175,10 +185,12 @@ const Footer = () => {
 
                         .pages-side {
                             padding-left: 10px;
+                            width: 45%;
                         }
 
                         .dipsea-side {
                             padding-left: 10px;
+                            width: 30%;
                         }
 
                         .logo-img {
@@ -213,6 +225,9 @@ const Footer = () => {
                             font-size: 7px;
                         }
 
+                        .dipsea-map {
+                            display: none;
+                        }
                     }
                     `
                 }
