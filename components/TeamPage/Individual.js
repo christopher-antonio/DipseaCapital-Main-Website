@@ -82,6 +82,7 @@ const Individual = ( props ) => {
                         line-height: calc(100vw * 4 / 131 + 0px);
                         margin: 0;
                         padding: 0 0 0 2rem;
+                        text-align: justify;
                     }
 
                     @media (max-width: 451px) {

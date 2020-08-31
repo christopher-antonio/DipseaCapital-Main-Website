@@ -134,7 +134,7 @@ const team = () => {
                       .intro {
                         font-family: 'Prata', serif;
                         font-size: calc(100vw * 0.014 + 0px);
-                        width: 50%;
+                        width: 70%;
                         height: auto;
                         padding: calc(100vw * 3 / 70 + 0px) 0 0 0;
                         text-align: center;

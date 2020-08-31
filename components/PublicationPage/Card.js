@@ -16,7 +16,7 @@ const Card = ( props ) => {
                 {
                     `
                     .card {
-                        width: 100%;
+                        width: 80%;
                         height: auto;
                         box-shadow: 0 0 10px 2px lightgrey;
                         margin: 2rem 0;
@@ -53,6 +53,7 @@ const Card = ( props ) => {
                         font-family: 'Prata',serif;
                         letter-spacing: 1px;
                         color: #000;
+                        text-align: justify;
                     }
 
                     @media (max-width: 451px) {

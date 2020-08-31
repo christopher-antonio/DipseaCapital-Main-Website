@@ -31,6 +31,7 @@ const about = () => {
                         <div className='headline'>
                             <div className='line fade-in'></div>
                             <h4 data-aos='fade-right'>Our firm</h4>
+                            <div className='old-trace' data-aos='fade-up'><img src='/DipseaTrace.png' alt='Dipsea Capital Trace' /></div>
                         </div>
                     </div>
                     <div className='firm-content'>
@@ -43,8 +44,8 @@ const about = () => {
                                 <div className='hook-desc'>since 1995</div>
                             </div> */}
                             <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
-                                <div className='hook'>93 +</div>
-                                <div className='hook-desc'>year combined trading experience</div>
+                                <div className='hook'>25 +</div>
+                                <div className='hook-desc'>years senior team's average experience</div>
                             </div>
                             <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
                                 <div className='hook'>16 +</div>
@@ -59,7 +60,6 @@ const about = () => {
                         <div className='headline'>
                             <div className='line fade-in'></div>
                             <h4 data-aos='fade-right'>Beginning</h4>
-                            <div className='old-trace' data-aos='fade-up'><img src='/DipseaTrace.png' alt='Dipsea Capital Trace' /></div>
                         </div>
                     </div>
                     <div className='firm-content' id='firm-begin'>
@@ -68,7 +68,7 @@ const about = () => {
                         <p className='about-1' data-aos='fade-up'>Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach - a grueling event that rewards perseverance, teamwork, and preparation.</p>
                     </div>
                 </div>
-                <div className='firm-space'></div>
+                {/* <div className='firm-space'></div> */}
             </main>
             <Footer />
             <style jsx>
@@ -137,6 +137,7 @@ const about = () => {
                         font-size: max(calc(100vw * 19 / 1310 + 0px), 15px);
                         line-height: calc(100vw * 9 / 262 + 0px);
                         font-weight: 300;
+                        text-align: justify;
                     }
 
                     .cards {

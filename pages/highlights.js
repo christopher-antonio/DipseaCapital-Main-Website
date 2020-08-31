@@ -4,8 +4,8 @@ import { useEffect } from 'react';
 import PageHeading from '../shared/PageHeading';
 import Aos from 'aos';
 import Footer from '../shared/Footer';
-import List from '../components/PhilosophyPage/List';
-import * as ListContent from '../components/PhilosophyPage/ListDetails'
+import List from '../components/HighlightsPage/List';
+import * as ListContent from '../components/HighlightsPage/ListDetails'
 
 const highlights = () => {
 
@@ -21,7 +21,7 @@ const highlights = () => {
     return (
         <div className="container">
             <Head>
-                <title>Philisophy - Dipsea Capital</title>
+                <title>Fund Highlights - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
             </Head>
@@ -38,15 +38,15 @@ const highlights = () => {
                         {/* <h2 className='sub-heading' data-aos='fade-up'>Lorem ipsum</h2> */}
                         <div className='ul'>
                             <div className='list-line' data-aos='fade-up'></div>
+                            <List content={ ListContent.listContent1 } />
+                            <div className='list-line' data-aos='fade-up'></div>
+                            <List content={ ListContent.listContent2 } />
+                            <div className='list-line' data-aos='fade-up'></div>
+                            <List content={ ListContent.listContent3 } />
+                            <div className='list-line' data-aos='fade-up'></div>
+                            <List content={ ListContent.listContent4 } />
+                            <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent5 } />
-                            <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent6 } />
-                            <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent7 } />
-                            <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent8 } />
-                            <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent9 } />
                             <div className='list-line' data-aos='fade-up'></div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@ const highlights = () => {
                     }
 
                     .ul {
-                        margin-top: 2rem;
+                        margin-top: calc(-100vw * 3 / 175 + 0px);
                     }
 
                     .list-line {
@@ -118,21 +118,23 @@ const highlights = () => {
                         margin: calc(100vw * 3 / 175 + 0px) 0;
                     }
 
-                    @media (max-width: 376px) {
-
-                        .firm {
-                            align-items: flex-start;
-                            padding-top: 50px;
-                            margin-top: 20px;
-                        }
-
-                        .firm, .highlights {
-                            height: 760px;
-                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 9 / 13 + 410px);
-                        }
-
+                    @media (min-width: 770px) and (max-width: 1024px) {
                         .highlights {
-                            padding-top: 40px;
+                            height: calc(100vw * 14 / 13 + 0px);
+                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 80 / 131 + 330px);
+                        }
+                    }
+
+                    @media (min-width: 452px) and (max-width: 769px) {
+                        .highlights {
+                            height: calc(100vw * 14 / 13 + 0px);
+                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 70 / 131 + 330px);
+                        }
+                    }
+
+                    @media (max-width: 451px) {
+                        .highlights {
+                            height: 760px;
                             background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 330px);
                         }
 
@@ -159,11 +161,6 @@ const highlights = () => {
                             padding: 0.2rem 2rem 2rem 0;
                             font-size: 7px;
                         }
-
-                        .ul {
-                            margin-top: 0.7rem;
-                        }
-
                     }
                     `
                 }

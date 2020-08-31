@@ -33,6 +33,7 @@ const philosophy = () => {
                             <div className='line fade-in'></div>
                             <h4 data-aos='fade-right'>Strategy</h4>
                         </div>
+                        <img />
                     </div>
                     <div className='firm-content'>
                         {/* <h2 className='sub-heading' data-aos='fade-up'>High Quality Returns</h2> */}
@@ -45,7 +46,7 @@ const philosophy = () => {
                             <List content={ ListContent.listContent3 } />
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent4 } />
-                            <div className='list-line' data-aos='fade-up'></div>
+                            {/* <div className='list-line' data-aos='fade-up'></div> */}
                         </div>
                         <div className='cards'>
                             <div className='card' data-aos='fade-up'>
@@ -69,7 +70,7 @@ const philosophy = () => {
                 {
                     `
                     .firm {
-                        height: calc(100vw * 14 / 13 + 70px);
+                        height: calc(100vw * 10 / 13 + 70px);
                         width: 100%;
                         display: flex;
                         flex-direction: row;
@@ -77,7 +78,7 @@ const philosophy = () => {
                         justify-content: center;
                         background-image: linear-gradient(#e6eefe, #e6eefe);
                         background-repeat: no-repeat;
-                        background-size: calc(100vw * 0.8 + 0px) max(calc(100vw * 21.5 / 23 + 0px), 780px) ;
+                        background-size: calc(100vw * 0.8 + 0px) max(calc(100vw * 16 / 23 + 0px), 780px) ;
                         background-position: calc(100vw / 6 + 0px) calc(100vw * 13 / 420 + 0px);
                     }
 
@@ -151,7 +152,7 @@ const philosophy = () => {
                     }
 
                     .ul {
-                        margin-top: 2rem;
+                        margin-top: calc(-100vw * 3 / 175 + 0px);
                     }
 
                     .list-line {
@@ -161,17 +162,21 @@ const philosophy = () => {
                         margin: calc(100vw * 3 / 175 + 0px) 0;
                     }
 
+                    @media (min-width: 452px) and (max-width: 769px) {
+                        .firm {
+                            height: calc(100vw * 10 / 13 + 70px);
+                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 100 / 131 + 0px);
+                        }
+                    }
+
                     @media (max-width: 451px) {
 
                         .firm {
                             align-items: flex-start;
                             padding-top: 50px;
                             margin-top: 20px;
-                        }
-
-                        .firm {
-                            height: 760px;
-                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 9 / 13 + 410px);
+                            height: 670px;
+                            background-size: calc(100vw * 0.8 + 0px) calc(100vw * 7 / 13 + 410px);
                         }
 
                         .line {
@@ -187,10 +192,6 @@ const philosophy = () => {
                         .firm-sub h4 {
                             padding: 0.2rem 2rem 2rem 1rem;
                             font-size: 7px;
-                        }
-
-                        .ul {
-                            margin-top: 0.7rem;
                         }
 
                         .hook {

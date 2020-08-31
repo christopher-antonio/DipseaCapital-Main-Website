@@ -37,7 +37,7 @@ const SideDrawer = props => {
                     </Link>
                     <Link href='/publications'>
                         <a className='clickable'>
-                            <p>PUBLICATIONS</p>
+                            <p>INSIGHTS</p>
                         </a>
                     </Link>
                     <a href='http://eepurl.com/g_QvTb' className='clickable' target='_blank'>
@@ -45,7 +45,8 @@ const SideDrawer = props => {
                     </a>
                 </ul>
                 <div className='logo'>
-                    <img src='/SideDrawerLogo.png' alt='Dipsea Capital, LLC Logo' />
+                    {/* <img src='/SideDrawerLogo.png' alt='Dipsea Capital, LLC Logo' /> */}
+                    <img src='DipseaLogo.png' alt='Dipsea Capital, LLC Logo' />
                 </div>
                 
             </nav>
@@ -103,16 +104,29 @@ const SideDrawer = props => {
                         transition: border-bottom 0.3s;
                     }
 
+                    // .logo {
+                    //     height: auto;
+                    //     width: 18vw;
+                    //     margin: 22% 0 0 17%;                        
+                    // }
+
+                    // .logo img {
+                    //     height: auto;
+                    //     width: 100%;
+                    //     background-color: white;
+                    // }
                     .logo {
                         height: auto;
-                        width: 18vw;
-                        margin: 22% 0 0 17%;                        
+                        width: calc(100vw * 16 / 131 + 0px);
+                        padding: 12px 0;
+                        margin: 22% 0 0 17%;
+                        background-color: #fff;
                     }
 
                     .logo img {
-                        height: auto;
-                        width: 100%;
                         background-color: white;
+                        height: auto;
+                        width: calc(100vw * 16 / 131 + 0px);
                     }
 
                     @media (max-width: 451px) {
@@ -124,7 +138,14 @@ const SideDrawer = props => {
                         }
 
                         .logo {
-                            width: 40vw;
+                            padding: 6px 0;
+                            width: 80px;
+                        }
+
+                        .logo img {
+                            background-color: white;
+                            height: auto;
+                            width: 80px;
                         }
                     }
 

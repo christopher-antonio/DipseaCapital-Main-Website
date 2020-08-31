@@ -10,7 +10,7 @@ const publications = () => {
 
     const headDetail = {
         subtitle: 'Insights',
-        heading: 'Lastest articles and letters'
+        heading: 'Latest articles and letters'
     };
 
     useEffect( () => {
@@ -59,14 +59,18 @@ const publications = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='main-sub'>
-                    <div className='sub-left'>
+                        <Card content={ card4 } delay={ 0 } />
+                        <Card content={ card2 } delay={ 200 } />
+                        <Card content={ card3 } delay={ 0 } />
+                        <Card content={ card1 } delay={ 200 } />
+                    {/* <div className='sub-left'>
                         <Card content={ card4 } delay={ 0 } />
                         <Card content={ card3 } delay={ 0 } />
                     </div>
                     <div className='sub-right'>
                         <Card content={ card2 } delay={ 200 } />
                         <Card content={ card1 } delay={ 200 } />
-                    </div>
+                    </div> */}
                 </div>
                 <div className='spacing'></div>
             </main>
@@ -78,7 +82,8 @@ const publications = () => {
                         // height: 100vh;
                         width: 100%;
                         display: flex;
-                        align-items: flex-start;
+                        flex-direction: column;
+                        align-items: center;
                         justify-content: center;
                         margin-top: calc(100vw * 4 / 131 + 0px);
                     }
