@@ -38,7 +38,7 @@ const publications = () => {
         date: 'June 2019',
         author: 'Christopher Antonio',
         desc: 'There are numerous factors which can degrade our performance from a psychological perspective. Today I’ll begin with three of them, and offer a few tricks I use as a fund manager to assist in neutralizing sub-optimal decision making.',
-        link: ''
+        link: 'https://94ee4a5b-e92a-42d7-b59e-6a64f93b3bcd.filesusr.com/ugd/8f3ee2_cbbe6c85e3224a6daff76691ecb25329.pdf'
     };
 
     const card4 = {
