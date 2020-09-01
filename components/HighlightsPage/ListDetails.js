@@ -1,6 +1,6 @@
 export const listContent1 = {
     head: 'Uncorrelated returns',
-    detail: 'The strategy has been effective at also profiting during market downturns such as in the February - March 2020 (-19.56%) and fourth quarter 2018 (-13.52%) S&P 500 selloffs, resulting in a track record with zero correlation to equities and zero correlation to bonds'
+    detail: 'The strategy has been effective at also profiting during market downturns such as in the February - March 2020 (-19.56%) and fourth quarter 2018 (-13.52%) S&P 500 selloffs, resulting in a track record with zero correlation to equities and zero correlation to bonds.'
 };
 
 export const listContent2 = {

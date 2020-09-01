@@ -66,7 +66,7 @@ const Footer = () => {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
-                        justify-content: center;
+                        justify-content: flex-start;
                         height: 80%;
                         width: 20%;
                         padding-left: 2rem;
@@ -173,11 +173,20 @@ const Footer = () => {
                     }
 
                     .dipsea-map {
-                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        height: 80%;
                         width: 20%;
                     }
 
-                
+                    @media (min-width: 452px) and (max-width: 769px) {
+                        .footer {
+                            height: calc(100vw * 52 / 131 + 30px);
+                        }
+                    }
+
                     @media (max-width: 451px) {
                         .footer {
                             height: 250px;

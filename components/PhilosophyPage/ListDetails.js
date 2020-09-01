@@ -15,5 +15,5 @@ export const listContent3 = {
 
 export const listContent4 = {
     head: 'Liquid',
-    detail: 'Dipsea’s differentiated approach within the most liquid equity and options markets has resulted in uncorrelated, low volatility returns with a high Sharpe ratio above 3.'
+    detail: 'Dipsea’s differentiated approach within the most liquid equity and options markets has resulted in uncorrelated, low volatility returns with a Sharpe ratio above 3.'
 };

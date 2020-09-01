@@ -32,6 +32,21 @@ const philosophy = () => {
                         <div className='headline'>
                             <div className='line fade-in'></div>
                             <h4 data-aos='fade-right'>Strategy</h4>
+                            <img src='/hedge-con.jpeg' alt='Hedge Connection December' />
+                            <div className='cards'>
+                            <div className='card' data-aos='fade-up'>
+                                <div className='hook'>0</div>
+                                <div className='hook-desc'>correlation to stock market</div>
+                            </div>
+                            <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
+                                <div className='hook'>0</div>
+                                <div className='hook-desc'>correlation to bond indices</div>
+                            </div>
+                            <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
+                                <div className='hook'>67 %</div>
+                                <div className='hook-desc'>positive days</div>
+                            </div>
+                        </div>
                         </div>
                         <img />
                     </div>
@@ -48,20 +63,7 @@ const philosophy = () => {
                             <List content={ ListContent.listContent4 } />
                             {/* <div className='list-line' data-aos='fade-up'></div> */}
                         </div>
-                        <div className='cards'>
-                            <div className='card' data-aos='fade-up'>
-                                <div className='hook'>0</div>
-                                <div className='hook-desc'>correlation to stock market</div>
-                            </div>
-                            <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
-                                <div className='hook'>0</div>
-                                <div className='hook-desc'>correlation to bond indices</div>
-                            </div>
-                            <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
-                                <div className='hook'>67 %</div>
-                                <div className='hook-desc'>positive days</div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </main>
@@ -86,6 +88,12 @@ const philosophy = () => {
                         height: 80%;
                         width: 30%;
                     }
+
+                    .firm-sub img {
+                        height: auto;
+                        width: 90%;
+                        margin-top: 10%;
+                    }
             
                     .line {
                         height: 3px;
@@ -107,7 +115,7 @@ const philosophy = () => {
 
                     .cards {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         height: 10%;
@@ -118,6 +126,7 @@ const philosophy = () => {
                     .card {
                         height: 100%;
                         width: 33%;
+                        margin: 8% 0;
                     }
 
                     .hook {

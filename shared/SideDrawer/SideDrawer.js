@@ -119,7 +119,7 @@ const SideDrawer = props => {
                         height: auto;
                         width: calc(100vw * 16 / 131 + 0px);
                         padding: 12px 0;
-                        margin: 22% 0 0 17%;
+                        margin: 15% 0 0 17%;
                         background-color: #fff;
                     }
 
