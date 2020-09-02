@@ -32,7 +32,7 @@ const philosophy = () => {
                         <div className='headline'>
                             <div className='line fade-in'></div>
                             <h4 data-aos='fade-right'>Strategy</h4>
-                            <img src='/hedge-con.jpeg' alt='Hedge Connection December' />
+                            <div data-aos='fade-up'><img src='/hedge-con.jpeg' alt='Hedge Connection December' /></div>
                             <div className='cards'>
                             <div className='card' data-aos='fade-up'>
                                 <div className='hook'>0</div>
