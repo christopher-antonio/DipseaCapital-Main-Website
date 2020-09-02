@@ -143,10 +143,11 @@ const about = () => {
                     .cards {
                         display: flex;
                         flex-direction: row;
-                        align-items: center;
+                        align-items: flex-start;
                         justify-content: center;
                         height: 30%;
                         width: 120%;
+                        margin-top: 2%;
                         transform: translateX(-10%);
                     }
 

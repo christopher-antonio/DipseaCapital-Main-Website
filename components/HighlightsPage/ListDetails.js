@@ -15,7 +15,7 @@ export const listContent3 = {
 
 export const listContent4 = {
     head: 'Liquid',
-    detail: 'The Fund offers investors monthly liquidity with no limitation.'
+    detail: 'The Fund offers investors monthly liquidity with no limitations.'
 };
 
 export const listContent5 = {

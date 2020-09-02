@@ -10,7 +10,7 @@ const publications = () => {
 
     const headDetail = {
         subtitle: 'Insights',
-        heading: 'Latest articles and letters'
+        heading: 'Latest articles & letters'
     };
 
     useEffect( () => {
