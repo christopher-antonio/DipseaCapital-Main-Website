@@ -45,7 +45,7 @@ const Footer = () => {
                     <div className='menus'>
                         <Link href='/highlights'><a>Fund Highlights</a></Link>
                         <Link href='/publications'><a>Insights</a></Link>
-                        <a href='http://eepurl.com/g_QvTb' target='_blank'>Contact Us</a>
+                        <a href='http://eepurl.com/hcpLcr' target='_blank'>Contact Us</a>
                     </div>
                 </div>
             </div>

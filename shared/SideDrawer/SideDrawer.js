@@ -40,7 +40,7 @@ const SideDrawer = props => {
                             <p>INSIGHTS</p>
                         </a>
                     </Link>
-                    <a href='http://eepurl.com/g_QvTb' className='clickable' target='_blank'>
+                    <a href='http://eepurl.com/hcpLcr' className='clickable' target='_blank'>
                         <p>CONTACT US</p>
                     </a>
                 </ul>
