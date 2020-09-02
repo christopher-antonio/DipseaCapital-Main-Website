@@ -11,7 +11,7 @@ const philosophy = () => {
 
     const headDetail = {
         subtitle: 'Investment Philosophy',
-        heading: 'Transparency from the ground up'
+        heading: 'Absolute returns'
     };
 
     useEffect( () => {
