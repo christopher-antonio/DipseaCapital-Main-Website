@@ -13,6 +13,7 @@ const MetaTag = () => {
                 property="og:description"
                 content="Dipsea Capital was established to provide its clients consistent, uncorrelated returns to major asset classes in all market environments."
             />
+            <meta name="author" content="Natheethorn 'Beam' Teacharuangchit" />
         </React.Fragment>
     );
 };
