@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import PageHeading from '../shared/PageHeading';
 import Aos from 'aos';
 import Footer from '../shared/Footer';
+import MetaTag from '../shared/MetaTag';
 
 const about = () => {
 
@@ -22,6 +23,7 @@ const about = () => {
                 <title>About - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
+                <MetaTag />
             </Head>
             <main>
                 <PageHeading head={ headDetail } />

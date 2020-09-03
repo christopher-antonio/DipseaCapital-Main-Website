@@ -5,6 +5,7 @@ import PageHeading from '../shared/PageHeading';
 import Aos from 'aos';
 import Footer from '../shared/Footer';
 import Card from '../components/PublicationPage/Card';
+import MetaTag from '../shared/MetaTag';
 
 const publications = () => {
 
@@ -55,6 +56,7 @@ const publications = () => {
                 <title>Insights - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
+                <MetaTag />
             </Head>
             <main>
                 <PageHeading head={ headDetail } />

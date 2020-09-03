@@ -6,6 +6,7 @@ import Aos from 'aos';
 import Footer from '../shared/Footer';
 import List from '../components/HighlightsPage/List';
 import * as ListContent from '../components/HighlightsPage/ListDetails'
+import MetaTag from '../shared/MetaTag';
 
 const highlights = () => {
 
@@ -24,6 +25,7 @@ const highlights = () => {
                 <title>Fund Highlights - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
+                <MetaTag />
             </Head>
             <main>
                 <PageHeading head={ headDetail } />

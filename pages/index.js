@@ -6,6 +6,7 @@ import Backdrop from '../shared/Backdrop';
 import { IoIosArrowDown } from 'react-icons/io';
 import Footer from '../shared/Footer';
 import Aos from 'aos';
+import MetaTag from '../shared/MetaTag';
 
 export default function Home () {
   const [ sideDrawerOpen, setSideDrawerOpen ] = useState( false );
@@ -27,6 +28,7 @@ export default function Home () {
         <title>Dipsea Capital, LLC</title>
         <link rel="icon" href="/dipseaicon.jpg" />
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
+        <MetaTag />
       </Head>
 
       <SideDrawer show={ sideDrawerOpen } />

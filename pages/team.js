@@ -5,6 +5,7 @@ import PageHeading from '../shared/PageHeading';
 import Footer from '../shared/Footer';
 import Individual from '../components/TeamPage/Individual';
 import Aos from 'aos';
+import MetaTag from '../shared/MetaTag';
 
 const team = () => {
     const headDetail = {
@@ -64,6 +65,7 @@ const team = () => {
                 <title>Our Team - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
+                <MetaTag />
             </Head>
             <main>
                 <PageHeading head={ headDetail } />
