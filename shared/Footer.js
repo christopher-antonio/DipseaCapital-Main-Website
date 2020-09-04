@@ -11,6 +11,14 @@ const Footer = () => {
     const goLinkedIn = () => {
         window.open( 'https://www.linkedin.com/company/dipsea-capital-llc/' );
     };
+
+    const goTwitter = () => {
+        window.open( 'https://twitter.com/dipseacapital' );
+    };
+
+    const goMedium = () => {
+        window.open( 'https://medium.com/@dipsea_30709' );
+    };
     return (
         <div className='footer'>
             <div className='dipsea-side'>
@@ -26,8 +34,8 @@ const Footer = () => {
                 <div className='number'>+1 (415) 925-9022</div>
                 <div className='icons'>
                     <div className='linkedin' onClick={ goLinkedIn }><FaLinkedinIn color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
-                    <div className='twitter' onClick={ goLinkedIn }><FaTwitter color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
-                    <div className='medium' onClick={ goLinkedIn }><FaMediumM color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
+                    <div className='twitter' onClick={ goTwitter }><FaTwitter color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
+                    <div className='medium' onClick={ goMedium }><FaMediumM color="#283348" size={ 'calc(100vw * 1 / 131 + 8px)' } /></div>
                 </div>
             </div>
             <div className='dipsea-map'>
