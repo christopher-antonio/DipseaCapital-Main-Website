@@ -1,6 +1,7 @@
 import Link from 'next/link';
+
+// Icons
 import { FaLinkedinIn, FaTwitter, FaMediumM } from 'react-icons/fa';
-import { useEffect } from 'react';
 
 const Footer = () => {
 

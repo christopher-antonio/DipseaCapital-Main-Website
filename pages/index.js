@@ -59,13 +59,18 @@ export default function Home () {
       {/* Main Page */ }
       <main>
         <div className='hero'>
+          {/* Navigation Bar - '/shared/Navbar.js' */}
           <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
           <div className='top-space'></div>
+          
+          {/* First part of the landing page */}
           <div className='heading text-animation'>We believe in providing consistent returns</div>
           <div className='heading-2 text-animation-2'>throughout the markets' ups and downs<div className='border'></div></div>
           <div className='space'></div>
           <div className='arrow' data-aos='fade-down'><IoIosArrowDown size={ 'calc(100vw * 5 / 131 + 0px)' } color='white' /></div>
         </div>
+
+        {/* Second part of the landing page */}
         <div className='belief' id='belief-section'>
           <div className='belief-sub'>
             <div className='headline'>
@@ -86,6 +91,7 @@ export default function Home () {
         <Footer />
       </main>
 
+      {/* Styling for this page here */}
       <style jsx>{
         `
         .container {

@@ -1,11 +1,14 @@
 import Navbar from '../shared/Navbar';
 import { useState } from 'react';
+
+// Components
 import SideDrawer from '../shared/SideDrawer/SideDrawer';
 import Backdrop from '../shared/Backdrop';
 
 const PageHeading = ( props ) => {
     const [ sideDrawerOpen, setSideDrawerOpen ] = useState( false );
 
+    // Managing backdrop state
     let backdrop;
     if ( sideDrawerOpen ) {
         backdrop = <Backdrop click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />;

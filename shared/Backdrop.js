@@ -18,7 +18,6 @@ const Backdrop = ( props ) => {
                 }
             </style>
         </React.Fragment>
-
     );
 };
 

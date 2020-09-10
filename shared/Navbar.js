@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+
+// Component
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
 
 const Navbar = ( props ) => {
-    const router = useRouter();
 
     const goTo = () => {
         window.open( 'https://www.navconsulting.net/' );

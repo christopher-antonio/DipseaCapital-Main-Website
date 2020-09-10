@@ -1,15 +1,19 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 
+// Components
 import PageHeading from '../shared/PageHeading';
-import Aos from 'aos';
 import Footer from '../shared/Footer';
 import List from '../components/HighlightsPage/List';
 import * as ListContent from '../components/HighlightsPage/ListDetails'
 import MetaTag from '../shared/MetaTag';
 
+// Animations
+import Aos from 'aos';
+
 const highlights = () => {
 
+    // Configure the header of the page here
     const headDetail = {
         subtitle: 'Fund Highlights',
         heading: 'High quality returns'
@@ -30,12 +34,16 @@ const highlights = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='highlights' id='firm-section'>
+
+                    {/* Left side of the page */}
                     <div className='highlights-sub'>
                         <div className='headline'>
                             <div className='highlights-line fade-in'></div>
                             <h4 data-aos='fade-right'>Highlights</h4>
                         </div>
                     </div>
+
+                    {/* Right side of the page */}
                     <div className='firm-content'>
                         <div className='ul'>
                             <div className='list-line' data-aos='fade-up'></div>
@@ -55,6 +63,8 @@ const highlights = () => {
                 <div className='space-bottom'></div>
             </main>
             <Footer />
+
+            {/* Styling for this page here */}
             <style jsx>
                 {
                     `

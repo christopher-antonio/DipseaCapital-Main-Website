@@ -1,15 +1,19 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 
+// Components
 import PageHeading from '../shared/PageHeading';
-import Aos from 'aos';
 import Footer from '../shared/Footer';
 import List from '../components/PhilosophyPage/List';
-import * as ListContent from '../components/PhilosophyPage/ListDetails'
+import * as ListContent from '../components/PhilosophyPage/ListDetails';
 import MetaTag from '../shared/MetaTag';
+
+// Animation
+import Aos from 'aos';
 
 const philosophy = () => {
 
+    // Configure the header of the page here
     const headDetail = {
         subtitle: 'Investment Philosophy',
         heading: 'Absolute returns'
@@ -30,30 +34,35 @@ const philosophy = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='firm' id='firm-section'>
+
+                    {/* Left side of the page */ }
                     <div className='firm-sub'>
                         <div className='headline'>
                             <div className='line fade-in'></div>
                             <h4 data-aos='fade-right'>Strategy</h4>
+                            {/* Hedge Connection picture */}
                             <div data-aos='fade-up'><img src='/hedge-con.jpeg' alt='Hedge Connection December' /></div>
+                            {/* Highlights detail */}
                             <div className='cards'>
-                            <div className='card' data-aos='fade-up'>
-                                <div className='hook'>0</div>
-                                <div className='hook-desc'>correlation to stock market</div>
+                                <div className='card' data-aos='fade-up'>
+                                    <div className='hook'>0</div>
+                                    <div className='hook-desc'>correlation to stock market</div>
+                                </div>
+                                <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
+                                    <div className='hook'>0</div>
+                                    <div className='hook-desc'>correlation to bond indices</div>
+                                </div>
+                                <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
+                                    <div className='hook'>94 %</div>
+                                    <div className='hook-desc'>positive months</div>
+                                </div>
                             </div>
-                            <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
-                                <div className='hook'>0</div>
-                                <div className='hook-desc'>correlation to bond indices</div>
-                            </div>
-                            <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
-                                <div className='hook'>94 %</div>
-                                <div className='hook-desc'>positive months</div>
-                            </div>
-                        </div>
                         </div>
                         <img />
                     </div>
+
+                    {/* Right side of the page */ }
                     <div className='firm-content'>
-                        {/* <h2 className='sub-heading' data-aos='fade-up'>High Quality Returns</h2> */}
                         <div className='ul'>
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent1 } />
@@ -63,13 +72,13 @@ const philosophy = () => {
                             <List content={ ListContent.listContent3 } />
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent4 } />
-                            {/* <div className='list-line' data-aos='fade-up'></div> */}
                         </div>
-                        
                     </div>
                 </div>
             </main>
             <Footer />
+
+            {/* Styling for this page here */ }
             <style jsx>
                 {
                     `
@@ -216,7 +225,6 @@ const philosophy = () => {
                         .cards {
                             transform: translateX(-15%);   
                         }
-
                     }
                     `
                 }
@@ -234,7 +242,6 @@ const philosophy = () => {
                 * {
                 box-sizing: border-box;
                 }
-
                 
                 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
             `}</style>

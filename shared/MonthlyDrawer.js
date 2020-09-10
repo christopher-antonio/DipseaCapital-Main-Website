@@ -1,3 +1,4 @@
+// Icons
 import { IoMdArrowRoundBack } from 'react-icons/io';
 
 const MonthlyDrawer = props => {
