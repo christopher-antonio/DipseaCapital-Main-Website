@@ -34,7 +34,6 @@ const publications = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='main-sub'>
-                        <Card content={ Info.card4 } delay={ 0 } />
                         <Card content={ Info.card2 } delay={ 200 } />
                         <Card content={ Info.card3 } delay={ 0 } />
                         <Card content={ Info.card1 } delay={ 200 } />
