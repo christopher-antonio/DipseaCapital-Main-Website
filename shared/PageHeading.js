@@ -3,22 +3,37 @@ import { useState } from 'react';
 
 // Components
 import SideDrawer from '../shared/SideDrawer/SideDrawer';
+import MonthlyDrawer from './MonthlyDrawer';
 import Backdrop from '../shared/Backdrop';
 
 const PageHeading = ( props ) => {
     const [ sideDrawerOpen, setSideDrawerOpen ] = useState( false );
+    const [ monthlyDrawerOpen, setMonthlyDrawerOpen ] = useState( false );
 
     // Managing backdrop state
     let backdrop;
     if ( sideDrawerOpen ) {
-        backdrop = <Backdrop click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />;
+        backdrop = <Backdrop click={ () => {
+            setSideDrawerOpen( false );
+            setMonthlyDrawerOpen( false );
+        } } />;
     }
+
+    // For sideDrawer
+    const monthlyToggleButton = () => {
+        return setMonthlyDrawerOpen( !monthlyDrawerOpen );
+    };
+    // For mobile version
+    const monthlyCloseButton = () => {
+        return setMonthlyDrawerOpen( false );
+    };
 
     return (
         <React.Fragment>
             <div className='page-header'>
                 <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
-                <SideDrawer show={ sideDrawerOpen } />
+                <SideDrawer show={ sideDrawerOpen } toggle={ monthlyToggleButton } />
+                <MonthlyDrawer show={ monthlyDrawerOpen } toggle={ monthlyCloseButton } />
                 { backdrop }
                 <div className='title'>
                     <h4 className='subtitle'>{ props.head.subtitle }</h4>
