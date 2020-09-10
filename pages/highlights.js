@@ -37,7 +37,6 @@ const highlights = () => {
                         </div>
                     </div>
                     <div className='firm-content'>
-                        {/* <h2 className='sub-heading' data-aos='fade-up'>Lorem ipsum</h2> */}
                         <div className='ul'>
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent1 } />
@@ -127,14 +126,14 @@ const highlights = () => {
                         }
                     }
 
-                    @media (min-width: 452px) and (max-width: 769px) {
+                    @media (min-width: 542px) and (max-width: 769px) {
                         .highlights {
                             height: calc(100vw * 14 / 13 + 0px);
                             background-size: calc(100vw * 0.8 + 0px) calc(100vw * 70 / 131 + 330px);
                         }
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
                         .highlights {
                             height: 760px;
                             background-size: calc(100vw * 0.8 + 0px) calc(100vw * 120 / 131 + 330px);

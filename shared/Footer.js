@@ -189,13 +189,13 @@ const Footer = () => {
                         width: 20%;
                     }
 
-                    @media (min-width: 452px) and (max-width: 769px) {
+                    @media (min-width: 542px) and (max-width: 769px) {
                         .footer {
                             height: calc(100vw * 52 / 131 + 30px);
                         }
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
                         .footer {
                             height: 250px;
                         }

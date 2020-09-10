@@ -35,6 +35,7 @@ const SideDrawer = props => {
                             <p>FUND HIGHLIGHTS</p>
                         </a>
                     </Link>
+                    <a className='clickable' onClick={ props.toggle }><p>INVESTOR LETTERS</p></a>
                     <Link href='/publications'>
                         <a className='clickable'>
                             <p>INSIGHTS</p>
@@ -45,10 +46,9 @@ const SideDrawer = props => {
                     </a>
                 </ul>
                 <div className='logo'>
-                    {/* <img src='/SideDrawerLogo.png' alt='Dipsea Capital, LLC Logo' /> */}
                     <img src='DipseaLogo.png' alt='Dipsea Capital, LLC Logo' />
                 </div>
-                
+
             </nav>
             <style jsx>
                 {
@@ -104,17 +104,6 @@ const SideDrawer = props => {
                         transition: border-bottom 0.3s;
                     }
 
-                    // .logo {
-                    //     height: auto;
-                    //     width: 18vw;
-                    //     margin: 22% 0 0 17%;                        
-                    // }
-
-                    // .logo img {
-                    //     height: auto;
-                    //     width: 100%;
-                    //     background-color: white;
-                    // }
                     .logo {
                         height: auto;
                         width: calc(100vw * 16 / 131 + 0px);
@@ -129,7 +118,7 @@ const SideDrawer = props => {
                         width: calc(100vw * 16 / 131 + 0px);
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
                         .sideDrawer {
                             width: 70vw;
                         }
@@ -148,32 +137,6 @@ const SideDrawer = props => {
                             width: 80px;
                         }
                     }
-
-                    // .logo {
-                    //     display: flex;
-                    //     height: 13vh;
-                    //     margin: 8rem 0 0 6rem;
-                    //     font-family: 'Playfair Display', serif;
-                    //     color: white;
-                    //     font-size: 30px;
-                    //     font-weight: 600;
-                    //     letter-spacing: 2px;
-                    // }
-
-                    // .tilted {
-                    //     padding: 0 2px 0 4px;
-                    //     transform: rotate(20deg) translateX(-15px) translateY(3px);
-                    // }
-
-                    // .logo img {
-                    //     height: 100%;
-                    //     width: auto;
-                    //     background-color: white;
-                    // }
-
-                   
-
-
                     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
                     `
                 }

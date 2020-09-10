@@ -70,7 +70,6 @@ const about = () => {
                         <p className='about-1' data-aos='fade-up'>Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach - a grueling event that rewards perseverance, teamwork, and preparation.</p>
                     </div>
                 </div>
-                {/* <div className='firm-space'></div> */}
             </main>
             <Footer />
             <style jsx>
@@ -96,10 +95,6 @@ const about = () => {
                         justify-content: center;
                     }
 
-                    // .begin {
-                    //     height: calc(100vw * 90 / 131 + 0px);
-                    // }
-              
                     .firm-sub {
                         height: 100%;
                         width: 30%;
@@ -204,7 +199,7 @@ const about = () => {
                         to { opacity: 1; }
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
 
                         .firm {
                             height: 270px;

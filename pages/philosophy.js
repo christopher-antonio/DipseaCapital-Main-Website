@@ -45,8 +45,8 @@ const philosophy = () => {
                                 <div className='hook-desc'>correlation to bond indices</div>
                             </div>
                             <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
-                                <div className='hook'>67 %</div>
-                                <div className='hook-desc'>positive days</div>
+                                <div className='hook'>94 %</div>
+                                <div className='hook-desc'>positive months</div>
                             </div>
                         </div>
                         </div>
@@ -173,14 +173,14 @@ const philosophy = () => {
                         margin: calc(100vw * 3 / 175 + 0px) 0;
                     }
 
-                    @media (min-width: 452px) and (max-width: 769px) {
+                    @media (min-width: 542px) and (max-width: 769px) {
                         .firm {
                             height: calc(100vw * 10 / 13 + 70px);
                             background-size: calc(100vw * 0.8 + 0px) calc(100vw * 100 / 131 + 0px);
                         }
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
 
                         .firm {
                             align-items: flex-start;

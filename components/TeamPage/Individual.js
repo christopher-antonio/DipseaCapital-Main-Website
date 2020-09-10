@@ -85,7 +85,7 @@ const Individual = ( props ) => {
                         text-align: justify;
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
                         .employee {
                             height: auto;
                             flex-direction: column;
@@ -138,7 +138,6 @@ const Individual = ( props ) => {
                             height: 20px;
                         }
                     }
-                    
                     `
                 }
             </style>

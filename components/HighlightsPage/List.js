@@ -21,7 +21,7 @@ const List = ( props ) => {
                         text-align: justify;
                     }
 
-                    @media (max-width: 376px) {
+                    @media (max-width: 541px) {
                         .list h4 {
                             font-size: 14px;
                             margin: 0.2rem 0;
@@ -32,7 +32,6 @@ const List = ( props ) => {
                             line-height: 14px;
                         }
                     }
-
                     `
                 }
             </style>

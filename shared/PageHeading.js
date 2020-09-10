@@ -57,11 +57,11 @@ const PageHeading = ( props ) => {
 
                     .header-line {
                         height: 5px;
-                        width: 100vw;
+                        width: 100%;
                         background-color: #f9bc06;
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
                         .page-header {
                             min-height: auto;
                             height: calc(100vw * 25 / 131 + 90px);

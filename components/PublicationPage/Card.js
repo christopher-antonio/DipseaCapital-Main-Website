@@ -56,7 +56,7 @@ const Card = ( props ) => {
                         text-align: justify;
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
                         .head {
                             font-size: 14px;
                             padding: 1rem 1rem 0.2rem 1rem;

@@ -1,23 +1,43 @@
 import Head from 'next/head';
-import Navbar from '../shared/Navbar';
 import { useState, useEffect } from 'react';
+
+// Components
+import Navbar from '../shared/Navbar';
 import SideDrawer from '../shared/SideDrawer/SideDrawer';
 import Backdrop from '../shared/Backdrop';
-import { IoIosArrowDown } from 'react-icons/io';
 import Footer from '../shared/Footer';
-import Aos from 'aos';
 import MetaTag from '../shared/MetaTag';
+import MonthlyDrawer from '../shared/MonthlyDrawer';
+
+// Icon and Animation
+import { IoIosArrowDown } from 'react-icons/io';
+import Aos from 'aos';
 
 export default function Home () {
-  const [ sideDrawerOpen, setSideDrawerOpen ] = useState( false );
 
+  // Managing sideDrawer and monthlyDrawer state
+  const [ sideDrawerOpen, setSideDrawerOpen ] = useState( false );
+  const [ monthlyDrawerOpen, setMonthlyDrawerOpen ] = useState( false );
+
+  // Managing Backdrop's state open/close
   let backdrop;
   if ( sideDrawerOpen ) {
-    backdrop = <Backdrop click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />;
+    backdrop = <Backdrop click={ () => {
+      setSideDrawerOpen( false );
+      setMonthlyDrawerOpen( false );
+    } } />;
   }
 
-  let s = null;
+  // For sideDrawer
+  const monthlyToggleButton = () => {
+    return setMonthlyDrawerOpen( !monthlyDrawerOpen );
+  };
+  // For mobile version
+  const monthlyCloseButton = () => {
+    return setMonthlyDrawerOpen( false );
+  }
 
+  // For aos animation -> useEffect = ComponentDidLoad 
   useEffect( () => {
     Aos.init( { duration: 1200 } );
   } );
@@ -31,13 +51,15 @@ export default function Home () {
         <MetaTag />
       </Head>
 
-      <SideDrawer show={ sideDrawerOpen } />
+      {/* SideDrawer and Monthly Drawer */ }
+      <SideDrawer show={ sideDrawerOpen } toggle={ monthlyToggleButton } />
+      <MonthlyDrawer show={ monthlyDrawerOpen } toggle={ monthlyCloseButton } />
       { backdrop }
+
+      {/* Main Page */ }
       <main>
-        
         <div className='hero'>
-        <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
-          {/* <div className='eyebrow fade-in'>At Dipsea Capital</div> */}
+          <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
           <div className='top-space'></div>
           <div className='heading text-animation'>We believe in providing consistent returns</div>
           <div className='heading-2 text-animation-2'>throughout the markets' ups and downs<div className='border'></div></div>
@@ -235,7 +257,7 @@ export default function Home () {
           50% { border-color: white; }
         }
         
-        @media (max-width: 451px) {
+        @media (max-width: 541px) {
           .hero {
             height: 70vh;
           }
@@ -355,13 +377,13 @@ export default function Home () {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          overflow-x: hidden;
         }
 
         * {
           box-sizing: border-box;
         }
 
-        
         @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
       `}</style>
     </div>

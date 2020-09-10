@@ -68,7 +68,7 @@ const Navbar = ( props ) => {
                         flex: 1;
                     }
 
-                    @media (max-width: 451px) {
+                    @media (max-width: 541px) {
                         .nav {
                             width: 100%;
                             height: 80px;
