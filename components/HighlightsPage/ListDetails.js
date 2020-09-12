@@ -1,6 +1,6 @@
 export const listContent1 = {
     head: 'Robust return profile',
-    detail: `The strategy has been effective at also profiting during market downturns such as in the February - March 2020 (-19.56%) 
+    detail: `The strategy has been effective at profiting during market downturns such as in the February - March 2020 (-19.56%) 
     and fourth quarter 2018 (-13.52%) S&P 500 selloff. The corresponding track record achieves zero correlation to both equities and bonds.`
 };
 

@@ -14,7 +14,7 @@ const about = () => {
     // Configure the header of the page here
     const headDetail = {
         subtitle: 'About Us',
-        heading: 'Believing in adaptation'
+        heading: 'Embracing adaptation'
     };
 
     useEffect( () => {
@@ -32,7 +32,12 @@ const about = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='firm-space'></div>
-                <div className='quote'><em>" Operating in the markets is not an effort of seeking perfection. Success arrives through a process of constant evolution of our strategies supported by a robust focus on self improvement" - Christopher Antonio, CIO </em></div>
+                <div className='quote'>
+                    <em>
+                        " Operating in the markets is not an effort of seeking perfection. Success arrives through a process of constant evolution
+                         of our strategies supported by a robust focus on self improvement" - Christopher Antonio, CIO 
+                    </em>
+                </div>
                 <div className='firm' id='firm-section'>
 
                     {/* Left side of the page */ }
@@ -48,8 +53,8 @@ const about = () => {
                     <div className='firm-content'>
                         <p className='about-1' data-aos='fade-up' data-aos-delay={ 300 }>
                             Dipsea Capital manages liquid hedged investment strategies using systematic tools combined with discretionary portfolio management. 
-                            Founder and CIO Chris Antonio’s investment approach is based on his scientific background combined with his experience in the late 80s and early 90s as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations. 
-                            Both experiences contribute to an orientation of seeking consistent daily profitability based on equity market inefficiencies.
+                            Founder and CIO Chris Antonio’s investment approach is based on his scientific background combined with his experience as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations. 
+                            Both experiences contribute to an orientation of seeking consistent profitability based on equity market inefficiencies.
                         </p>
                         <p className='about-1' data-aos='fade-up'>
                             Chris has been an independent portfolio manager since 1995 and established Dipsea Capital, LLC in 2007, followed by the Dipsea Capital Fund, 

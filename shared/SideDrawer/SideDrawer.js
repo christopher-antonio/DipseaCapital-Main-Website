@@ -41,7 +41,7 @@ const SideDrawer = props => {
                             <p>INSIGHTS</p>
                         </a>
                     </Link>
-                    <Link href='/#'>
+                    <Link href='/community'>
                         <a className='clickable'>
                             <p>COMMUNITY</p>
                         </a>
@@ -101,7 +101,7 @@ const SideDrawer = props => {
                     .clickable p {
                         margin: 0;
                         padding-bottom: 6px;
-                        font-size: max(calc(100vw * 14 / 1450 + 2px), 12px);
+                        font-size: max(calc(100vw * 12 / 1450 + 2px), 12px);
                     }
 
                     .clickable p:hover {
@@ -111,16 +111,16 @@ const SideDrawer = props => {
 
                     .logo {
                         height: auto;
-                        width: calc(100vw * 13 / 131 + 0px);
+                        width: calc(100vw * 11 / 131 + 0px);
                         padding: 12px 0;
-                        margin: 15% 0 0 17%;
+                        margin: 11% 0 0 17%;
                         background-color: #fff;
                     }
 
                     .logo img {
                         background-color: white;
                         height: auto;
-                        width: calc(100vw * 13 / 131 + 0px);
+                        width: calc(100vw * 11 / 131 + 0px);
                     }
 
                     @media (max-width: 541px) {

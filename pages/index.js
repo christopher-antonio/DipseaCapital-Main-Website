@@ -35,7 +35,7 @@ export default function Home () {
   // For mobile version
   const monthlyCloseButton = () => {
     return setMonthlyDrawerOpen( false );
-  }
+  };
 
   // For aos animation -> useEffect = ComponentDidLoad 
   useEffect( () => {
@@ -59,18 +59,19 @@ export default function Home () {
       {/* Main Page */ }
       <main>
         <div className='hero'>
-          {/* Navigation Bar - '/shared/Navbar.js' */}
+          {/* Navigation Bar - '/shared/Navbar.js' */ }
           <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
           <div className='top-space'></div>
-          
-          {/* First part of the landing page */}
+
+          {/* First part of the landing page */ }
           <div className='heading text-animation'>We offer a consistent and uncorrelated</div>
-          <div className='heading-2 text-animation-2'>strategy in a zero interest world<div className='border'></div></div>
+          <div className='heading-2 text-animation-2'>strategy in a zero interest rate world<div className='border'></div></div>
           <div className='space'></div>
           <div className='arrow' data-aos='fade-down'><IoIosArrowDown size={ 'calc(100vw * 5 / 131 + 0px)' } color='white' /></div>
         </div>
 
-        {/* Second part of the landing page */}
+        {/* Second part of the landing page */ }
+        <div className='top-space'></div>
         <div className='belief' id='belief-section'>
           <div className='belief-sub'>
             <div className='headline'>
@@ -83,16 +84,17 @@ export default function Home () {
               <li data-aos='fade-down'><p>The inherent volatility of markets creates significant challenges for investors</p></li>
               <li data-aos='fade-down'><p>Non-correlated investment strategies are a solution</p></li>
               <li data-aos='fade-down'><p>Portfolio construction designed to mitigate cognitive biases supports a consistent return profile</p></li>
-              <li data-aos='fade-down'><p>Liquid for investment strategies are a material element in effective risk management, providing investor access to their capital, and accurate portfolio marking</p></li>
+              <li data-aos='fade-down'><p>Liquid investment strategies are a material element in effective risk management, providing investor access to their capital, and accurate portfolio marking</p></li>
               <li data-aos='fade-down'><p>Low volatility investment solutions facilitate superior wealth compounding</p></li>
               <li data-aos='fade-down'><p>In a full alignment of interests as demonstrated by a significant fund investment alongside our clients</p></li>
             </ul>
           </div>
         </div>
+        <div className='top-space'></div>
         <Footer />
       </main>
 
-      {/* Styling for this page here */}
+      {/* Styling for this page here */ }
       <style jsx>{
         `
         .container {
@@ -101,6 +103,7 @@ export default function Home () {
 
         .hero {
           height: 100vh;
+          max-height: 1100px;
           width: 100%;
           background-color: #283348;
           display: flex;
@@ -173,11 +176,11 @@ export default function Home () {
         /* belief section ------------ */
 
         .belief {
-          height: 120vh;
+          height: auto;
           width: 100%;
           display: flex;
           flex-direction: row;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
         }
 

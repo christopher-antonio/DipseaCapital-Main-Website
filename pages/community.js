@@ -4,19 +4,19 @@ import { useEffect } from 'react';
 // Components
 import PageHeading from '../shared/PageHeading';
 import Footer from '../shared/Footer';
-import Card from '../components/PublicationPage/Card';
+import Card from '../components/CommunityPage/Card';
 import MetaTag from '../shared/MetaTag';
-import * as Info from '../components/PublicationPage/CardDetails';
+import * as Info from '../components/CommunityPage/CardDetails';
 
 // Animation
 import Aos from 'aos';
 
-const publications = () => {
+const community = () => {
 
     // Configure the header of the page here
     const headDetail = {
-        subtitle: 'Insights',
-        heading: 'Latest articles & letters'
+        subtitle: 'Community',
+        heading: 'Belief in giving back'
     };
 
     useEffect( () => {
@@ -26,7 +26,7 @@ const publications = () => {
     return (
         <div className="container">
             <Head>
-                <title>Insights - Dipsea Capital</title>
+                <title>Community - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
                 <MetaTag />
@@ -34,9 +34,10 @@ const publications = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='main-sub'>
-                        <Card content={ Info.card2 } delay={ 200 } />
-                        <Card content={ Info.card3 } delay={ 0 } />
-                        <Card content={ Info.card1 } delay={ 200 } />
+                        <Card content={ Info.card1 } />
+                        <Card content={ Info.card2 } />
+                        <Card content={ Info.card3 } />
+                        <Card content={ Info.card4 } />
                 </div>
                 <div className='spacing'></div>
             </main>
@@ -107,7 +108,7 @@ const publications = () => {
                 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
             `}</style>
         </div>
-    );
-};
+    )
+}
 
-export default publications;
+export default community
