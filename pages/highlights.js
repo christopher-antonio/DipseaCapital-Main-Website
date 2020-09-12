@@ -49,11 +49,11 @@ const highlights = () => {
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent1 } />
                             <div className='list-line' data-aos='fade-up'></div>
-                            <List content={ ListContent.listContent2 } />
-                            <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent3 } />
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent4 } />
+                            <div className='list-line' data-aos='fade-up'></div>
+                            <List content={ ListContent.listContent2 } />
                             <div className='list-line' data-aos='fade-up'></div>
                             <List content={ ListContent.listContent5 } />
                             <div className='list-line' data-aos='fade-up'></div>

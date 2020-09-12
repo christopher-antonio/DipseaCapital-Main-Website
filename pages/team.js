@@ -16,7 +16,7 @@ const team = () => {
     // Configure the header of the page here
     const headDetail = {
         subtitle: 'Our Team',
-        heading: 'Experience & dedication'
+        heading: 'Experience & stewardship'
     };
 
     useEffect( () => {

@@ -14,7 +14,7 @@ const about = () => {
     // Configure the header of the page here
     const headDetail = {
         subtitle: 'About Us',
-        heading: 'Highly experienced at adaptation'
+        heading: 'Believing in adaptation'
     };
 
     useEffect( () => {
@@ -32,9 +32,10 @@ const about = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='firm-space'></div>
+                <div className='quote'><em>" Operating in the markets is not an effort of seeking perfection. Success arrives through a process of constant evolution of our strategies supported by a robust focus on self improvement" - Christopher Antonio, CIO </em></div>
                 <div className='firm' id='firm-section'>
 
-                    {/* Left side of the page */}
+                    {/* Left side of the page */ }
                     <div className='firm-sub'>
                         <div className='headline'>
                             <div className='line fade-in'></div>
@@ -43,10 +44,16 @@ const about = () => {
                         </div>
                     </div>
 
-                    {/* Top half of the page */}
+                    {/* Top half of the page */ }
                     <div className='firm-content'>
-                        <p className='about-1' data-aos='fade-up' data-aos-delay={ 300 }>Dipsea Capital manages liquid hedged investment strategies using systematic tools combined with discretionary portfolio management. Founder and CIO Chris Antonio’s investment approach is based on his formative experience in the late 80s and early 90s as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations, seeking consistent daily profitability based on equity market inefficiencies.</p>
-                        <p className='about-1' data-aos='fade-up'>Chris has been an independent portfolio manager since 1995 and established Dipsea Capital, LLC in 2007, followed by the Dipsea Capital Fund, LP in 2015.</p>
+                        <p className='about-1' data-aos='fade-up' data-aos-delay={ 300 }>
+                            Dipsea Capital manages liquid hedged investment strategies using systematic tools combined with discretionary portfolio management. 
+                            Founder and CIO Chris Antonio’s investment approach is based on his scientific background combined with his experience in the late 80s and early 90s as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations. 
+                            Both experiences contribute to an orientation of seeking consistent daily profitability based on equity market inefficiencies.
+                        </p>
+                        <p className='about-1' data-aos='fade-up'>
+                            Chris has been an independent portfolio manager since 1995 and established Dipsea Capital, LLC in 2007, followed by the Dipsea Capital Fund, 
+                            LP in 2015.</p>
                         <div className='cards'>
                             <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
                                 <div className='hook'>25 +</div>
@@ -61,18 +68,25 @@ const about = () => {
                 </div>
                 <div className='firm-space'></div>
 
-                {/* Second half of the page */}
+                {/* Second half of the page */ }
                 <div className='begin' id='firm-section'>
                     <div className='firm-sub'>
                         <div className='headline'>
                             <div className='line fade-in'></div>
-                            <h4 data-aos='fade-right'>Beginning</h4>
+                            <h4 data-aos='fade-right'>The Name</h4>
                         </div>
                     </div>
                     <div className='firm-content' id='firm-begin'>
-                        <h2 className='sub-heading' data-aos='fade-up'>Where it all begins...</h2>
-                        <p className='about-1' data-aos='fade-up'>Dipsea Capital is a California Registered Investment Advisor and offers both a private fund, Dipsea Capital Fund, LP, as well as separately managed accounts for large institutional investors.</p>
-                        <p className='about-1' data-aos='fade-up'>Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach - a grueling event that rewards perseverance, teamwork, and preparation.</p>
+                        <h2 className='sub-heading' data-aos='fade-up'>Dipsea ...</h2>
+                        <p className='about-1' data-aos='fade-up'>
+                            Dipsea Capital is a California Registered Investment Advisor and offers both a private fund, 
+                            Dipsea Capital Fund, LP, as well as separately managed accounts for large institutional investors.
+                        </p>
+                        <p className='about-1' data-aos='fade-up'>
+                            Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. 
+                            Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach 
+                            - a grueling event that rewards perseverance, ingenuity, and perseverance.
+                        </p>
                     </div>
                 </div>
             </main>
@@ -91,6 +105,21 @@ const about = () => {
                         height: calc(100vw * 0.09 + 0px);
                         max-height: 100px;
                         width: 100%;
+                    }
+
+                    .quote {
+                        padding: 0 0 7% 0;
+                        text-align: center;
+                        font-size: max(calc(100vw * 0.014 + 0px), 13px);
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .quote em {
+                        width: 80%;
+                        font-weight: 300;
                     }
 
                     .firm, .begin {

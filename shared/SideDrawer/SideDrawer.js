@@ -41,6 +41,11 @@ const SideDrawer = props => {
                             <p>INSIGHTS</p>
                         </a>
                     </Link>
+                    <Link href='/#'>
+                        <a className='clickable'>
+                            <p>COMMUNITY</p>
+                        </a>
+                    </Link>
                     <a href='http://eepurl.com/hcpLcr' className='clickable' target='_blank'>
                         <p>CONTACT US</p>
                     </a>
@@ -106,7 +111,7 @@ const SideDrawer = props => {
 
                     .logo {
                         height: auto;
-                        width: calc(100vw * 16 / 131 + 0px);
+                        width: calc(100vw * 13 / 131 + 0px);
                         padding: 12px 0;
                         margin: 15% 0 0 17%;
                         background-color: #fff;
@@ -115,7 +120,7 @@ const SideDrawer = props => {
                     .logo img {
                         background-color: white;
                         height: auto;
-                        width: calc(100vw * 16 / 131 + 0px);
+                        width: calc(100vw * 13 / 131 + 0px);
                     }
 
                     @media (max-width: 541px) {
