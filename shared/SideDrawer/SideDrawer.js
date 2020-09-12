@@ -69,6 +69,7 @@ const SideDrawer = props => {
                         z-index: 200;
                         transform: translateX(-100%);
                         transition: transform 0.3s ease-in-out;
+                        overflow-y: scroll;
                     }
                     
                     .open {
@@ -113,7 +114,7 @@ const SideDrawer = props => {
                         height: auto;
                         width: calc(100vw * 11 / 131 + 0px);
                         padding: 12px 0;
-                        margin: 11% 0 0 17%;
+                        margin: 11% 0 10% 17%;
                         background-color: #fff;
                     }
 

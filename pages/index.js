@@ -329,6 +329,10 @@ export default function Home () {
             height: 4%;
             width: 100%;
           }
+
+          .belief-sub .headline {
+            margin-top: -25%;
+          }
   
           .line {
             height: 3px;

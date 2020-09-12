@@ -115,7 +115,7 @@ const about = () => {
                     .quote {
                         padding: 0 0 7% 0;
                         text-align: center;
-                        font-size: max(calc(100vw * 0.014 + 0px), 13px);
+                        font-size: max(calc(100vw * 0.014 + 0px), 12px);
                         width: 100%;
                         display: flex;
                         align-items: center;
