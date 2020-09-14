@@ -78,7 +78,7 @@ const about = () => {
                     <div className='firm-sub'>
                         <div className='headline'>
                             <div className='line fade-in'></div>
-                            <h4 data-aos='fade-right'>The Name</h4>
+                            <h4 data-aos='fade-right'>The name</h4>
                         </div>
                     </div>
                     <div className='firm-content' id='firm-begin'>
