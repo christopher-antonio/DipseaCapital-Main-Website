@@ -84,6 +84,11 @@ const community = () => {
                             align-items: center;
                         }
 
+                        .intro {
+                            width: 80%;
+                            font-size: 10px;
+                        }
+
                         .sub-left, .sub-right {
                             height: 70%;
                             width: 80%;
