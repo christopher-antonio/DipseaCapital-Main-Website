@@ -179,7 +179,6 @@ const Contact = () => {
                     }
 
                     form {
-                        font-family: 'Prata', serif;
                         height: auto;
                         width: 60%;
                         display: flex;
@@ -193,7 +192,6 @@ const Contact = () => {
                     }
 
                     form p, label {
-                        font-family: 'Prata', serif;
                         height: auto;
                         width: 100%;
                         margin: 0 0 0 10%;
@@ -202,7 +200,6 @@ const Contact = () => {
                     }
 
                     select {
-                        font-family: 'Prata', serif;
                         margin: 2% 0 3% 10%;
                         padding: 1%;
                         color: #fff;
@@ -219,7 +216,6 @@ const Contact = () => {
                         padding: 1%;
                         border-radius: 7px;
                         border: none;
-                        font-family: 'Prata', serif;
                     }
 
                     textarea {
@@ -230,11 +226,9 @@ const Contact = () => {
                         border-radius: 7px;
                         border: none;
                         font-size: calc(100vw * 18 / 1310 + 0px);
-                        font-family: 'Prata', serif;
                     }
 
                     #submit {
-                        font-family: 'Prata', serif;
                         width: auto;
                         margin: 4% 0 4% 10%;
                         border: none;
