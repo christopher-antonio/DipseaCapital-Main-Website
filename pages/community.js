@@ -15,8 +15,8 @@ const community = () => {
 
     // Configure the header of the page here
     const headDetail = {
-        subtitle: 'Community',
-        heading: 'Belief in giving back'
+        subtitle: 'Giving back',
+        heading: 'Supporting local institutions'
     };
 
     useEffect( () => {
@@ -26,7 +26,7 @@ const community = () => {
     return (
         <div className="container">
             <Head>
-                <title>Community - Dipsea Capital</title>
+                <title>Giving back - Dipsea Capital</title>
                 <link rel="icon" href="/dipseaicon.jpg" />
                 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"></link>
                 <MetaTag />

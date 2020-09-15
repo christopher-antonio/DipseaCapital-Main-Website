@@ -100,9 +100,9 @@ const Contact = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 {/* Dipsea Capital Map */ }
-                {/* <div className='dipsea-map'>
+                <div className='dipsea-map'>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.36550171785!2d-122.52412608459578!3d37.9452509101058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a446de34fc3%3A0xb0b6faf3b01150f5!2sDipsea%20Capital!5e0!3m2!1sen!2sus!4v1598818482193!5m2!1sen!2sus" style={ {border: 0, height: '100%', width: '100%' } } allowFullScreen="" aria-hidden="false" tabIndex="0" ></iframe>
-                </div> */}
+                </div>
                 <h1>Prospective Clients</h1>
 
                 {/* Form Section */ }
@@ -167,7 +167,6 @@ const Contact = () => {
                         width: 60%;
                         height: 30%;
                         margin-top: 5%;
-                        border: 3px solid #f9bc06;
                     }
 
                     main h1 {
@@ -176,7 +175,7 @@ const Contact = () => {
                         height: auto;
                         color: #7EA0E2;
                         font-size: calc(100vw * 48 / 1310 + 0px);
-                        margin: 8% 0 3% 0;
+                        margin: 2% 0 3% 0;
                     }
 
                     form {
@@ -258,9 +257,15 @@ const Contact = () => {
                     }
 
                     @media (max-width: 541px) {
+
+                        .dipsea-map {
+                            width: 90%;
+                        }
+
                         main h1 {
                             width: 90%;
                             font-size: 20px;
+                            margin: 20px 0;
                         }
 
                         form {
