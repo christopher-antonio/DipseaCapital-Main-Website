@@ -152,7 +152,6 @@ const Contact = () => {
                     `
                     .container {
                         background-color: rgba(0,0,0,0.01);
-                        font-family: 'Prata', serif;
                     }
 
                     main {
@@ -172,6 +171,7 @@ const Contact = () => {
                     }
 
                     main h1 {
+                        font-family: 'Prata', serif;
                         width: 60%;
                         height: auto;
                         color: #7EA0E2;
@@ -180,6 +180,7 @@ const Contact = () => {
                     }
 
                     form {
+                        font-family: 'Prata', serif;
                         height: auto;
                         width: 60%;
                         display: flex;
@@ -193,6 +194,7 @@ const Contact = () => {
                     }
 
                     form p, label {
+                        font-family: 'Prata', serif;
                         height: auto;
                         width: 100%;
                         margin: 0 0 0 10%;
@@ -201,6 +203,7 @@ const Contact = () => {
                     }
 
                     select {
+                        font-family: 'Prata', serif;
                         margin: 2% 0 3% 10%;
                         padding: 1%;
                         color: #fff;
@@ -208,7 +211,6 @@ const Contact = () => {
                         font-size: calc(100vw * 18 / 1310 + 0px);
                         cursor: pointer;
                         border-radius: 7px;
-                        font-family: 'Prata', serif;
                     }
 
                     input {
