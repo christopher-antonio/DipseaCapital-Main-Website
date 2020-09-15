@@ -33,6 +33,7 @@ const community = () => {
             </Head>
             <main>
                 <PageHeading head={ headDetail } />
+                <div className='intro'>Dipsea's principals are involved in supporting the following organizations</div>
                 <div className='main-sub'>
                         <Card content={ Info.card1 } />
                         <Card content={ Info.card2 } />
@@ -47,6 +48,14 @@ const community = () => {
             <style jsx>
                 {
                     `
+                    .intro {
+                        width: 100%;
+                        text-align: center;
+                        font-family: 'Prata', serif;
+                        font-size: calc(100vw * 0.014 + 0px);
+                        padding: calc(100vw * 3 / 70 + 0px) 0 0 0;
+                    }
+
                     .main-sub {
                         // height: 100vh;
                         width: 100%;

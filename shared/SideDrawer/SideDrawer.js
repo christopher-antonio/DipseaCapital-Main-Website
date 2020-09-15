@@ -43,7 +43,7 @@ const SideDrawer = props => {
                     </Link>
                     <Link href='/community'>
                         <a className='clickable'>
-                            <p>COMMUNITY</p>
+                            <p>GIVING BACK</p>
                         </a>
                     </Link>
                     <Link href='/contact'>
