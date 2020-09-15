@@ -152,7 +152,7 @@ export default function Home () {
         .top-space {
           height: 8rem;
           max-height: 130px;
-          width: 100vw;
+          width: 100%;
         }
 
         .space {

@@ -46,9 +46,11 @@ const SideDrawer = props => {
                             <p>COMMUNITY</p>
                         </a>
                     </Link>
-                    <a href='http://eepurl.com/hcpLcr' className='clickable' target='_blank'>
-                        <p>CONTACT US</p>
-                    </a>
+                    <Link href='/contact'>
+                        <a className='clickable'>
+                            <p>CONTACT US</p>
+                        </a>
+                    </Link>
                 </ul>
                 <div className='logo'>
                     <img src='DipseaLogo.png' alt='Dipsea Capital, LLC Logo' />

@@ -9,7 +9,7 @@ import MetaTag from '../shared/MetaTag';
 // Animation
 import Aos from 'aos';
 
-const about = () => {
+const About = () => {
 
     // Configure the header of the page here
     const headDetail = {
@@ -319,4 +319,4 @@ const about = () => {
     );
 };
 
-export default about;
+export default About;

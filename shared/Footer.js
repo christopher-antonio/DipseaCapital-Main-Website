@@ -55,7 +55,7 @@ const Footer = () => {
                         <Link href='/highlights'><a>Fund Highlights</a></Link>
                         <Link href='/publications'><a>Insights</a></Link>
                         <Link href='/community'><a>Community</a></Link>
-                        <a href='http://eepurl.com/hcpLcr' target='_blank'>Contact Us</a>
+                        <Link href='/community'><a>Contact us</a></Link>
                     </div>
                 </div>
             </div>
