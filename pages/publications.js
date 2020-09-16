@@ -16,7 +16,7 @@ const publications = () => {
     // Configure the header of the page here
     const headDetail = {
         subtitle: 'Insights',
-        heading: 'Latest articles & letters'
+        heading: 'Latest articles'
     };
 
     useEffect( () => {
