@@ -34,17 +34,17 @@ const Contact = () => {
     // EmailJS for sending automated emails
     const clearFileds = () => {
         setEmail( '' );
-        document.getElementById('email').value = ''
+        document.getElementById( 'email' ).value = '';
         setFirstName( '' );
-        document.getElementById('firstName').value = ''
+        document.getElementById( 'firstName' ).value = '';
         setLastName( '' );
-        document.getElementById('lastName').value = ''
+        document.getElementById( 'lastName' ).value = '';
         setNumber( '' );
-        document.getElementById('phone').value = ''
+        document.getElementById( 'phone' ).value = '';
         setInvestor( 'Yes' );
-        document.getElementById('investor').value = 'Yes'
+        document.getElementById( 'investor' ).value = 'Yes';
         setMessage( '' );
-        document.getElementById('message').value = ''
+        document.getElementById( 'message' ).value = '';
     };
 
     emailjs.init( 'user_QKLpa9jRQMfIvGJRnNU9x' );
@@ -53,16 +53,16 @@ const Contact = () => {
         e.preventDefault();
 
         // send it!
-        emailjs.send( 'service_w0r3213', 'template_xm0f0cr', { 
-            from_name: 'Dipsea Bot', 
-            to_name: 'Head of Marketing', 
+        emailjs.send( 'service_w0r3213', 'template_xm0f0cr', {
+            from_name: 'Dipsea Bot',
+            to_name: 'Head of Marketing',
             email: email,
             first_name: firstName,
             last_name: lastName,
             number: number,
             investor: investor,
             message: message
-         } );
+        } );
 
         alert( 'Your message was sent to our marketing team! We will get back to you as soon as possible!' );
 
@@ -99,49 +99,57 @@ const Contact = () => {
             </Head>
             <main>
                 <PageHeading head={ headDetail } />
-                {/* Dipsea Capital Map */ }
-                <div className='dipsea-map'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.36550171785!2d-122.52412608459578!3d37.9452509101058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a446de34fc3%3A0xb0b6faf3b01150f5!2sDipsea%20Capital!5e0!3m2!1sen!2sus!4v1598818482193!5m2!1sen!2sus" style={ {border: 0, height: '100%', width: '100%' } } allowFullScreen="" aria-hidden="false" tabIndex="0" ></iframe>
-                </div>
-                <h1>Prospective Clients</h1>
+                <div className='bottom-space'></div>
+                <body>
+                    <div className='map-section'>
+                        <p className='map-text'>Dipsea Capital is located in Greenbrae in Marin County, a 15 minute drive north of San Francisco or a 30 minute ferry trip across San Francisco Bay to adjacent Larkspur Landing.</p>
+                        {/* Dipsea Capital Map */ }
+                        <div className='dipsea-map'>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.36550171785!2d-122.52412608459578!3d37.9452509101058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a446de34fc3%3A0xb0b6faf3b01150f5!2sDipsea%20Capital!5e0!3m2!1sen!2sus!4v1598818482193!5m2!1sen!2sus" style={ { border: 0, height: '100%', width: '100%' } } allowFullScreen="" aria-hidden="false" tabIndex="0" ></iframe>
+                        </div>
+                        <p className='map-text'>Investments in the Dipsea Capital Fund, LP are exclusively for Qualified Clients.</p>
+                    </div>
+                    <div className='form-section'>
+                        <h1>Prospective Clients</h1>
+                        {/* Form Section */ }
+                        <form onSubmit={ submitForm }>
+                            {/* Email input */ }
+                            <p>Email Address <br />
+                                <input type='email' name='email' id='email' placeholder='email@address.com' required={ true } onChange={ changeEmail } />
+                            </p>
 
-                {/* Form Section */ }
-                <form onSubmit={ submitForm }>
-                    {/* Email input */ }
-                    <p>Email Address <br />
-                        <input type='email' name='email' id='email' placeholder='email@address.com' required={ true } onChange={ changeEmail } />
-                    </p>
+                            {/* Firstname Input */ }
+                            <p>First Name <br />
+                                <input type='text' name='firstName' id='firstName' placeholder='John' required={ true } onChange={ changeFirstName } />
+                            </p>
 
-                    {/* Firstname Input */ }
-                    <p>First Name <br />
-                        <input type='text' name='firstName' id='firstName' placeholder='John' required={ true } onChange={ changeFirstName } />
-                    </p>
+                            {/* Lastname Input */ }
+                            <p>Last Name <br />
+                                <input type='text' name='lastName' id='lastName' placeholder='Doe' required={ true } onChange={ changeLastName } />
+                            </p>
 
-                    {/* Lastname Input */ }
-                    <p>Last Name <br />
-                        <input type='text' name='lastName' id='lastName' placeholder='Doe' required={ true } onChange={ changeLastName } />
-                    </p>
+                            {/* Phone number Input */ }
+                            <p>Phone Number <br />
+                                <input type='tel' name='phone' id='phone' required={ true } placeholder='123-456-7890' onChange={ changeNumber } />
+                            </p>
 
-                    {/* Phone number Input */ }
-                    <p>Phone Number <br />
-                        <input type='tel' name='phone' id='phone' required={ true } placeholder='123-456-7890' onChange={ changeNumber } />
-                    </p>
+                            {/* Investor Choice */ }
+                            <label htmlFor="investor">Accredited Investors?</label>
+                            <select id="investor" name="investor" onChange={ changeInvestor }>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
 
-                    {/* Investor Choice */ }
-                    <label htmlFor="investor">Accredited Investors?</label>
-                    <select id="investor" name="investor" onChange={ changeInvestor }>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
+                            {/* Message Input */ }
+                            <p>Message <br />
+                                <textarea name='message' id='message' onChange={ changeMessage }></textarea>
+                            </p>
 
-                    {/* Message Input */ }
-                    <p>Message <br />
-                        <textarea name='message' id='message' onChange={ changeMessage }></textarea>
-                    </p>
-
-                    {/* Submit Button */ }
-                    <input type="submit" value='Send' id='submit' />
-                </form>
+                            {/* Submit Button */ }
+                            <input type="submit" value='Send' id='submit' />
+                        </form>
+                    </div>
+                </body>
                 <div className='bottom-space'></div>
             </main>
             <Footer />
@@ -164,23 +172,48 @@ const Contact = () => {
                     }
 
                     .dipsea-map {
-                        width: 60%;
-                        height: 30%;
-                        margin-top: 5%;
+                        width: 80%;
+                        height: 60vh;
+                        margin: 5% 0;
                     }
 
                     main h1 {
                         font-family: 'Prata', serif;
-                        width: 60%;
+                        width: 90%;
                         height: auto;
                         color: #7EA0E2;
                         font-size: calc(100vw * 48 / 1310 + 0px);
                         margin: 2% 0 3% 0;
                     }
 
+                    body {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center:
+                    }
+
+                    .form-section, .map-section {
+                        height: auto;
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center:
+                    }
+
+                    .map-text {
+                        width: 80%;
+                        height: auto;
+                        font-size: calc(100vw * 18 / 1310 + 0px);
+                        font-weight: 300;
+                    }
+
                     form {
                         height: auto;
-                        width: 60%;
+                        width: 90%;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
@@ -193,7 +226,7 @@ const Contact = () => {
 
                     form p, label {
                         height: auto;
-                        width: 100%;
+                        width: 80%;
                         margin: 0 0 0 10%;
                         padding: 2% 0 0 0;
                         font-size: calc(100vw * 18 / 1310 + 0px);
@@ -256,10 +289,22 @@ const Contact = () => {
                             width: 90%;
                         }
 
+                        body {
+                            flex-direction: column;
+                        }
+
                         main h1 {
                             width: 90%;
                             font-size: 20px;
                             margin: 20px 0;
+                        }
+
+                        .form-section, .map-section {
+                            width: 95%;
+                        }
+
+                        .map-text {
+                            font-size: 14px;
                         }
 
                         form {
