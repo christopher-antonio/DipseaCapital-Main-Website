@@ -1,3 +1,7 @@
+/** 
+ * Individual cards for the publication page
+*/
+
 const Card = ( props ) => {
 
     const goTo = () => {

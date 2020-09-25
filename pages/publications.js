@@ -1,3 +1,12 @@
+/**
+ * To add more cards to this page
+ * 1. Go to /components/PublicationPage/CardDetails.js to add the content there first
+ * 2. If you're here I assumed that you already followed the instruction from the other file
+ * 3. Copy this code: <Card content={ Info.card{ card number } } />
+ * !! Remove the brackets when replace the content. Ex: { Name } -> Put John NOT { John } in the field
+ * 4. Fill in the card number accordingly and paste it in the field down below
+ */
+
 import Head from 'next/head';
 import { useEffect } from 'react';
 
@@ -34,9 +43,10 @@ const publications = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='main-sub'>
-                        <Card content={ Info.card2 } delay={ 200 } />
-                        <Card content={ Info.card3 } delay={ 0 } />
-                        <Card content={ Info.card1 } delay={ 200 } />
+                        <Card content={ Info.card2 } />
+                        <Card content={ Info.card3 } />
+                        <Card content={ Info.card1 } />
+                        {/* Paste it above this line for more cards */}
                 </div>
                 <div className='spacing'></div>
             </main>

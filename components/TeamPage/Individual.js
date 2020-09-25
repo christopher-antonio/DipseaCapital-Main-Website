@@ -1,3 +1,6 @@
+/**
+ * A card for individual employee to be utilized in the Team page
+ */
 const Individual = ( props ) => {
     return (
         <React.Fragment>

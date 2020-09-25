@@ -1,3 +1,7 @@
+/**
+ * This file contains all the information for the bullet points in the highlights page
+ */
+
 export const listContent1 = {
     head: 'Robust return profile',
     detail: `The strategy has been effective at profiting during market downturns such as in the February - March 2020 (-19.56%) 

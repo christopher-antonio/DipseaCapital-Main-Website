@@ -1,3 +1,7 @@
+/**
+ * This file contains the information of all the employees in the company
+ */
+
 export const Employee1 = {
     name: 'Christopher Antonio',
     position: 'Founder and Chief Investment Officer',
@@ -11,6 +15,8 @@ export const Employee1 = {
     pic: '/Team/nchris.png'
 };
 
+// No longer with Dipsea Capital
+/*
 export const Employee2 = {
     name: 'Eddy Altamirano',
     position: 'Head of Trading',
@@ -21,6 +27,7 @@ export const Employee2 = {
     Bachelor’s degree in Economics from the University of California at Berkeley.`,
     pic: '/Team/neddy.png'
 };
+*/
 
 export const Employee3 = {
     name: 'Kurt Romstad',

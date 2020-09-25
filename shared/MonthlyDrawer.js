@@ -1,3 +1,11 @@
+/**
+ * Instruction on how to add more monthly letter:
+ * 1. Add a new PDF file to the /public/Letters/ folder with the same naming format
+ * 2. Copy this code: <li><a className='clickable' href='/Letters/{ month }-{ year }.pdf' target='_blank' rel='noopener noreferrer'>{ month year }</a></li>
+ * 3. Fill in the { month }, { year }, and { month year } accordingly.
+ * 4. Go paste the code down there
+ */
+
 // Icons
 import { IoMdArrowRoundBack } from 'react-icons/io';
 
@@ -22,6 +30,7 @@ const MonthlyDrawer = props => {
                     <li><a className='clickable' href='/Letters/June-2020.pdf' target='_blank' rel='noopener noreferrer'>June 2020</a></li>
                     <li><a className='clickable' href='/Letters/July-2020.pdf' target='_blank' rel='noopener noreferrer'>July 2020</a></li>
                     <li><a className='clickable' href='/Letters/August-2020.pdf' target='_blank' rel='noopener noreferrer'>August 2020</a></li>
+                    {/* Paste the code over here for more monthly letter from step 3 */}
                 </ul>
             </nav>
             <style jsx>
@@ -39,6 +48,7 @@ const MonthlyDrawer = props => {
                         transform: translateX(-100%);
                         transition: transform 0.4s ease-in-out;
                         font-size: max(calc(100vw * 14 / 1450 + 6px), 12px);
+                        overflow-y: scroll;
                     }
 
                     .back-btn {
@@ -53,13 +63,13 @@ const MonthlyDrawer = props => {
                         padding: 5rem 0 0 10%;
                         color: white;
                     }
-                    
+
                     .monthlyDrawer ul {
                         list-style: none;
                         display: flex;
                         flex-direction: column;
                         margin: 0;
-                        padding: 1.5rem 0 0 10%;
+                        padding: 1.5rem 0 1.5rem 10%;
                     }
                     
                     .monthlyDrawer li {

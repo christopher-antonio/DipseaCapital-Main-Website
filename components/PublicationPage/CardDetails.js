@@ -1,3 +1,17 @@
+/**
+ * This file contains all the information for the bullet points in the publication page
+ * To add more publications:
+ * 1. Copy this code and paste below; fill out all the fields accordingly ->
+ * !! Remove the brackets when replace the content. Ex: { Name } -> Put John NOT { John } in the field
+ * export const card{ card # } = {
+    head: '{ Content header }',
+    date: '{ Date of the publication }',
+    author: '{ Author of the publication }',
+    desc: `{ Brief description of the content }`,
+    link: '{ Link to the publication }'
+};
+ */
+
 export const card1 = {
     head: 'Volatility: It’s Worse Than You Thought',
     date: 'Third Quarter 2018',
