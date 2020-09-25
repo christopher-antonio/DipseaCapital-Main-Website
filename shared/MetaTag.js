@@ -1,7 +1,7 @@
 const MetaTag = () => {
     return (
         <React.Fragment>
-            <meta property="og:title" content="Dipsea Capital, LLC | We believe in providing consistent returns throughout the markets' ups and downs" />
+            <meta property="og:title" content="[Under Development] Dipsea Capital, LLC | We believe in providing consistent returns throughout the markets' ups and downs" />
             <meta property="og:type" content="website" />
             <meta property='og:url' content='https://www.dipseacapital.com/' />
             <meta property='og:image' content='https://dipsea-capital-main-website.vercel.app/DipseaLogo.png' />
