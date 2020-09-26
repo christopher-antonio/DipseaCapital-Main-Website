@@ -64,11 +64,17 @@ export default function Home () {
           <div className='top-space'></div>
 
           {/* First part of the landing page */ }
-          <div className='heading text-animation'>We offer a consistent and uncorrelated</div>
-          <div className='heading-2 text-animation-2'>strategy in a zero interest rate world<div className='border'></div></div>
+          <div className='heading text-animation'>The wonder of compounding returns amid:</div>
+          <div className='heading text-animation-2'>High valuations</div>
+          <div className='heading text-animation-3'>Zero interest rates</div>
+          <div className='heading text-animation-4'>Unprecedented uncertainty</div>
+          <div className='heading-2 text-glow' id='sub-section'>Dipsea Capital has historically delivered a consistent</div>
+          <div className='heading-2 text-glow'>return profile, uncorrelated to other asset classes<div className='border'></div></div>
           <div className='space'></div>
+          <div className='top-space'></div>
           <div className='arrow' data-aos='fade-down'><IoIosArrowDown size={ 'calc(100vw * 5 / 131 + 0px)' } color='white' /></div>
         </div>
+
 
         {/* Second part of the landing page */ }
         <div className='top-space'></div>
@@ -102,8 +108,7 @@ export default function Home () {
         }
 
         .hero {
-          height: 100vh;
-          max-height: 1100px;
+          height: auto;
           width: 100%;
           background-color: #283348;
           display: flex;
@@ -127,7 +132,7 @@ export default function Home () {
           overflow: hidden;
           font-family: 'Prata', serif;
           color: white;
-          font-size: min(calc(100vw * 0.034 + 0px), 50px);
+          font-size: min(calc(100vw * 0.015 + 0px), 50px);
           padding: 2rem 0 0 5rem;
         }
 
@@ -139,8 +144,12 @@ export default function Home () {
           overflow: hidden;
           font-family: 'Prata', serif;
           color: white;
-          font-size: min(calc(100vw * 0.034 + 0px), 50px);
+          font-size: min(calc(100vw * 0.027 + 0px), 50px);
           padding: 1rem 0 0 5rem;
+        }
+
+        #sub-section {
+          padding-top: 5%;
         }
 
         .border {
@@ -171,6 +180,32 @@ export default function Home () {
 
         .arrow a {
           transition: all 1s ease-in-out;
+        }
+
+        .text-animation {
+          animation: animated-text 2s steps(40,end) 1s 1 normal both;
+        }
+
+        .text-animation-2 {
+          animation: animated-text 2s steps(40,end) 1s 1 normal both;
+          animation-delay: 2.3s;
+        }
+
+        .text-animation-3 {
+          animation: animated-text 2s steps(40,end) 1s 1 normal both;
+          animation-delay: 3s;
+        }
+
+        .text-animation-4 {
+          animation: animated-text 2s steps(40,end) 1s 1 normal both;
+          animation-delay: 3.7s;
+        }
+
+        .text-glow {
+          opacity: 0;
+          animation: fadeIn 0.70s ease-in;
+          animation-delay: 4.3s;
+          animation-fill-mode: forwards;
         }
 
         /* belief section ------------ */
@@ -230,15 +265,6 @@ export default function Home () {
           font-size: max(calc(100vw * 0.0157 + 0px), 17px);
         }
 
-        .text-animation {
-          animation: animated-text 2s steps(40,end) 1s 1 normal both;
-        }
-
-        .text-animation-2 {
-          animation: animated-text 2s steps(40,end) 1s 1 normal both;
-          animation-delay: 2.5s;
-        }
-
         .fade-in {
           animation: fadeIn 0.70s ease-in;
         }
@@ -269,7 +295,7 @@ export default function Home () {
         
         @media (max-width: 541px) {
           .hero {
-            height: 70vh;
+            height: auto;
           }
 
           .top-space {
@@ -306,6 +332,10 @@ export default function Home () {
             color: white;
             font-size: calc(100vw * 0.03 + 0px);
             padding: 1rem 0 0 2rem;
+          }
+
+          #sub-section {
+            margin-top: 6%;
           }
 
           .border {

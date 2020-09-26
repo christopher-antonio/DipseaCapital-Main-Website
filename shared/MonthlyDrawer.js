@@ -1,7 +1,7 @@
 /**
  * Instruction on how to add more monthly letter:
  * 1. Add a new PDF file to the /public/Letters/ folder with the same naming format
- * 2. Copy this code: <li><a className='clickable' href='/Letters/{ month }-{ year }.pdf' target='_blank' rel='noopener noreferrer'>{ month year }</a></li>
+ * 2. Copy this code: <li><a className='clickable' href='/Letters/{ year }{ month }-{ year }.pdf' target='_blank' rel='noopener noreferrer'>{ month year }</a></li>
  * 3. Fill in the { month }, { year }, and { month year } accordingly.
  * 4. Go paste the code down there
  */
@@ -21,15 +21,21 @@ const MonthlyDrawer = props => {
                 <div className='back-btn' onClick={ props.toggle }><IoMdArrowRoundBack color='white' size={ 35 } /></div>
                 <div className='monthly-head'> INVESTOR LETTERS </div>
                 <ul>
-                    <li><a className='clickable' href='/Letters/December-2019.pdf' target='_blank' rel='noopener noreferrer'>December 2019</a></li>
-                    <li><a className='clickable' href='/Letters/January-2020.pdf' target='_blank' rel='noopener noreferrer'>January 2020</a></li>
-                    <li><a className='clickable' href='/Letters/February-2020.pdf' target='_blank' rel='noopener noreferrer'>Februay 2020</a></li>
-                    <li><a className='clickable' href='/Letters/March-2020.pdf' target='_blank' rel='noopener noreferrer'>March 2020</a></li>
-                    <li><a className='clickable' href='/Letters/April-2020.pdf' target='_blank' rel='noopener noreferrer'>April 2020</a></li>
-                    <li><a className='clickable' href='/Letters/May-2020.pdf' target='_blank' rel='noopener noreferrer'>May 2020</a></li>
-                    <li><a className='clickable' href='/Letters/June-2020.pdf' target='_blank' rel='noopener noreferrer'>June 2020</a></li>
-                    <li><a className='clickable' href='/Letters/July-2020.pdf' target='_blank' rel='noopener noreferrer'>July 2020</a></li>
-                    <li><a className='clickable' href='/Letters/August-2020.pdf' target='_blank' rel='noopener noreferrer'>August 2020</a></li>
+                    <h5>2019</h5>
+                    <li><a className='clickable' href='/Letters/2019/July-2019.pdf' target='_blank' rel='noopener noreferrer'>July 2019</a></li>
+                    <li><a className='clickable' href='/Letters/2019/September-2019.pdf' target='_blank' rel='noopener noreferrer'>September 2019</a></li>
+                    <li><a className='clickable' href='/Letters/2019/October-2019.pdf' target='_blank' rel='noopener noreferrer'>October 2019</a></li>
+                    <li><a className='clickable' href='/Letters/2019/November-2019.pdf' target='_blank' rel='noopener noreferrer'>November 2019</a></li>
+                    <li><a className='clickable' href='/Letters/2019/December-2019.pdf' target='_blank' rel='noopener noreferrer'>December 2019</a></li>
+                    <h5>2020</h5>
+                    <li><a className='clickable' href='/Letters/2020/January-2020.pdf' target='_blank' rel='noopener noreferrer'>January 2020</a></li>
+                    <li><a className='clickable' href='/Letters/2020/February-2020.pdf' target='_blank' rel='noopener noreferrer'>Februay 2020</a></li>
+                    <li><a className='clickable' href='/Letters/2020/March-2020.pdf' target='_blank' rel='noopener noreferrer'>March 2020</a></li>
+                    <li><a className='clickable' href='/Letters/2020/April-2020.pdf' target='_blank' rel='noopener noreferrer'>April 2020</a></li>
+                    <li><a className='clickable' href='/Letters/2020/May-2020.pdf' target='_blank' rel='noopener noreferrer'>May 2020</a></li>
+                    <li><a className='clickable' href='/Letters/2020/June-2020.pdf' target='_blank' rel='noopener noreferrer'>June 2020</a></li>
+                    <li><a className='clickable' href='/Letters/2020/July-2020.pdf' target='_blank' rel='noopener noreferrer'>July 2020</a></li>
+                    <li><a className='clickable' href='/Letters/2020/August-2020.pdf' target='_blank' rel='noopener noreferrer'>August 2020</a></li>
                     {/* Paste the code over here for more monthly letter from step 3 */}
                 </ul>
             </nav>
@@ -70,6 +76,11 @@ const MonthlyDrawer = props => {
                         flex-direction: column;
                         margin: 0;
                         padding: 1.5rem 0 1.5rem 10%;
+                    }
+
+                    h5 {
+                        color: white;
+                        font-weight: 400;
                     }
                     
                     .monthlyDrawer li {
