@@ -1,6 +1,8 @@
-## Getting Started
+## Dipsea Capital Main Website
 
-First, run the development server:
+For future developer, this website is currently hosted on Vercel. We utilized Next.js, React.js, Node.js for this project.
+
+To run the development server:
 
 ```bash
 npm run dev
@@ -12,17 +14,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The website is already deployed on Vercel. To make any changes, just commit a new version and Vercel will automatically rebuild the website. Wait like 30 seconds and you should see the new version with a confirmation email from Vercel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributor
+#### Developer & Designer
+* [beam-ntth](https://github.com/beam-ntth) - **Natheethorn "Beam" Teacharuangchit**
+
+#### Executive Team
+* Founder and CIO - **Christopher Antonio**
+* Director of Marketing - **Jonathan Clark**
