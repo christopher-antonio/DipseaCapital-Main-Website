@@ -34,12 +34,11 @@ const team = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='the-team fade-in'>
-                    <div className='intro'>Meet our team, combining over nine decades of experience in generating absolute returns</div>
+                    <div className='intro'>Meet our team, combining over multiple decades of experience in generating absolute returns</div>
                 </div>
                 <div className='space-top'></div>
                 <div className='indy-mem'>
                     <Individual employee={ TeamMember.Employee1 } />
-                    <Individual employee={ TeamMember.Employee2 } />
                     <Individual employee={ TeamMember.Employee3 } />
                     <Individual employee={ TeamMember.Employee4 } />
                     <Individual employee={ TeamMember.Employee5 } />

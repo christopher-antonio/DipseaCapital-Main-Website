@@ -1,3 +1,7 @@
+/** 
+ * Individual bullet point for the highlights page
+*/
+
 const List = ( props ) => {
     return (
         <React.Fragment>

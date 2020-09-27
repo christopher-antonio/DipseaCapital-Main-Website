@@ -1,3 +1,7 @@
+/**
+ * This file contains all the information for the bullet points in the philosophy page
+ */
+
 export const listContent1 = {
     head: 'Short Duration',
     detail: `Dipsea Capital employs relative value trading strategies in short duration US equity index and single name 

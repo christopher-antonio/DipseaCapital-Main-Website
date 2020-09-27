@@ -1,3 +1,7 @@
+/**
+ * This file contains the information of all the employees in the company
+ */
+
 export const Employee1 = {
     name: 'Christopher Antonio',
     position: 'Founder and Chief Investment Officer',
@@ -11,6 +15,8 @@ export const Employee1 = {
     pic: '/Team/nchris.png'
 };
 
+// No longer with Dipsea Capital
+/*
 export const Employee2 = {
     name: 'Eddy Altamirano',
     position: 'Head of Trading',
@@ -21,6 +27,7 @@ export const Employee2 = {
     Bachelor’s degree in Economics from the University of California at Berkeley.`,
     pic: '/Team/neddy.png'
 };
+*/
 
 export const Employee3 = {
     name: 'Kurt Romstad',
@@ -60,7 +67,7 @@ export const Employee5 = {
 
 export const Employee6 = {
     name: 'Cameron Grimes',
-    position: 'Trader',
+    position: 'Senior Trader',
     desc: `Cameron joined Dipsea Capital in July, 2020 after serving six years as a derivatives trader for CMZ T
     He was involved in all aspects of portfolio trading, including identifying and enhancing trading strategies and managing portfolio risk across 
     various market environments. He also provided liquidity as a market maker in index equity options at both the Chicago Board of Trade and the 

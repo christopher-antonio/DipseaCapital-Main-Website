@@ -1,3 +1,7 @@
+/**
+ * Individual cards for each organization that the company supported over time - utilized in the giving back page
+ */
+
 const Card = ( props ) => {
 
     const goTo = () => {

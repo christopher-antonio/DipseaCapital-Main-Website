@@ -1,3 +1,18 @@
+/**
+ * This file contains all the information for the bullet points in the giving back page
+ * To add more content to the community page:
+ * 1. Add the image to the /public/Community folder
+ * 2. Copy this code over here and paste it at the bottom ->
+ * !! Remove the brackets when replace the content. Ex: { Name } -> Put John NOT { John } in the field
+*   export const card{n} = {
+        head: '{ name of the institution }',
+        desc: `{ description of the institution }`,
+        link: '{ link to the website of the instituiton }',
+        img: '/Community/{ name of the image file }'
+    };
+    3. Go to the community.js file for next steps
+ */
+
 export const card1 = {
     head: 'Canal Alliance',
     desc: `Canal Alliance offers immigration legal services, education, career programs, and social services to help Hispanic 
