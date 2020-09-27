@@ -19,9 +19,9 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 The website is already deployed on Vercel. To make any changes, just commit a new version and Vercel will automatically rebuild the website. Wait like 30 seconds and you should see the new version with a confirmation email from Vercel.
 
 ## Contributor
-#### Developer & Designer
-* [beam-ntth](https://github.com/beam-ntth) - **Natheethorn "Beam" Teacharuangchit**
-
 #### Executive Team
 * Founder and CIO - **Christopher Antonio**
 * Director of Marketing - **Jonathan Clark**
+
+#### Developer & Designer
+* [beam-ntth](https://github.com/beam-ntth) - **Natheethorn "Beam" Teacharuangchit**
