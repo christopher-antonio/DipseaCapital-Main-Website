@@ -34,7 +34,7 @@ const team = () => {
             <main>
                 <PageHeading head={ headDetail } />
                 <div className='the-team fade-in'>
-                    <div className='intro'>Meet our team, combining over multiple decades of experience in generating absolute returns</div>
+                    <div className='intro'>Meet our team, combining multiple decades of experience in generating absolute returns</div>
                 </div>
                 <div className='space-top'></div>
                 <div className='indy-mem'>

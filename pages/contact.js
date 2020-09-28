@@ -14,7 +14,7 @@ const Contact = () => {
 
     // Configure the header of the page here
     const headDetail = {
-        subtitle: 'Learn more',
+        subtitle: 'Learn More',
         heading: 'Contact us for more information!'
     };
 

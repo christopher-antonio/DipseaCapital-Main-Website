@@ -33,7 +33,7 @@ export const card3 = {
     head: 'Dipsea Race',
     desc: `To inspire our community and beyond to support the tradition of the Dipsea Race and the stewardship of the Dipsea Trail.`,
     link: 'https://www.dipsea.org/',
-    img: '/Community/Dipsea-race.jpg'
+    img: '/Community/Dipsea-race-new.jpg'
 };
 
 export const card4 = {
