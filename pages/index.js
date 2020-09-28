@@ -89,8 +89,8 @@ export default function Home () {
             <ul className='list-content'>
               <li data-aos='fade-down'><p>The inherent volatility of markets creates significant challenges for investors</p></li>
               <li data-aos='fade-down'><p>Non-correlated investment strategies are a solution</p></li>
-              <li data-aos='fade-down'><p>Portfolio construction designed to mitigate cognitive biases supports a consistent return profile</p></li>
-              <li data-aos='fade-down'><p>Liquid investment strategies are a material element in effective risk management, providing investor access to their capital, and accurate portfolio marking</p></li>
+              {/* <li data-aos='fade-down'><p>Portfolio construction designed to mitigate cognitive biases supports a consistent return profile</p></li> */}
+              <li data-aos='fade-down'><p>Liquidity for investment strategies matters: for effective risk management, for investor access to their capital, and for accurate portfolio marking</p></li>
               <li data-aos='fade-down'><p>Low volatility investment solutions facilitate superior wealth compounding</p></li>
               <li data-aos='fade-down'><p>In a full alignment of interests as demonstrated by a significant fund investment alongside our clients</p></li>
             </ul>
