@@ -66,7 +66,7 @@ export default function Home () {
           {/* First part of the landing page */ }
           <div className='heading-2 text-animation'>The wonder of compounding returns amid:</div>
           <div className='heading text-animation-2'>High valuations</div>
-          <div className='heading text-animation-3'>Zero interest rates</div>
+          <div className='heading text-animation-3'>Interest rates at zero</div>
           <div className='heading text-animation-4'>Unprecedented uncertainty</div>
           <div className='heading-2 text-glow' id='sub-section'>Dipsea Capital has historically delivered a consistent</div>
           <div className='heading-2 text-glow'>return profile, uncorrelated to other asset classes<div className='border'></div></div>
