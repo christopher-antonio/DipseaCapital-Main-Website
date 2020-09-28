@@ -64,7 +64,7 @@ export default function Home () {
           <div className='top-space'></div>
 
           {/* First part of the landing page */ }
-          <div className='heading-2 text-animation'>The wonder of compounding returns amid:</div>
+          <div className='heading-2 text-animation'>Compounding returns amid:</div>
           <div className='heading text-animation-2'>High valuations</div>
           <div className='heading text-animation-3'>Interest rates at zero</div>
           <div className='heading text-animation-4'>Unprecedented uncertainty</div>
