@@ -11,43 +11,43 @@ const SideDrawer = props => {
             <nav className={ drawerClasses.join( ' ' ) }>
                 <ul>
                     <Link href='/'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>HOME</p>
                         </a>
                     </Link>
                     <Link href='/about'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>ABOUT US</p>
                         </a>
                     </Link>
                     <Link href='/team'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>OUR TEAM</p>
                         </a>
                     </Link>
                     <Link href='/philosophy'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>INVESTMENT PHILOSOPHY</p>
                         </a>
                     </Link>
                     <Link href='/highlights'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>FUND HIGHLIGHTS</p>
                         </a>
                     </Link>
                     <a className='clickable' onClick={ props.toggle }><p>INVESTOR LETTERS</p></a>
                     <Link href='/publications'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>INSIGHTS</p>
                         </a>
                     </Link>
                     <Link href='/community'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>GIVING BACK</p>
                         </a>
                     </Link>
                     <Link href='/contact'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>CONTACT US</p>
                         </a>
                     </Link>
@@ -55,7 +55,6 @@ const SideDrawer = props => {
                 <div className='logo'>
                     <img src='DipseaLogo.png' alt='Dipsea Capital, LLC Logo' />
                 </div>
-
             </nav>
             <style jsx>
                 {
