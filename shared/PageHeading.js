@@ -19,6 +19,10 @@ const PageHeading = ( props ) => {
         } } />;
     }
 
+    const samePageCloseButton = () => {
+        return setSideDrawerOpen( false );
+    };
+
     // For sideDrawer
     const monthlyToggleButton = () => {
         return setMonthlyDrawerOpen( !monthlyDrawerOpen );
@@ -32,7 +36,7 @@ const PageHeading = ( props ) => {
         <React.Fragment>
             <div className='page-header'>
                 <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
-                <SideDrawer show={ sideDrawerOpen } toggle={ monthlyToggleButton } />
+                <SideDrawer show={ sideDrawerOpen } samePage={ samePageCloseButton } toggle={ monthlyToggleButton } />
                 <MonthlyDrawer show={ monthlyDrawerOpen } toggle={ monthlyCloseButton } />
                 { backdrop }
                 <div className='title'>
