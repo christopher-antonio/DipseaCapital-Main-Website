@@ -28,6 +28,11 @@ export default function Home () {
     } } />;
   }
 
+  // To close main navigation side drawer when on the same page
+  const samePageCloseButton = () => {
+    return setSideDrawerOpen( false );
+  };
+
   // For sideDrawer
   const monthlyToggleButton = () => {
     return setMonthlyDrawerOpen( !monthlyDrawerOpen );
@@ -52,7 +57,7 @@ export default function Home () {
       </Head>
 
       {/* SideDrawer and Monthly Drawer */ }
-      <SideDrawer show={ sideDrawerOpen } toggle={ monthlyToggleButton } />
+      <SideDrawer show={ sideDrawerOpen } samePage={ samePageCloseButton } toggle={ monthlyToggleButton } />
       <MonthlyDrawer show={ monthlyDrawerOpen } toggle={ monthlyCloseButton } />
       { backdrop }
 

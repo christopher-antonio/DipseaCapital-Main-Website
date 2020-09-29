@@ -11,7 +11,7 @@ const SideDrawer = props => {
             <nav className={ drawerClasses.join( ' ' ) }>
                 <ul>
                     <Link href='/'>
-                        <a className='clickable'>
+                        <a className='clickable' onClick={ props.samePage }>
                             <p>HOME</p>
                         </a>
                     </Link>
@@ -55,7 +55,6 @@ const SideDrawer = props => {
                 <div className='logo'>
                     <img src='DipseaLogo.png' alt='Dipsea Capital, LLC Logo' />
                 </div>
-
             </nav>
             <style jsx>
                 {

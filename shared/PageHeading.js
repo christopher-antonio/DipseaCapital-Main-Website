@@ -19,11 +19,12 @@ const PageHeading = ( props ) => {
         } } />;
     }
 
+    // To close main navigation side drawer when on the same page
     const samePageCloseButton = () => {
         return setSideDrawerOpen( false );
     };
 
-    // For sideDrawer
+    // For monthly side drawer
     const monthlyToggleButton = () => {
         return setMonthlyDrawerOpen( !monthlyDrawerOpen );
     };
@@ -35,7 +36,7 @@ const PageHeading = ( props ) => {
     return (
         <React.Fragment>
             <div className='page-header'>
-                <Navbar click={ () => setSideDrawerOpen( !sideDrawerOpen ) } />
+                <Navbar click={ () => setSideDrawerOpen( true ) } />
                 <SideDrawer show={ sideDrawerOpen } samePage={ samePageCloseButton } toggle={ monthlyToggleButton } />
                 <MonthlyDrawer show={ monthlyDrawerOpen } toggle={ monthlyCloseButton } />
                 { backdrop }
