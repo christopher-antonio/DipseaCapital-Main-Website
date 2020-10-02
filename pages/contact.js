@@ -192,7 +192,7 @@ const Contact = () => {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        justify-content: center:
+                        justify-content: center;
                     }
 
                     .form-section, .map-section {
@@ -201,7 +201,7 @@ const Contact = () => {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        justify-content: center:
+                        justify-content: center;
                     }
 
                     .map-text {
@@ -289,7 +289,7 @@ const Contact = () => {
                             width: 90%;
                         }
 
-                        body {
+                        .body {
                             flex-direction: column;
                         }
 
