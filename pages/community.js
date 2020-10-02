@@ -42,7 +42,7 @@ const community = () => {
             </Head>
             <main>
                 <PageHeading head={ headDetail } />
-                <div className='intro'>Dipsea's principals are involved in supporting the following organizations</div>
+                <div className='intro'><p>Dipsea's principals are involved in supporting the following organizations</p></div>
                 <div className='main-sub'>
                         <Card content={ Info.card1 } />
                         <Card content={ Info.card2 } />
@@ -95,8 +95,14 @@ const community = () => {
                         }
 
                         .intro {
-                            width: 80%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             font-size: 10px;
+                        }
+
+                        .intro p {
+                            width: 80%;
                         }
 
                         .sub-left, .sub-right {
