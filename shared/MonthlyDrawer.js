@@ -22,6 +22,8 @@ const MonthlyDrawer = props => {
                 <div className='monthly-head'> INVESTOR LETTERS </div>
                 <ul>
                     {/* Paste the code over here for more monthly letter from step 3 */ }
+                    <h5>2021</h5>
+                    <li><a className='clickable' href='/Letters/2021/January-2021.pdf' target='_blank' rel='noopener noreferrer'>January 2021</a></li>
                     <h5>2020</h5>
                     <li><a className='clickable' href='/Letters/2020/December-2020.pdf' target='_blank' rel='noopener noreferrer'>December 2020</a></li>
                     <li><a className='clickable' href='/Letters/2020/November-2020.pdf' target='_blank' rel='noopener noreferrer'>November 2020</a></li>
