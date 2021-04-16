@@ -68,7 +68,7 @@ export const Employee5 = {
 export const Employee6 = {
     name: 'Cameron Grimes',
     position: 'Senior Trader',
-    desc: `Cameron joined Dipsea Capital in July, 2020 after serving six years as a derivatives trader for CMZ T
+    desc: `Cameron joined Dipsea Capital in July, 2020 after serving six years as a derivatives trader for CMZ Trading, a Chicago proprietary trading firm.
     He was involved in all aspects of portfolio trading, including identifying and enhancing trading strategies and managing portfolio risk across 
     various market environments. He also provided liquidity as a market maker in index equity options at both the Chicago Board of Trade and the 
     Chicago Board of Options Exchange. Cameron earned his bachelor’s degree in Economics from The University of Chicago.`,
