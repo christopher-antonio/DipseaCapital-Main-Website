@@ -30,13 +30,17 @@ export const Employee2 = {
 */
 
 export const Employee3 = {
-    name: 'Kurt Romstad',
+    name: 'Gene Koziarz',
     position: 'Head of Risk Management',
-    desc: `Mr. Romstad has over 20 years of risk management experience and has worked with Mr. Antonio since 1998. Mr. Romstad has managed 
-    capital through all types of market environments and covered all types of investment products (equities, options, futures, and fixed 
-    income products). Prior to joining Dipsea Capital, Mr. Romstad managed a Paine Webber equity trading desk for eight years. Mr. Romstad 
-    earned a Bachelor of Science in Finance from the California State University at Chico.`,
-    pic: '/Team/nkurt.png'
+    desc: `Gene has 20 years of equity derivatives experience as a trader, risk manager, and systems designer. 
+    Before joining Dipsea in May, 2021 he was the Director of Trading and Portfolio Risk Management for Stratifi, a 
+    $400 million RIA that specialized in providing hedging solutions using listed options. Prior to this, he worked 
+    in trading technology, designing and commercializing automated trading solutions for financial institutions. 
+    This led him to create as co-inventor the Derivative Trading Strategy Backtesting Machine - its pending U.S. 
+    patent later became part of Morningstar. Gene began his career on the trading floor of the Chicago Board Options 
+    Exchange as an Independent Market Maker and trading floor Risk Manager.  He has a bachelor’s degree from Indiana 
+    University in Germanic Studies.`,
+    pic: '/Team/gene.png'
 };
 
 export const Employee4 = {

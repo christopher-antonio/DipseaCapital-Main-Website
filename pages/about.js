@@ -65,8 +65,8 @@ const About = () => {
                                 <div className='hook-desc'>years senior team's average experience</div>
                             </div>
                             <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
-                                <div className='hook'>16 +</div>
-                                <div className='hook-desc'>years as a team</div>
+                                <div className='hook'>21 +</div>
+                                <div className='hook-desc'>average years of experience of team members</div>
                             </div>
                         </div>
                     </div>
