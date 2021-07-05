@@ -18,7 +18,7 @@ export const listContent2 = {
 
 export const listContent3 = {
     head: 'No correlation',
-    detail: `Dipsea Capital’s returns on a day-to-day basis reflect the robustness of our strategy. Over 5+ years, Dipsea's strategy exhibits a stock market 
+    detail: `Dipsea Capital’s returns on a day-to-day basis reflect the robustness of our strategy. Over 6+ years, Dipsea's strategy exhibits a stock market 
     correlation of approximately -0.10, with two-thirds positive days, and positive returns on nearly three-quarters of down market days.`
 };
 
