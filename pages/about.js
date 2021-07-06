@@ -60,10 +60,6 @@ const About = () => {
                             Chris has been an independent portfolio manager since 1995 and established Dipsea Capital, LLC in 2007, followed by the Dipsea Capital Fund, 
                             LP in 2015.</p>
                         <div className='cards'>
-                            <div className='card' data-aos='fade-up' data-aos-delay={ 200 } >
-                                <div className='hook'>25 +</div>
-                                <div className='hook-desc'>years senior team's average experience</div>
-                            </div>
                             <div className='card' data-aos='fade-up' data-aos-delay={ 400 }>
                                 <div className='hook'>21 +</div>
                                 <div className='hook-desc'>average years of experience of team members</div>
