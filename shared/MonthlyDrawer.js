@@ -23,6 +23,9 @@ const MonthlyDrawer = props => {
                 <ul>
                     {/* Paste the code over here for more monthly letter from step 3 */ }
                     <h5>2021</h5>
+                    <li><a className='clickable' href='/Letters/2021/October-2021.pdf' target='_blank' rel='noopener noreferrer'>October 2021</a></li>
+                    <li><a className='clickable' href='/Letters/2021/September-2021.pdf' target='_blank' rel='noopener noreferrer'>September 2021</a></li>
+                    <li><a className='clickable' href='/Letters/2021/August-2021.pdf' target='_blank' rel='noopener noreferrer'>August 2021</a></li>
                     <li><a className='clickable' href='/Letters/2021/July-2021.pdf' target='_blank' rel='noopener noreferrer'>July 2021</a></li>
                     <li><a className='clickable' href='/Letters/2021/June-2021.pdf' target='_blank' rel='noopener noreferrer'>June 2021</a></li>
                     <li><a className='clickable' href='/Letters/2021/May-2021.pdf' target='_blank' rel='noopener noreferrer'>May 2021</a></li>

@@ -78,3 +78,13 @@ export const Employee6 = {
     Chicago Board of Options Exchange. Cameron earned his bachelor’s degree in Economics from The University of Chicago.`,
     pic: '/Team/ncameron.png'
 };
+
+export const Employee7 = {
+    name: 'Ryan Miller',
+    position: 'Client Solutions and Business Development',
+    desc: `Ryan joined Dipsea Capital in September, 2021 from Aviva Investors, the UK insurance giant’s asset management division, where he led sales 
+    enablement initiatives as an Institutional Sales Specialist in Chicago. Previously, he was at Berenberg Asset Management, where he assisted its 
+    North America CEO in executing the firm’s institutional growth strategy.  Ryan began his career as an Analyst at SunGard Global Trading.  
+    He holds a bachelor’s degree in Business Administration from the University of Wisconsin-Madison and is a Chartered Alternative Investment Analyst.`,
+    pic: '/Team/rmiller.jpg'
+};
