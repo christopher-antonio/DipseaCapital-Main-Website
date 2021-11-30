@@ -88,6 +88,9 @@ export default function Home () {
             <div className='headline'>
               <div className='line fade-in'></div>
               <h4 data-aos='fade-right'>We believe</h4>
+              <div className="video-container">
+                <iframe data-aos='fade-right' className="video-main" src="https://www.youtube.com/embed/B9uDJJYq9G8" style={{border:"none", boxShadow: "5px 5px 1px #4E638C"}}></iframe>
+              </div>
             </div>
           </div>
           <div className='belief-content'>
@@ -236,6 +239,15 @@ export default function Home () {
           margin-left: 2rem;
         }
 
+        .video-container {
+          padding-left: 2rem;
+        }
+
+        .video-main {
+          width: calc(100vw * 0.23);
+          height: calc(100vw * 0.23 * 0.5625);
+        }
+
         .belief-sub h4 {
           margin: 0;
           padding: 1rem 2rem 2rem 2rem;
@@ -375,6 +387,16 @@ export default function Home () {
             background-color: #4E638C;
             margin-left: 1rem;
           }
+
+          .video-container {
+            text-align: center;
+            padding: 0;
+          }
+
+          .video-main {
+            width: 300px;
+            height: calc(300px * 0.5625);
+          }
   
           .belief-sub h4 {
             margin: 0;
@@ -396,6 +418,7 @@ export default function Home () {
             margin: 0;
             padding: 0;
             width: 80%;
+            transform: translateY(110px);
           }
   
           .list-content li {
