@@ -89,7 +89,7 @@ export default function Home () {
               <div className='line fade-in'></div>
               <h4 data-aos='fade-right'>We believe</h4>
               <div className="video-container">
-                <iframe data-aos='fade-right' className="video-main" src="https://www.youtube.com/embed/B9uDJJYq9G8" style={{border:"none", boxShadow: "5px 5px 1px #4E638C"}}></iframe>
+                <iframe data-aos='fade-right' className="video-main" src="https://www.youtube.com/embed/B9uDJJYq9G8" allowFullScreen="true" style={{border:"none", boxShadow: "5px 5px 1px #4E638C"}}></iframe>
               </div>
             </div>
           </div>
