@@ -134,7 +134,7 @@ const Contact = () => {
                             </p>
 
                             {/* Investor Choice */ }
-                            <label htmlFor="investor">Accredited Investors?</label>
+                            <label htmlFor="investor">Qualified Purchaser?</label>
                             <select id="investor" name="investor" onChange={ changeInvestor }>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
