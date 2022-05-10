@@ -98,7 +98,7 @@ const About = () => {
                 {
                     `
                     .container {
-                        height: 100vh;
+                        height: auto;
                         width: 100%;
                     }
 
