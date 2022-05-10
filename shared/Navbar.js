@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import React from 'react';
 
 // Component
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
@@ -11,6 +12,9 @@ const Navbar = ( props ) => {
 
     return (
         <React.Fragment>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+            <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" />
             <nav className='nav'>
                 <div className='toggle-button'><DrawerToggleButton click={ props.click } /></div>
                 <Link href='/'><a className='logo'><img src='/DipseaLogo.png' alt='homepage logo' /></a></Link>
@@ -86,8 +90,6 @@ const Navbar = ( props ) => {
                             font-size: 12px;
                         }
                     }
-
-                    @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
                     `
                 }
             </style>

@@ -8,7 +8,7 @@
  */
 
 import Head from 'next/head';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import PageHeading from '../shared/PageHeading';
@@ -20,7 +20,7 @@ import * as Info from '../components/CommunityPage/CardDetails';
 // Animation
 import Aos from 'aos';
 
-const community = () => {
+const Community = () => {
 
     // Configure the header of the page here
     const headDetail = {
@@ -42,7 +42,7 @@ const community = () => {
             </Head>
             <main>
                 <PageHeading head={ headDetail } />
-                <div className='intro'><p>Dipsea's principals are involved in supporting the following organizations</p></div>
+                <div className='intro'><p>Dipsea&apos;s principals are involved in supporting the following organizations</p></div>
                 <div className='main-sub'>
                         <Card content={ Info.card1 } />
                         <Card content={ Info.card2 } />
@@ -141,4 +141,4 @@ const community = () => {
     )
 }
 
-export default community
+export default Community

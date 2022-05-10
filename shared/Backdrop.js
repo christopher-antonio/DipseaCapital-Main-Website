@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Backdrop = ( props ) => {
     return (
         <React.Fragment>

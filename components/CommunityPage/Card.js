@@ -1,3 +1,4 @@
+import React from 'react'
 /**
  * Individual cards for each organization that the company supported over time - utilized in the giving back page
  */
