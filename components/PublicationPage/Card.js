@@ -1,3 +1,4 @@
+import React from 'react'
 /** 
  * Individual cards for the publication page
 */

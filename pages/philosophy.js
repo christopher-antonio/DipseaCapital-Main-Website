@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import PageHeading from '../shared/PageHeading';
@@ -11,7 +11,7 @@ import MetaTag from '../shared/MetaTag';
 // Animation
 import Aos from 'aos';
 
-const philosophy = () => {
+const Philosophy = () => {
 
     // Configure the header of the page here
     const headDetail = {
@@ -58,7 +58,6 @@ const philosophy = () => {
                                 </div>
                             </div>
                         </div>
-                        <img />
                     </div>
 
                     {/* Right side of the page */ }
@@ -249,4 +248,4 @@ const philosophy = () => {
     );
 };
 
-export default philosophy;
+export default Philosophy;

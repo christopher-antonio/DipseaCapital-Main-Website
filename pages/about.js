@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import PageHeading from '../shared/PageHeading';
@@ -34,8 +34,8 @@ const About = () => {
                 <div className='firm-space'></div>
                 <div className='quote'>
                     <em>
-                        " Operating in the markets is not an effort of seeking perfection. Success arrives through a process of constant evolution
-                         of our strategies supported by a robust focus on self improvement" - Christopher Antonio, CIO 
+                        &quot;Operating in the markets is not an effort of seeking perfection. Success arrives through a process of constant evolution
+                         of our strategies supported by a robust focus on self improvement&quot; - Christopher Antonio, CIO 
                     </em>
                 </div>
                 <div className='firm' id='firm-section'>
@@ -53,7 +53,7 @@ const About = () => {
                     <div className='firm-content'>
                         <p className='about-1' data-aos='fade-up' data-aos-delay={ 300 }>
                             Dipsea Capital manages liquid hedged investment strategies using systematic tools combined with discretionary portfolio management. 
-                            Founder and CIO Chris Antonio’s investment approach is based on his scientific background combined with his experience as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations. 
+                            Founder and CIO Chris Antonio&apos;s investment approach is based on his scientific background combined with his experience as a Pacific Stock Exchange specialist and co-manager of Paine Webber’s equity floor trading operations. 
                             Both experiences contribute to an orientation of seeking consistent profitability based on equity market inefficiencies.
                         </p>
                         <p className='about-1' data-aos='fade-up'>
@@ -84,7 +84,7 @@ const About = () => {
                             Dipsea Capital Fund, LP, as well as separately managed accounts for large institutional investors.
                         </p>
                         <p className='about-1' data-aos='fade-up'>
-                            Dipsea Capital is named after America’s oldest trail race, the Dipsea Race. 
+                            Dipsea Capital is named after America&apos;s oldest trail race, the Dipsea Race. 
                             Established in 1905, the Dipsea Race takes place in California between Mill Valley and Stinson Beach 
                             - a grueling event that rewards preparation and perseverance.
                         </p>

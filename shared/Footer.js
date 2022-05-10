@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import React from 'react';
 
 // Icons
 import { FaLinkedinIn, FaTwitter, FaMediumM } from 'react-icons/fa';
