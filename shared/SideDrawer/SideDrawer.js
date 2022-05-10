@@ -35,7 +35,7 @@ const SideDrawer = props => {
                             <p>FUND HIGHLIGHTS</p>
                         </a>
                     </Link>
-                    <a className='clickable' onClick={ props.toggle }><p>INVESTOR LETTERS</p></a>
+                    {/* <a className='clickable' onClick={ props.toggle }><p>INVESTOR LETTERS</p></a> */}
                     <Link href='/publications'>
                         <a className='clickable' onClick={ props.samePage }>
                             <p>INSIGHTS</p>
