@@ -54,7 +54,7 @@ const Team = () => {
                 {
                     `
                     .container {
-                        height: 100vh;
+                        height: auto;
                         width: 100%;
                     }
 
