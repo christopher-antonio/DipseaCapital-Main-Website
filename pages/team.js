@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import PageHeading from '../shared/PageHeading';
@@ -11,7 +11,7 @@ import * as TeamMember from '../components/TeamPage/TeamDetails';
 // Animations
 import Aos from 'aos';
 
-const team = () => {
+const Team = () => {
 
     // Configure the header of the page here
     const headDetail = {
@@ -176,4 +176,4 @@ const team = () => {
     );
 };
 
-export default team;
+export default Team;

@@ -5,6 +5,7 @@
  * 3. Fill in the { month }, { year }, and { month year } accordingly.
  * 4. Go paste the code down there
  */
+import React from 'react';
 
 // Icons
 import { IoMdArrowRoundBack } from 'react-icons/io';

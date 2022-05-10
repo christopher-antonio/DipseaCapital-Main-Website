@@ -1,3 +1,5 @@
+import React from 'react'
+
 /**
  * A card for individual employee to be utilized in the Team page
  */
@@ -6,7 +8,7 @@ const Individual = ( props ) => {
         <React.Fragment>
             <div className='employee'>
                 <div className='bio' data-aos='fade-up'>
-                    <div className='image'><img src={ props.employee.pic } /></div>
+                    <div className='image'><img src={ props.employee.pic } alt={`Picture of ${props.employee.name}`} /></div>
                     <div className='intro'>
                         <div className='name'>{ props.employee.name }</div>
                         <div className='position'>{ props.employee.position }</div>

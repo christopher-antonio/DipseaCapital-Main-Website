@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Components
 import PageHeading from '../shared/PageHeading';
@@ -105,7 +105,7 @@ const Contact = () => {
                         <p className='map-text'>Dipsea Capital is located in Greenbrae in Marin County, a 15 minute drive north of San Francisco or a 30 minute ferry trip across San Francisco Bay to adjacent Larkspur Landing.</p>
                         {/* Dipsea Capital Map */ }
                         <div className='dipsea-map'>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.36550171785!2d-122.52412608459578!3d37.9452509101058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a446de34fc3%3A0xb0b6faf3b01150f5!2sDipsea%20Capital!5e0!3m2!1sen!2sus!4v1598818482193!5m2!1sen!2sus" style={ { border: 0, height: '100%', width: '100%' } } allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.36550171785!2d-122.52412608459578!3d37.9452509101058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a446de34fc3%3A0xb0b6faf3b01150f5!2sDipsea%20Capital!5e0!3m2!1sen!2sus!4v1598818482193!5m2!1sen!2sus" style={ { border: 0, height: '100%', width: '100%' } } allowFullScreen={true} aria-hidden="false" tabIndex="0"></iframe>
                         </div>
                         <p className='map-text'>Investments in the Dipsea Capital Fund, LP are exclusively for Qualified Clients.</p>
                     </div>

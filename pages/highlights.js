@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import PageHeading from '../shared/PageHeading';
@@ -11,7 +11,7 @@ import MetaTag from '../shared/MetaTag';
 // Animations
 import Aos from 'aos';
 
-const highlights = () => {
+const Highlights = () => {
 
     // Configure the header of the page here
     const headDetail = {
@@ -197,4 +197,4 @@ const highlights = () => {
     )
 }
 
-export default highlights
+export default Highlights

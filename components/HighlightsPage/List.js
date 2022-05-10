@@ -1,3 +1,4 @@
+import React from 'react'
 /** 
  * Individual bullet point for the highlights page
 */
