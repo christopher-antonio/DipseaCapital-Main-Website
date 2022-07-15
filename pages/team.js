@@ -40,7 +40,7 @@ const Team = () => {
                 <div className='indy-mem'>
                     <Individual employee={ TeamMember.Employee1 } />
                     <Individual employee={ TeamMember.Employee3 } />
-                    <Individual employee={ TeamMember.Employee4 } />
+                    {/* <Individual employee={ TeamMember.Employee4 } /> */}
                     <Individual employee={ TeamMember.Employee5 } />
                     <Individual employee={ TeamMember.Employee6 } />
                     <Individual employee={ TeamMember.Employee7 } />
