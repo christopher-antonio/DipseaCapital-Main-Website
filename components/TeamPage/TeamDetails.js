@@ -79,6 +79,8 @@ export const Employee6 = {
     pic: '/Team/ncameron.png'
 };
 
+// No longer with Dipsea Capital
+/*
 export const Employee7 = {
     name: 'Ryan Miller',
     position: 'Director of Business Development',
@@ -88,3 +90,4 @@ export const Employee7 = {
     He holds a bachelor’s degree in Business Administration from the University of Wisconsin-Madison and is a Chartered Alternative Investment Analyst.`,
     pic: '/Team/rmiller.jpg'
 };
+*/
