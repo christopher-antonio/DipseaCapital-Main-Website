@@ -79,7 +79,7 @@ export const Employee6 = {
     pic: '/Team/ncameron.png'
 };
 
-export const Employee7 = {
+export const Employee8 = {
     name: 'Grant Avalon',
     position: 'Head of Quantitative Strategies',
     desc: `Grant works directly with our CIO as Head of Trading to enhance Dipsea Capital’s systematic strategies by guiding the growth of the firm’s research technology and trade automation. 
