@@ -43,7 +43,7 @@ const Team = () => {
                     {/* <Individual employee={ TeamMember.Employee4 } /> */}
                     <Individual employee={ TeamMember.Employee5 } />
                     <Individual employee={ TeamMember.Employee6 } />
-                    <Individual employee={ TeamMember.Employee7 } />
+                    <Individual employee={ TeamMember.Employee8 } />
                 </div>
             </main>
             <div className='space-bottom'></div>
