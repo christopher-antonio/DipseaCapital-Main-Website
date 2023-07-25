@@ -79,6 +79,19 @@ export const Employee6 = {
     pic: '/Team/ncameron.png'
 };
 
+export const Employee7 = {
+    name: 'Grant Avalon',
+    position: 'Head of Quantitative Strategies',
+    desc: `Grant works directly with our CIO as Head of Trading to enhance Dipsea Capital’s systematic strategies by guiding the growth of the firm’s research technology and trade automation. 
+    Grant joined Dipsea in 2023, bringing with him expertise in trading fixed income, equity, index and crypto options.  He began his career at DRW, a global derivatives trading firm.  
+    Here he honed his technology skills writing back-testing software, contributing to the firm’s research codebase in Python and C++.  
+    Grant then had success converting quantitative research into tradable actions while making markets in US Treasury and Eurodollar options. 
+    He returned to California working with another proprietary options trading firm, where he optimized risk management software, expanded the firm’s research and back-testing capabilities 
+    and built software that automated their trading strategies.  Grant then applied his financial and technology skills to work with Synquote, a DeFi crypto options exchange building out options pricing, 
+    risk management and market making technologies. Grant graduated from Stanford University with a degree in Economics.`,
+    pic: '/Team/grant.png'
+};
+
 // No longer with Dipsea Capital
 /*
 export const Employee7 = {
