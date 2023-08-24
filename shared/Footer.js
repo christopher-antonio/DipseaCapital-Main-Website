@@ -28,9 +28,9 @@ const Footer = () => {
                     <img src='/DipseaLogo.png' alt='dipsea logo' />
                 </div>
                 <div className='address'>
-                    <p>350 Bon Air Center</p>
-                    <p>Suite 230</p>
-                    <p>Greenbrae, CA 94904</p>
+                    <p>2 Belvedere Place</p>
+                    <p>Suite 310</p>
+                    <p>Mill Valley, CA 94941</p>
                 </div>
                 <div className='direction' onClick={ goTo }>Get directions</div>
                 <div className='number'>+1 (415) 925-9022</div>
